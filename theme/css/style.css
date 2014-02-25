@@ -39,3 +39,8 @@ float: left; }
 //#menu ul li a#nowopen {background:blue; border-bottom: 1px solid #fff;}
 
 .photo {float: left; padding: 0 25px 25px 0}
+img.center {
+    diplay:block;
+    margin-left: auto;
+    margin-right: auto;
+}

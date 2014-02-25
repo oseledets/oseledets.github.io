@@ -106,6 +106,9 @@ tbody tr:nth-child(even) td,
 tbody tr.even td  {
   background: #e5ecf9;
 }
+  table, th, td {
+  text-align: center;
+  }
 tfoot       { font-style: italic; }
 caption     { background: #eee; }
 

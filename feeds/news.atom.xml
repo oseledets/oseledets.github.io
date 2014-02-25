@@ -1,3 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2014-02-13T00:00:00+04:00</updated><entry><title>Theses topics</title><link href="/news/theses-topics/" rel="alternate"></link><updated>2014-02-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-13:news/theses-topics/</id><summary type="html">&lt;p&gt;I have put short descriptions of the available student
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2014-02-25T00:00:00+04:00</updated><entry><title>Convolution via cross approximation</title><link href="/news/convolution-via-cross-approximation/" rel="alternate"></link><updated>2014-02-25T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-25:news/convolution-via-cross-approximation/</id><summary type="html">&lt;p&gt;Multidimensional convolution plays a crucial role in many 
+applications. We have proposed a new method for approximation computation of the convolution 
+in low-rank tensor formats
+that is based on the
+&lt;em&gt;cross approximation&lt;/em&gt; in the frequency domain. 
+The method is applicable to any &lt;span class="caps"&gt;SVD&lt;/span&gt;-based tensor format (skeleton, Tucker,  Tensor Train, Hierachical Tucker).
+We have computed Newton potentials of different electronic densities, and also presented preliminary 
+results for the solution of the Hartree-Fock equation on tensor product grids.
+For a practically interesting range of one-dimensional grid sizes &lt;mathjax&gt;$n \sim 10^{3}-10^{5}$&lt;/mathjax&gt; our algorithm is&amp;nbsp;faster.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;He density&lt;/th&gt;
+&lt;th&gt;H2 density&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img width="270" class="center" src="/images/He_density.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img width="270" class="center" src="/images/H2_density.jpg"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1402.5649"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rakhuba/tucker3d"&gt;MiniTucker Toolbox on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bitbucket.org/rakhuba/crossconv-experiment"&gt;Data from the paper on&amp;nbsp;Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+		? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js'
+		: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+&lt;/script&gt;
+</summary><category term="paper"></category></entry><entry><title>Theses topics</title><link href="/news/theses-topics/" rel="alternate"></link><updated>2014-02-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-13:news/theses-topics/</id><summary type="html">&lt;p&gt;I have put short descriptions of the available student
 project online. &lt;a href="/theses/"&gt;Please&amp;nbsp;check&lt;/a&gt;&lt;/p&gt;</summary><category term="Students"></category></entry></feed>
