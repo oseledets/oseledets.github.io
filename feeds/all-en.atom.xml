@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2014-02-25T00:00:00+04:00</updated><entry><title>Convolution via cross approximation</title><link href="/news/convolution-via-cross-approximation/" rel="alternate"></link><updated>2014-02-25T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-25:news/convolution-via-cross-approximation/</id><summary type="html">&lt;p&gt;Multidimensional convolution plays a crucial role in many 
-applications. We have proposed a new method for approximation computation of the convolution 
-in low-rank tensor formats
+applications. We have proposed a new method for approximate computation of the convolution 
+in &lt;em&gt;low-rank tensor formats&lt;/em&gt;
 that is based on the
 &lt;em&gt;cross approximation&lt;/em&gt; in the frequency domain. 
 The method is applicable to any &lt;span class="caps"&gt;SVD&lt;/span&gt;-based tensor format (skeleton, Tucker,  Tensor Train, Hierachical Tucker).
