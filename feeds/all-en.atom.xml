@@ -6,7 +6,7 @@ of a three-dimensional integral. We exploit its structure by computing low-rank 
 using cross approximation for a two-dimensional function, and exponential sums approach for the Slater density 
 function. 
 Implementation of this technique decreases the total computational
-time by a &lt;strong&gt;factor of 1000&lt;/strong&gt;. What is more importance, the general concept can be applied to more complicated models
+time by a &lt;strong&gt;factor of 1000&lt;/strong&gt;. What is more important, the general concept can be applied to more complicated models
 (like ion-molecule&amp;nbsp;collision).&lt;/p&gt;
 &lt;p&gt;&lt;mathjax&gt;$ 
 \begin{array}{cccccc}
