@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2014-02-26T00:00:00+04:00</updated><entry><title>Cross approximation: intro</title><link href="/news/cross-approximation-intro/" rel="alternate"></link><updated>2014-02-26T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-26:news/cross-approximation-intro/</id><summary type="html">&lt;h3&gt;Skeleton&amp;nbsp;decomposition&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2014-03-19T00:00:00+04:00</updated><entry><title>Multidimensional integrals in ion-atom collisions</title><link href="/news/multidimensional-integrals-in-ion-atom-collisions/" rel="alternate"></link><updated>2014-03-19T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-19:news/multidimensional-integrals-in-ion-atom-collisions/</id><summary type="html">&lt;p&gt;Simulation in physics is full of multidimensional integrals. In the paper &lt;a href="http://arxiv.org/abs/1403.4068"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev and &lt;span class="caps"&gt;I. V.&lt;/span&gt; Oseledets. Fast multidimensional convolution in low-rank formats via cross approximation. arXiv preprint 1403.4068, 2014&lt;/a&gt; we consider the
+&lt;a href="http://www.sciencedirect.com/science/article/pii/S0010465512003153"&gt;&lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; code&lt;/a&gt; that is suited 
+for the computation of ion-atomic collisons. The main computational bottleneck is the computation 
+of a three-dimensional integral. We exploit its structure by computing low-rank separated representation
+using cross approximation for a two-dimensional function, and exponential sums approach for the Slater density 
+function. 
+Implementation of this technique decreases the total computational
+time by a &lt;strong&gt;factor of 1000&lt;/strong&gt;. What is more importance, the general concept can be applied to more complicated models
+(like ion-molecule&amp;nbsp;collision).&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$ 
+\begin{array}{cccccc}
+\hline
+\hline
+System &amp;amp;  \gamma\mbox{-Shell} &amp;amp;  N_w  &amp;amp;  T_s  ( \times10^{-3}  sec) &amp;amp;  T_{D}  (sec) &amp;amp;  T_{D}/T_s   \\
+\hline
+ Au^{26+}+ O  &amp;amp;  4df^{17}  &amp;amp;  74  &amp;amp;  7.94  &amp;amp;  3.89  &amp;amp;  490   \\
+ &amp;amp;  4sp^{8}  &amp;amp;  69  &amp;amp;  4.92  &amp;amp;  3.83  &amp;amp;  778   \\
+ &amp;amp;  3d^{10}  &amp;amp;  73  &amp;amp;  3.59  &amp;amp;  3.88  &amp;amp;  1080   \\
+ &amp;amp;  3sp^{8}  &amp;amp;  72  &amp;amp;  3.81  &amp;amp;  3.82  &amp;amp;  1003   \\ 
+ &amp;amp;  2sp^{8}  &amp;amp;  107  &amp;amp;  2.42  &amp;amp;  3.86  &amp;amp;  1592   \\
+ &amp;amp;  1sp^{2}  &amp;amp;  209  &amp;amp;  1.24  &amp;amp;  3.88  &amp;amp;  3120   \\&lt;br /&gt;
+\hline
+ U^{28+}+ Xe  &amp;amp;  5sp^{4}  &amp;amp;  62  &amp;amp;  10.1  &amp;amp;  3.94  &amp;amp;  390  \\
+ &amp;amp;  4df^{24}  &amp;amp;  70  &amp;amp;  6.05  &amp;amp;  3.90  &amp;amp;  644  \\
+ &amp;amp;  4sp^{8}  &amp;amp;  67  &amp;amp;  5.00  &amp;amp;  3.94  &amp;amp;  788  \\
+ &amp;amp;  3d^{10}  &amp;amp;  71  &amp;amp;  3.88  &amp;amp;  3.92  &amp;amp;  1011  \\
+ &amp;amp;  3sp^{8}  &amp;amp;  70  &amp;amp;  3.52  &amp;amp;  3.90  &amp;amp;  1106  \\
+ &amp;amp;  2sp^{8}  &amp;amp;  105  &amp;amp;  1.99  &amp;amp;  3.87  &amp;amp;  1945  \\
+ &amp;amp;  1sp^{2}  &amp;amp;  207  &amp;amp;  1.04  &amp;amp;  3.88  &amp;amp;  3723  \\
+\hline
+\hline
+\end{array}
+$&lt;/mathjax&gt;&lt;/p&gt;
+&lt;p&gt;Time for the old code (&lt;mathjax&gt;$T_D)$&lt;/mathjax&gt; versus the time for the new code (&lt;mathjax&gt;$T_s$&lt;/mathjax&gt;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1403.4068"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+		? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js'
+		: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+&lt;/script&gt;
+</summary><category term="paper"></category></entry><entry><title>Cross approximation: intro</title><link href="/news/cross-approximation-intro/" rel="alternate"></link><updated>2014-02-26T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-26:news/cross-approximation-intro/</id><summary type="html">&lt;h3&gt;Skeleton&amp;nbsp;decomposition&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;Cross approximation&lt;/em&gt; and &lt;em&gt;skeleton decomposition&lt;/em&gt; are one of the basic concepts in our research. 
 It is all about low-rank matrices which appear in many different applications: integral equations, tensor approximations and 
 many others.
