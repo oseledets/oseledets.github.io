@@ -44,3 +44,8 @@ img.center {
     margin-left: auto;
     margin-right: auto;
 }
+
+.more{
+    color: grey;
+    padding-bottom: 1em;
+}
