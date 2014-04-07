@@ -92,12 +92,13 @@ then substitutes one row at a step (greedy approach). For this problem, the conv
 There are few tricks to make it really efficient. The efficient implementations of the <strong>maxvol</strong> algorithm are
 available both in the <span class="caps">MATLAB</span> and Python version of the <span class="caps">TT</span>-Toolbox.</p>
 <p>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[50]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">tt</span>
 <span class="kn">from</span> <span class="nn">tt.maxvol</span> <span class="kn">import</span> <span class="n">maxvol</span>
@@ -113,27 +114,28 @@ In&nbsp;[50]:
 
 </div>
 </div>
+</div>
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[50]:</div>
-<div class="box-flex1 output_subarea output_pyout">
 
 
+<div class="output_text output_subarea output_pyout">
 <pre>
 [&lt;matplotlib.lines.Line2D at 0x10cc69b50&gt;]
 </pre>
-
-</div>
 </div>
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_display_data">
+</div>
+
+<div class="output_area"><div class="prompt"></div>
 
 
+<div class="output_png output_subarea ">
 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYMAAAEDCAYAAADX1GjKAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAHMpJREFUeJzt3X1wG+WdB/CvgnydvDXYRyJiSWRNJGIpCIcZA8U3umyG
 MD4mV9EMNZYZVGph7pKOM1dfD+rhn+QfUqsznUymbicdkvhSDxgTChV0kg3tTDeEdMYqJW57yNS6
@@ -265,24 +267,32 @@ akNDg9rQ0KCuXr0606ezZ8+qDz30UFlOLfX7/ery5cvVqqoq1WazqXv37r1hf1544QV15cqV6qpV
 q1RJkopYeW6u79+ePXvUQCCgejwe9Z577lEfffRR9dSpU5n3l1P/jhw5oppMJrWhoSEzzfLgwYOG
 2X/T9e/AgQOG2X9/+MMf1HvvvVdtaGhQPR6P+v3vf19V1Rt/n8ymf3PycBsiIiptJXOaiIiIiodh
 QEREDAMiImIYEBERGAZERASGARERgWFARERgGBAREYD/A8lONTC3oFp+AAAAAElFTkSuQmCC
-">
+"
+>
+</div>
+
+</div>
 
 </div>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-
-</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Computing the maxvol-skeleton&nbsp;approximation</p>
 </div>
-<div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[51]:
 </div>
-<div class="input_area box-flex1">
+<div class="inner_cell">
+    <div class="input_area">
 <div class="highlight-ipynb"><pre class="ipynb"><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]:</span>
     <span class="n">u1</span> <span class="o">=</span> <span class="n">u</span><span class="p">[:,</span> <span class="p">:</span><span class="n">r</span><span class="p">]</span>
     <span class="n">v1</span> <span class="o">=</span> <span class="n">v</span><span class="p">[:</span><span class="n">r</span><span class="p">,</span> <span class="p">:]</span>
@@ -303,13 +313,14 @@ In&nbsp;[51]:
 
 </div>
 </div>
+</div>
 
-<div class="vbox output_wrapper">
-<div class="output vbox">
+<div class="output_wrapper">
+<div class="output">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
-<div class="box-flex1 output_subarea output_stream output_stdout">
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
 SVD er: 1.05910918542 Skeleton er: 1.62572489102
 SVD er: 0.00594784107656 Skeleton er: 0.0181112433106
@@ -329,8 +340,8 @@ SVD er: 5.96043397807e-10 Skeleton er: 1.55873142365e-09
         mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
         mathjaxscript.type = 'text/javascript';
         mathjaxscript.src = 'https:' == document.location.protocol
-		? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js'
-		: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
         mathjaxscript[(window.opera ? "innerHTML" : "text")] =
             "MathJax.Hub.Config({" +
             "    config: ['MMLorHTML.js']," +
