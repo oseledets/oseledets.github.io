@@ -13,7 +13,7 @@ $$&lt;/mathjax&gt;
 We have compared the efficiency of the new method with &lt;span class="caps"&gt;KPIK&lt;/span&gt; and &lt;span class="caps"&gt;RKSM&lt;/span&gt; methods (implementation
 were taken from the &lt;a href="http://www.dm.unibo.it/~simoncin/software.html"&gt;homepage of Valeria Simonchini&lt;/a&gt;.
 The &lt;span class="caps"&gt;ALR&lt;/span&gt; method we propose was the most efficient one (and it is&amp;nbsp;parameter-free).&lt;/p&gt;
-&lt;p&gt;&lt;img width="800" class="center" src="/images/diffusion.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img width="700" class="center" src="/images/diffusion.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1410.3335"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr"&gt;Code on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
