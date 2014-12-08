@@ -1,5 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2014-03-19T00:00:00+04:00</updated><entry><title>Multidimensional integrals in ion-atom collisions</title><link href="/news/multidimensional-integrals-in-ion-atom-collisions/" rel="alternate"></link><updated>2014-03-19T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-19:news/multidimensional-integrals-in-ion-atom-collisions/</id><summary type="html">&lt;p&gt;Simulation in physics is full of multidimensional integrals. In the paper &lt;a href="http://arxiv.org/abs/1403.4068"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev and &lt;span class="caps"&gt;I. V.&lt;/span&gt; Oseledets. Low rank approximations for the &lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; computer code. arXiv preprint 1403.4068, 2014&lt;/a&gt; we consider the
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2014-10-13T00:00:00+04:00</updated><entry><title>Alternating low-rank method for the Lyapunov equation</title><link href="/news/alternating-low-rank-method-for-the-lyapunov-equation/" rel="alternate"></link><updated>2014-10-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-10-13:news/alternating-low-rank-method-for-the-lyapunov-equation/</id><summary type="html">&lt;p&gt;Time-stepping free method based on the rational Krylov subspaces play an important role in many 
+applications. The adaptative selection of the shifts for the construction of the &lt;span class="caps"&gt;RKS&lt;/span&gt; is crucial.
+In this paper we propose a new algorithm for the selection of the shifts. It is based 
+on the connection between the solution of the Lyapunov&amp;nbsp;equation&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$
+   AX + XA^{\top} = y_0 y_0^{\top}
+$$&lt;/mathjax&gt;
+and the solution of a linear &lt;span class="caps"&gt;ODE&lt;/span&gt;
+&lt;mathjax&gt;$$
+   \frac{dy}{dt} = Ay, \quad y(0) = y_0.
+$$&lt;/mathjax&gt;
+We have compared the efficiency of the new method with &lt;span class="caps"&gt;KPIK&lt;/span&gt; and &lt;span class="caps"&gt;RKSM&lt;/span&gt; methods (implementation
+were taken from the &lt;a href="http://www.dm.unibo.it/~simoncin/software.html"&gt;homepage of Valeria Simonchini&lt;/a&gt;.
+The &lt;span class="caps"&gt;ALR&lt;/span&gt; method we propose was the most efficient one (and it is&amp;nbsp;parameter-free).&lt;/p&gt;
+&lt;p&gt;&lt;img width="800" class="center" src="/images/diffusion.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1410.3335"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr"&gt;Code on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr-paper"&gt;Code &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; data from the paper on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+&lt;/script&gt;
+</summary><category term="paper"></category></entry><entry><title>Time evolution and optimization with MPS</title><link href="/news/time-evolution-and-optimization-with-mps/" rel="alternate"></link><updated>2014-08-21T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-08-21:news/time-evolution-and-optimization-with-mps/</id><summary type="html">&lt;p&gt;The &lt;a href="http://arxiv.org/abs/1407.2042"&gt;projector-splitting scheme in the &lt;span class="caps"&gt;TT&lt;/span&gt;/&lt;span class="caps"&gt;MPS&lt;/span&gt; format&lt;/a&gt; is a natural way 
+to computing dynamics of quantum spin systems Hamiltonians with long-range interaction. We have proposed a unified 
+approach that leads to a cheap and efficient computational scheme that can be applied to any Hamiltonian, 
+represented in the &lt;span class="caps"&gt;MPO&lt;/span&gt;/&lt;span class="caps"&gt;TT&lt;/span&gt; form.
+&lt;img width="800" class="center" src="/images/jutho.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1408.5056"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains</title><link href="/news/time-integration-of-tensor-trains/" rel="alternate"></link><updated>2014-07-08T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-07-08:news/time-integration-of-tensor-trains/</id><summary type="html">&lt;p&gt;Dynamical low-rank approximation is an efficient framework for solving continious and discrete-time 
+problems in high-dimensions. Using the Dirac-Frenkel principle applied to the tensor-train format, 
+we have propose a robust and efficient time integrator for the resulting system of nonlinear&amp;nbsp;equations.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1407.2042"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Algorithm scheme&lt;/th&gt;
+&lt;th&gt;Approximate Laplace inversion&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img width="400" class="center" src="/images/sweep.png"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img width="400" class="center" src="/images/optim.png"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</summary><category term="paper"></category></entry><entry><title>Multidimensional integrals in ion-atom collisions</title><link href="/news/multidimensional-integrals-in-ion-atom-collisions/" rel="alternate"></link><updated>2014-03-19T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-19:news/multidimensional-integrals-in-ion-atom-collisions/</id><summary type="html">&lt;p&gt;Simulation in physics is full of multidimensional integrals. In the paper &lt;a href="http://arxiv.org/abs/1403.4068"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev and &lt;span class="caps"&gt;I. V.&lt;/span&gt; Oseledets. Low rank approximations for the &lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; computer code. arXiv preprint 1403.4068, 2014&lt;/a&gt; we consider the
 &lt;a href="http://www.sciencedirect.com/science/article/pii/S0010465512003153"&gt;&lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; code&lt;/a&gt; that is suited 
 for the computation of ion-atomic collisons. The main computational bottleneck is the computation 
 of a three-dimensional integral. We exploit its structure by computing low-rank separated representation

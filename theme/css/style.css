@@ -40,7 +40,7 @@ float: left; }
 
 .photo {float: left; padding: 0 25px 25px 0}
 img.center {
-    diplay:block;
+    display:block;
     margin-left: auto;
     margin-right: auto;
 }

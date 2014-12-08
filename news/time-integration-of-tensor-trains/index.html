@@ -31,41 +31,42 @@
 <div class="column span-17" >
 <nav id="menu">
 <ul class="menu">
-
     <li ><a href = "/">
             Home </a></li>
-
     <li ><a href = "/publications">
             Publications </a></li>
-
     <li ><a href = "/projects">
             Projects </a></li>
-
     <li ><a href = "/software">
             Software </a></li>
            </ul>
-</nav> <!-- /#nav -->    <p>In this page we collect possible topic for the master thesis research in our group.
-These topics are mainly intended for the Skoltech students, however students from other 
-universities and institutes may contact me as&nbsp;well. </p>
-<h3>Low-rank approximation for recommender&nbsp;systems.</h3>
-<p>Recommender systems play a crucial role in the internet trade. The mathematical and algorithmical 
-problems that appear are intrinsically related to the approximation of very sparse matrices and tensors. 
-A typical case is when a recommender system is learned off-line, and then applied in a online phase. 
-In the time of promotions the priorities of the buyers change tremendously, thus fast online learning methods
-are required. The goal of this work is to develop new algorithms for those tasks. This is a joint project with 
-a Tratata <span class="caps">AG</span> (webref) which is a leading company in the field in&nbsp;Europe. </p>
-<p>Download 1-page&nbsp;description.</p>
-<h3>Tensor train approximation for learning graphical&nbsp;models</h3>
-<p>Graphical models are powerful models for the joint distributions of random variables. Such joint distributions are typically
-extremely high-dimensional, and graphical models allow compact represenations. However, the problem of learning a graphical model 
-for the case when a corresponding graph has no cycles, is <span class="caps">NP</span>-hard. The goal of this project is to develop fast numerical techniques
-based on the Tensor Train (<span class="caps">TT</span>)-decomposition and related algorithm to learn graphical&nbsp;models. </p>
-<h3>Digital data compression (video and beyond) using Wavelet Tensor Train&nbsp;decomposition</h3>
-<p>Digital data is becoming more and more high-dimensional, thus compression techniques are almost always necessary. This project poses an
-ambitious task for creating a new video compression algorithm and software based on the so-called Wavelet Tensor Train (<span class="caps">WTT</span>) decomposition. 
-Preliminary experiments show that such an approach can be competitive with state-of-art codecs. However, a good compression algorithm consists of many
-parts. The <span class="caps">WTT</span> algorithm involves only the first part, which is related to the continious transformation step. It is a purely algebraical technique which involves the computation of auxiliary singular value&nbsp;decompositions. </p>
-<p>The goal of this project is to develop a prototype implementation of a <span class="caps">WTT</span>-based video codec and compare it with state-of-art codes available. A possible direction is for the compression of a high-dimensional arrays coming, for example, from 3D television problems. The <span class="caps">WTT</span> algorithm is not constraint for videos and images: its main concept allows it to work for arrays of different nature with a similar&nbsp;efficiency.</p>
+</nav> <!-- /#nav -->
+
+<div class="column span-24">
+    <h2>Time integration of tensor trains</h2>
+<div class="more"> 08 July 2014 </div>
+<p>Dynamical low-rank approximation is an efficient framework for solving continious and discrete-time 
+problems in high-dimensions. Using the Dirac-Frenkel principle applied to the tensor-train format, 
+we have propose a robust and efficient time integrator for the resulting system of nonlinear&nbsp;equations.</p>
+<ul>
+<li><a href="http://arxiv.org/abs/1407.2042">Preprint on&nbsp;arXiv</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Algorithm scheme</th>
+<th>Approximate Laplace inversion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img width="400" class="center" src="/images/sweep.png"></td>
+<td><img width="400" class="center" src="/images/optim.png"></td>
+</tr>
+</tbody>
+</table>
+</div>
+
 </div>
             </section>
 
