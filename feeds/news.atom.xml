@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2014-10-13T00:00:00+04:00</updated><entry><title>Alternating low-rank method for the Lyapunov equation</title><link href="/news/alternating-low-rank-method-for-the-lyapunov-equation/" rel="alternate"></link><updated>2014-10-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-10-13:news/alternating-low-rank-method-for-the-lyapunov-equation/</id><summary type="html">&lt;p&gt;Time-stepping free method based on the rational Krylov subspaces play an important role in many 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2014-12-30T00:00:00+03:00</updated><entry><title>Alexander Mikhalev defends his PhD</title><link href="/news/alexander-mikhalev-defends-his-phd/" rel="alternate"></link><updated>2014-12-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-30:news/alexander-mikhalev-defends-his-phd/</id><summary type="html">&lt;p&gt;Congratulations to Alexander Mikhalev for his successful PhD defense in &lt;span class="caps"&gt;INM&lt;/span&gt; &lt;span class="caps"&gt;RAS&lt;/span&gt;!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.inm.ras.ru/avtoreferat/%D0%9C%D0%B8%D1%85%D0%B0%D0%BB%D0%B5%D0%B2_dissertation.pdf"&gt;Dissertation (in&amp;nbsp;Russian)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary></entry><entry><title>Convolutional neural networks and tensors</title><link href="/news/convolutional-neural-networks-and-tensors/" rel="alternate"></link><updated>2014-12-19T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-19:news/convolutional-neural-networks-and-tensors/</id><summary type="html">&lt;p&gt;Deep learning is a huge topic today; speeding up the computation with convolutional 
+neural network is crucial for fast classification. In &lt;a href="http://arxiv.org/abs/1412.6553"&gt;this work&lt;/a&gt;
+we show how fine-tuned canonical polyadic (&lt;span class="caps"&gt;CP&lt;/span&gt;) decomposition can be used to speedup &lt;span class="caps"&gt;CNN&lt;/span&gt; by a factor 
+of&amp;nbsp;8-10.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.6553"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Preconditioners for hierarchical matrices</title><link href="/news/preconditioners-for-hierarchical-matrices/" rel="alternate"></link><updated>2014-12-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-03:news/preconditioners-for-hierarchical-matrices/</id><summary type="html">&lt;p&gt;We continue to develop our &lt;a href="https://bitbucket.org/muxas/h2tools"&gt;h2tools&lt;/a&gt; package with the new functionality.
+The solution of linear systems with hierarchical matrices plays a crucial role in many applications. 
+We use the sparse extended form of the H2-matrices to reduce the initial linear system to a block-structured
+linear system and then use this block structure to construct different preconditioners. The most efficient
+preconditioner is the preconditioner based on the 
+so-called &lt;a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3465730/"&gt;&amp;#8220;reverse-Schur complement&amp;#8221;&lt;/a&gt; method: we solve
+the initial system using the availability of the fast matrix-by-vector product, and to solve the corretion equation&lt;br /&gt;
+we construct the extended system and make several preconditioned iterative steps with&amp;nbsp;it. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.1253"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Alternating low-rank method for the Lyapunov equation</title><link href="/news/alternating-low-rank-method-for-the-lyapunov-equation/" rel="alternate"></link><updated>2014-10-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-10-13:news/alternating-low-rank-method-for-the-lyapunov-equation/</id><summary type="html">&lt;p&gt;Time-stepping free method based on the rational Krylov subspaces play an important role in many 
 applications. The adaptative selection of the shifts for the construction of the &lt;span class="caps"&gt;RKS&lt;/span&gt; is crucial.
 In this paper we propose a new algorithm for the selection of the shifts. It is based 
 on the connection between the solution of the Lyapunov&amp;nbsp;equation&lt;/p&gt;
