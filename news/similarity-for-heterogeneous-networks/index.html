@@ -31,69 +31,97 @@
 <div class="column span-17" >
 <nav id="menu">
 <ul class="menu">
-
-    <li  class = "active" ><a href = "/">
+    <li ><a href = "/">
             Home </a></li>
-
     <li ><a href = "/publications">
             Publications </a></li>
-
     <li ><a href = "/projects">
             Projects </a></li>
-
     <li ><a href = "/software">
             Software </a></li>
            </ul>
-</nav> <!-- /#nav -->    <h2>Welcome to the website of Scientific Computing group at <a href="http://www.skoltech.ru">Skoltech</a></h2>
-<p>Our research focuses on developing breakthrough numerical techniques for solving a broad range of high-dimensional problems. 
-The key ingredient is the effective decomposition of multidimensional arrays (tensors).
-Applications&nbsp;include: </p>
-<ol>
-<li>Solution of multidimensional integral 
-   and differential equations on fine&nbsp;grids</li>
-<li>Ab initio computations in quantum&nbsp;chemistry </li>
-<li>Solution of multiparametric&nbsp;problems</li>
-<li>Data mining and&nbsp;compression.</li>
-</ol>
-<p>Our recent interests also involve graph mining, recommender systems and topological shape&nbsp;optimization.</p>
-<h2>Group members at&nbsp;Skoltech</h2>
+</nav> <!-- /#nav -->
+
+<div class="column span-24">
+    <h2>Similarity for heterogeneous networks</h2>
+<div class="more"> 24 February 2015 </div>
+<p>We propose a generalization of SimRank similarity measure for heterogeneous information networks.
+Each node is associated with a set of objects and there are different possible relations. This is 
+encoded into the <strong>adjacency tensor</strong>, and the TensorSimRank equation is given&nbsp;as</p>
+<p><mathjax>$$s_{\alpha \beta} = \sum_{\gamma} w_{\alpha \beta \gamma} r_{\alpha \beta \gamma} s_{\alpha \beta} r_{\beta \alpha \gamma}, 
+\quad s_{\alpha \alpha} = 1.$$</mathjax>
+This equation generalizes the <a href="http://en.wikipedia.org/wiki/SimRank">classical SimRank similarity measure</a>.
+The simple iteration combined with low-rank approximation of <mathjax>$S$</mathjax> was proposed as a computational algorithm.<br />
+The model was tested both on synthetic datasets and a real <a href="http://www2.informatik.uni-freiburg.de/~cziegler/BX/">Book-Crossing Dataset</a>.
+The final network has the structure (Book, Author, Year, Publisher), and an example of a &#8220;closest book&#8221; request to the 
+Psychic Sisters
+is given in the Table&nbsp;below.</p>
+<div class=newstable>
+
+<table>
+<thead>
+<tr>
+<th>Psychic Sisters (Sweet Valley Twins and Friends, No 70)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Love Potion (Sweet Valley Twins and Friends, No 72)</td>
+</tr>
+<tr>
+<td>The Curse of the Ruby Necklace (Sweet Valley Twins and Friends Super, No 5)</td>
+</tr>
+<tr>
+<td>She&#8217;s Not What She Seems (Sweet Valley High No. 92)</td>
+</tr>
+<tr>
+<td>Are We in Love? (Sweet Valley High, No 94)</td>
+</tr>
+<tr>
+<td>Don&#8217;t Go Home With John (Sweet Valley High No. 90)</td>
+</tr>
+<tr>
+<td>In Love With a Prince (Sweet Valley High, No 91)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
 <ul>
-<li><a href="people/oseledets">Ivan Oseledets</a> &#8212; Associate Professor, <a href="http://scholar.google.com/citations?user=5kMqBQEAAAAJ&amp;hl=ru&amp;oi=sra">Google&nbsp;Scholar</a></li>
-<li><a href="people/litsarev">Mikhail Litsarev</a> &#8212; research scientist (from August&nbsp;2013)</li>
-<li><a href="people/sukhinov">Anton Sukhinov</a> &#8212; research scientist (from January&nbsp;2014)  </li>
-<li><a href="people/rakhuba">Maxim Rakhuba</a> &#8212; junior researcher (from September&nbsp;2013)</li>
-<li><a href="people/kolesnikov">Denis Kolesnikov</a> &#8212; PhD student (from January&nbsp;2014)</li>
-<li><a href="people/baranov">Vitaly Baranov</a> &#8212; PhD student (from July&nbsp;2014)</li>
-<li><a href="people/ryzhakov">Gleb Ryzhakov</a> &#8212; research scientist (from April&nbsp;2014)</li>
-<li><a href="people/ovchinnikov">George Ovchinnikov</a> &#8212; research scientist (from April&nbsp;2014)</li>
-<li><a href="people/ostanin">Igor Ostanin</a> &#8212; research scientist (from September&nbsp;2014)</li>
-<li><a href="people/frolov">Evgeny Frolov</a> &#8212; PhD student (from September&nbsp;2014)</li>
-<li><a href="people/chertkov">Andrey Chertkov</a> &#8212; PhD student (from September&nbsp;2014)</li>
-<li><a href="people/fonarev">Alexander Fonarev</a> &#8212; PhD student (from December&nbsp;2014)</li>
-<li><a href="people/mikhalev">Alexander Mikhalev</a> &#8212; software engineer (from September&nbsp;2014)</li>
-</ul>
-<h2>External group&nbsp;members</h2>
-<ul>
-<li><a href="people/sushnikova">Daria Sushnikova</a> &#8212; PhD student, <span class="caps">INM</span> <span class="caps">RAS</span>  </li>
-<li><a href="people/kuznetsov">Maxim Kuznetsov</a> &#8212; PhD student, <span class="caps">CMC</span> <span class="caps">MSU</span>  </li>
-<li><a href="people/kharyuk">Pavel Kharyuk</a> &#8212; PhD student, <span class="caps">CMC</span> <span class="caps">MSU</span>   </li>
-</ul>
-<h2>Collaborators</h2>
-<ul>
-<li><a href="http://bach.inm.ras.ru/h_chair.htm">Eugene Tyrtyshnikov</a> &#8212; <span class="caps">INM</span> <span class="caps">RAS</span></li>
-<li><a href="http://personal-homepages.mis.mpg.de/bokh">Boris Khoromskij</a> &#8212; <span class="caps">MPI</span> <span class="caps">MIS</span></li>
-<li><a href="http://na.uni-tuebingen.de/~lubich/">Christian Lubich</a> &#8212;- University of&nbsp;Tubingen</li>
-<li><a href="http://page.math.tu-berlin.de/~schneidr/">Reinhold Schneider</a> &#8212; <span class="caps">TU</span>&nbsp;Berlin</li>
-<li><a href="http://www.math.uconn.edu/~olshevsky/">Vadim Olshevsky</a> &#8212; University of&nbsp;Connecticut</li>
-<li><a href="http://scholar.google.com/citations?user=X6GQc34AAAAJ&amp;hl=ru&amp;oi=ao">Ekaterina Muravleva</a> &#8212; <span class="caps">MSU</span></li>
-<li><a href="http://scholar.google.com/citations?user=-PSjJ1oAAAAJ&amp;hl=ru&amp;oi=ao">Sergey Dolgov</a> &#8212; <span class="caps">INM</span> <span class="caps">RAS</span>, <span class="caps">MPI</span> <span class="caps">MIS</span></li>
-<li><a href="http://www.math.ethz.ch/~vkazeev/">Vladimir Kazeev</a> &#8212; <span class="caps">ETH</span>&nbsp;Zurich</li>
-<li>Stanislav Stavtsev &#8212; <span class="caps">INM</span> <span class="caps">RAS</span></li>
-<li><a href="http://wwwhome.math.utwente.nl/~botchevma/index.php">Mike Botchev</a> &#8212; University of&nbsp;Twente</li>
-<li><a href="http://sites.uclouvain.be/absil/">Pierre-Antoine Absil</a> &#8212;&nbsp;UCLouivan</li>
-<li><a href="http://sol.rutgers.edu/facultyRamachandran.html">Rohit Ramachandran</a> &#8212; Rutgers&nbsp;University</li>
-<li>Anwesha Chaudhury &#8212; Rutgers&nbsp;University</li>
-</ul>
+<li><a href="http://arxiv.org/abs/1502.06818">Preprint on&nbsp;arXiv</a></li>
+</ul><script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
+
+</div>
+
 </div>
             </section>
 

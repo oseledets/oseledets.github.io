@@ -49,3 +49,10 @@ img.center {
     color: grey;
     padding-bottom: 1em;
 }
+
+div.newstable th,
+div.newstable td,
+div.newstable table{
+       border: 1px solid black;
+    }
+}

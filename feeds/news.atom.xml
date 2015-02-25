@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2014-12-30T00:00:00+03:00</updated><entry><title>Alexander Mikhalev defends his PhD</title><link href="/news/alexander-mikhalev-defends-his-phd/" rel="alternate"></link><updated>2014-12-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-30:news/alexander-mikhalev-defends-his-phd/</id><summary type="html">&lt;p&gt;Congratulations to Alexander Mikhalev for his successful PhD defense in &lt;span class="caps"&gt;INM&lt;/span&gt; &lt;span class="caps"&gt;RAS&lt;/span&gt;!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2015-02-24T00:00:00+03:00</updated><entry><title>Similarity for heterogeneous networks</title><link href="/news/similarity-for-heterogeneous-networks/" rel="alternate"></link><updated>2015-02-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-24:news/similarity-for-heterogeneous-networks/</id><summary type="html">&lt;p&gt;We propose a generalization of SimRank similarity measure for heterogeneous information networks.
+Each node is associated with a set of objects and there are different possible relations. This is 
+encoded into the &lt;strong&gt;adjacency tensor&lt;/strong&gt;, and the TensorSimRank equation is given&amp;nbsp;as&lt;/p&gt;
+&lt;p&gt;&lt;mathjax&gt;$$s_{\alpha \beta} = \sum_{\gamma} w_{\alpha \beta \gamma} r_{\alpha \beta \gamma} s_{\alpha \beta} r_{\beta \alpha \gamma}, 
+\quad s_{\alpha \alpha} = 1.$$&lt;/mathjax&gt;
+This equation generalizes the &lt;a href="http://en.wikipedia.org/wiki/SimRank"&gt;classical SimRank similarity measure&lt;/a&gt;.
+The simple iteration combined with low-rank approximation of &lt;mathjax&gt;$S$&lt;/mathjax&gt; was proposed as a computational algorithm.&lt;br /&gt;
+The model was tested both on synthetic datasets and a real &lt;a href="http://www2.informatik.uni-freiburg.de/~cziegler/BX/"&gt;Book-Crossing Dataset&lt;/a&gt;.
+The final network has the structure (Book, Author, Year, Publisher), and an example of a &amp;#8220;closest book&amp;#8221; request to the 
+Psychic Sisters
+is given in the Table&amp;nbsp;below.&lt;/p&gt;
+&lt;div class=newstable&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Psychic Sisters (Sweet Valley Twins and Friends, No 70)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;The Love Potion (Sweet Valley Twins and Friends, No 72)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The Curse of the Ruby Necklace (Sweet Valley Twins and Friends Super, No 5)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;She&amp;#8217;s Not What She Seems (Sweet Valley High No. 92)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Are We in Love? (Sweet Valley High, No 94)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Don&amp;#8217;t Go Home With John (Sweet Valley High No. 90)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;In Love With a Prince (Sweet Valley High, No 91)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1502.06818"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+&lt;/script&gt;
+</summary><category term="paper"></category></entry><entry><title>Alexander Mikhalev defends his PhD</title><link href="/news/alexander-mikhalev-defends-his-phd/" rel="alternate"></link><updated>2014-12-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-30:news/alexander-mikhalev-defends-his-phd/</id><summary type="html">&lt;p&gt;Congratulations to Alexander Mikhalev for his successful PhD defense in &lt;span class="caps"&gt;INM&lt;/span&gt; &lt;span class="caps"&gt;RAS&lt;/span&gt;!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.inm.ras.ru/avtoreferat/%D0%9C%D0%B8%D1%85%D0%B0%D0%BB%D0%B5%D0%B2_dissertation.pdf"&gt;Dissertation (in&amp;nbsp;Russian)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary></entry><entry><title>Convolutional neural networks and tensors</title><link href="/news/convolutional-neural-networks-and-tensors/" rel="alternate"></link><updated>2014-12-19T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-19:news/convolutional-neural-networks-and-tensors/</id><summary type="html">&lt;p&gt;Deep learning is a huge topic today; speeding up the computation with convolutional 
