@@ -43,10 +43,75 @@
 </nav> <!-- /#nav -->
 
 <div class="column span-24">
-    <h2>Theses topics</h2>
-<div class="more"> 13 February 2014 </div>
-<p>I have put short descriptions of the available student
-project online. <a href="/theses/">Please&nbsp;check</a></p>
+    <h2>Path integrals & low-rank for unbounded domains</h2>
+<div class="more"> 24 May 2015 </div>
+<p>Path integrals play a dominant role in description of a wide range of problems in physics and mathematics.
+They are a universal and powerful tool 
+for condensed matter and  high-energy physics,
+theory of stochastic processes 
+and parabolic differential equations,
+financial modelling, quantum chemistry and many&nbsp;others. </p>
+<p>The solution of the one-dimensional reaction-diffusion equation
+with initial distribution <mathjax>$f(x): \mathbb{R} \to \mathbb{R}^{+}$</mathjax>
+and a constant diffusion coefficient~<mathjax>$\sigma$</mathjax>
+<mathjax>\begin{equation}
+\left{
+\begin{aligned}
+ &amp; \frac{\partial}{\partial t} u(x,t)
+ = \sigma \frac{\partial^2}{\partial x^2} u(x,t) - V(x,t) u(x,t),\
+&amp; u(x,0)=f(x)
+\end{aligned}
+\right.
+\qquad t \in [0, T],
+\quad x \in \mathbb{R}.
+\end{equation}</mathjax>
+can be expressed by the Feynman-Kac 
+<mathjax>\begin{equation}
+u_{f}(x,T)=\int_{\mathcal C{x,0; T }}  f(\xi(T))
+ e^{-\int_{0}^{T}! V(\xi(\tau),T-\tau) d\tau }
+\mathcal{D}_{\xi},
+\end{equation}</mathjax>
+where the integration is done over a set of all
+continuous paths <mathjax>$\xi(T): [0,T]\to \mathbb{R}$</mathjax>
+from the Banach space <mathjax>$\Xi([0,T], \mathbb{R})$</mathjax>
+starting at <mathjax>$\xi(0)=x$</mathjax> and stopping at arbitrary endpoints at time~<mathjax>$T$</mathjax>.
+The integration is then replaced by an <mathjax>$n$</mathjax>-dimensional&nbsp;integral.</p>
+<p>We present an efficient method for the computation of such path integrals with <mathjax>$\mathcal{O}(n + M \log M)$</mathjax> complexity 
+where <mathjax>$n$</mathjax> is the number of time steps and <mathjax>$M$</mathjax> is the size of the spatial mesh, where the solution is sought. 
+Using such approach, we can treat problems with non-periodic / non-decaying potentials. An&nbsp;exam.</p>
+<ul>
+<li><a href="http://arxiv.org/abs/1504.06149">Preprint on&nbsp;arXiv</a></li>
+</ul><script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
+
 </div>
 
 </div>

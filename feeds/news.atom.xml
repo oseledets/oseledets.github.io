@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2015-04-02T00:00:00+03:00</updated><entry><title>Time integration of tensor trains published!</title><link href="/news/time-integration-of-tensor-trains-published/" rel="alternate"></link><updated>2015-04-02T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-04-02:news/time-integration-of-tensor-trains-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../time-integration-of-tensor-trains"&gt;paper on time integration of tensor trains&lt;/a&gt; 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2015-05-24T00:00:00+03:00</updated><entry><title>Path integrals &amp; low-rank for unbounded domains</title><link href="/news/path-integrals-low-rank-for-unbounded-domains/" rel="alternate"></link><updated>2015-05-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-05-24:news/path-integrals-low-rank-for-unbounded-domains/</id><summary type="html">&lt;p&gt;Path integrals play a dominant role in description of a wide range of problems in physics and mathematics.
+They are a universal and powerful tool 
+for condensed matter and  high-energy physics,
+theory of stochastic processes 
+and parabolic differential equations,
+financial modelling, quantum chemistry and many&amp;nbsp;others. &lt;/p&gt;
+&lt;p&gt;The solution of the one-dimensional reaction-diffusion equation
+with initial distribution &lt;mathjax&gt;$f(x): \mathbb{R} \to \mathbb{R}^{+}$&lt;/mathjax&gt;
+and a constant diffusion coefficient~&lt;mathjax&gt;$\sigma$&lt;/mathjax&gt;
+&lt;mathjax&gt;\begin{equation}
+\left{
+\begin{aligned}
+ &amp;amp; \frac{\partial}{\partial t} u(x,t)
+ = \sigma \frac{\partial^2}{\partial x^2} u(x,t) - V(x,t) u(x,t),\
+&amp;amp; u(x,0)=f(x)
+\end{aligned}
+\right.
+\qquad t \in [0, T],
+\quad x \in \mathbb{R}.
+\end{equation}&lt;/mathjax&gt;
+can be expressed by the Feynman-Kac 
+&lt;mathjax&gt;\begin{equation}
+u_{f}(x,T)=\int_{\mathcal C{x,0; T }}  f(\xi(T))
+ e^{-\int_{0}^{T}! V(\xi(\tau),T-\tau) d\tau }
+\mathcal{D}_{\xi},
+\end{equation}&lt;/mathjax&gt;
+where the integration is done over a set of all
+continuous paths &lt;mathjax&gt;$\xi(T): [0,T]\to \mathbb{R}$&lt;/mathjax&gt;
+from the Banach space &lt;mathjax&gt;$\Xi([0,T], \mathbb{R})$&lt;/mathjax&gt;
+starting at &lt;mathjax&gt;$\xi(0)=x$&lt;/mathjax&gt; and stopping at arbitrary endpoints at time~&lt;mathjax&gt;$T$&lt;/mathjax&gt;.
+The integration is then replaced by an &lt;mathjax&gt;$n$&lt;/mathjax&gt;-dimensional&amp;nbsp;integral.&lt;/p&gt;
+&lt;p&gt;We present an efficient method for the computation of such path integrals with &lt;mathjax&gt;$\mathcal{O}(n + M \log M)$&lt;/mathjax&gt; complexity 
+where &lt;mathjax&gt;$n$&lt;/mathjax&gt; is the number of time steps and &lt;mathjax&gt;$M$&lt;/mathjax&gt; is the size of the spatial mesh, where the solution is sought. 
+Using such approach, we can treat problems with non-periodic / non-decaying potentials. An&amp;nbsp;exam.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1504.06149"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+&lt;/script&gt;
+</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains published!</title><link href="/news/time-integration-of-tensor-trains-published/" rel="alternate"></link><updated>2015-04-02T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-04-02:news/time-integration-of-tensor-trains-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../time-integration-of-tensor-trains"&gt;paper on time integration of tensor trains&lt;/a&gt; 
 &amp;#8220;Time integration of tensor trains&amp;#8221;
 by C. Lubich,  &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;, B. Vandereycken
 is now &lt;a href="http://epubs.siam.org/doi/abs/10.1137/140976546"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Numerical&amp;nbsp;Analysis&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Cross-conv paper published!</title><link href="/news/cross-conv-paper-published/" rel="alternate"></link><updated>2015-03-04T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-03-04:news/cross-conv-paper-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../convolution-via-cross-approximation"&gt;cross-convolution paper&lt;/a&gt; 
