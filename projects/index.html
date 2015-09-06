@@ -44,20 +44,312 @@
     <li ><a href = "/software">
             Software </a></li>
            </ul>
-</nav> <!-- /#nav -->    <h2>Possible research project&nbsp;topics</h2>
-<p>Several research topics are available in our group. 
-These topics are mainly intended for the Skoltech students, however students from other 
-universities and institutes may contact me as&nbsp;well. </p>
+</nav> <!-- /#nav -->    <h1>Student research projects at Scientific Computing&nbsp;Group</h1>
+<p>Contact: Prof. Ivan Oseledets, i.oseledets@skoltech.ru, <a href="oseledets.github.io">http://oseledets.github.io</a>, joint with the group&nbsp;members.</p>
+<p>Below is the list of projects. 
+Some of them can later evolve into the master theses. They can be also taken by a group of students&nbsp;(2-3). </p>
+<h3>Prerequisites</h3>
+<p>The main prerequisite is the motivation work with <a href="oseledets.github.io">us</a>: our group is big, and we are always quite helpful, even if you are not a master in the particular topic. However it is a good idea that you know linear algebra (or at least learning it). For machine-learning related projects, machine learning experience is a good idea, for <span class="caps">PDE</span>-related it not bad  to have a basic knowledge about finite differences and/or finite elements. Many projects are related to <strong>tensor train</strong> and <strong>quantized tensor train</strong> decompositions: this is our &#8220;special feature&#8221;, which you will surely need to learn. Also, all the projects are related to programming and Python is the preferred&nbsp;language.</p>
+<h3>Tasks</h3>
+<p>The tasks are of course specific for the particular projects, however the pipeline is&nbsp;similar.</p>
+<ol>
+<li>
+<p>Do a literature survey. <a href="scholar.google.com">Google Scholar</a> will help you. Read all the papers you can find on the topic, not only the particular ones that the advisor has given to you. Follow the references in the papers, find keywords, define key&nbsp;ideas.</p>
+</li>
+<li>
+<p>Find appropriate software and baseline algorithm. Typically, you are not the one solving a particular problem: look for the same projects, what was their approach and try to identify possible&nbsp;improvements</p>
+</li>
+<li>
+<p>Start writing in <mathjax>$\LaTeX$</mathjax> a short summary of what you are doing (something like a&nbsp;journal)</p>
+</li>
+<li>
+<p>Try to formulate questions: a good question is the core to the&nbsp;answer.</p>
+</li>
+<li>
+<p>Ask the questions to me or group&nbsp;members.</p>
+</li>
+<li>
+<p>Write code, do experiments, get new results (or find that the approach is not working at all - this is also a scientific&nbsp;result).</p>
+</li>
+</ol>
+<h3>List of&nbsp;projects</h3>
+<ol>
+<li><a href="#Deep-PDE">Deep <span class="caps">PDE</span>:</a> Try to solve PDEs using deep&nbsp;learning</li>
+<li><a href="#Multi-classifier">Multi-classifier:</a> Learn many linear classifiers with low-rank tensor&nbsp;constraints</li>
+<li><a href="#Linear-classification">Linear classification:</a> Linear classification with many classes <span class="amp">&amp;</span> low-rank optimization: Given a machine learning task with huge number of classes, try to reduce the complexity by incorporating low-rank constraints into the&nbsp;problem.</li>
+<li><a href="#Maxvol-feature-selection">Maxvol feature selection:</a> Given machine learning task with many features, try to extract the &#8220;good&#8221; ones using maximum-volume&nbsp;algorithm </li>
+<li><a href="#Risk%20analysis-and-high-dimensional%20integrals">Risk analysis and high-dimensional integrals:</a> Using recently developed fast low-rank numerical quadrature technique, evaluate integrals over Brownian motion and apply&nbsp;to </li>
+<li><a href="#Sum-product-network-and-Metropolis-algorithm">Sum-product-network and Metropolis algorithm:</a> Given a multivariate function, try to recover sum-product network for it based on Metropolis sampling&nbsp;method.</li>
+<li><a href="#Fast-direct-solver-for-sparse-matrices">Fast direct solver for sparse matrices:</a> Block elimination for hierarchically semiseparable&nbsp;matrices</li>
+<li><a href="#Boltzmann-collision-integral">Boltzmann collision integral:</a> Implement (possibly find a new one) fast technique for the evaluation of the Boltzmann collision&nbsp;integrals.</li>
+<li><a href="#Parallel-tensor-train-optimization">Parallel tensor-train optimization:</a> using message passing algorithm and its connection to loopy belief&nbsp;propagation.</li>
+<li><a href="#Finite-element-solver-for-topology-optimization-in-3D-printing">Finite element solver for topology optimization in 3D printing:</a>. Study different regularization techniques for the finite element (<span class="caps">FEM</span>) solvers for topology optimization of different&nbsp;shapes.</li>
+<li><a href="#TT-cross-approximation-for-topology-optimization-in-3D-printing"><span class="caps">TT</span>-cross approximation for topology optimization in 3D printing:</a>. Given a &#8220;Lego-type structure&#8221; of a 3D topology, defined by a set of parameters, apply <span class="amp">&amp;</span> compute <span class="caps">TT</span>-cross approximation of the optimized&nbsp;quantity.</li>
+<li><a href="#Quantized-tensor%20train-solver-topology-optimization-in-3D-printing">Quantized tensor train solver topology optimization in 3D printing:</a> Develop a <span class="caps">QTT</span> solver for shape <span class="amp">&amp;</span> topology optimization for different computational 3D printing&nbsp;tasks.</li>
+<li><a href="#Optimal-sparse-grids">Optimal sparse grids:</a> Given a set of multivariate functions, find the best interpolation points using maxvol&nbsp;algorithm.  </li>
+<li><a href="#QTTfun-project">QTTfun project:</a> Develop a <span class="caps">QTT</span> alternative to the Chebfun&nbsp;system.</li>
+<li><a href="#TT-Toolbox-production"><span class="caps">TT</span>-Toolbox production:</a> Develop a well-documented, clean codebase for the <span class="caps">TT</span>-Toolbox&nbsp;project.</li>
+<li><a href="#Tensors-on-GPU">Tensors on <span class="caps">GPU</span>:</a> Develop a prototype code for the <span class="caps">TT</span>-Toolbox on <span class="caps">GPU</span>&nbsp;(OpenCL).</li>
+<li><a href="#Tensors-on-MPI">Tensors on <span class="caps">MPI</span>:</a> Develop a prototype code for the <span class="caps">TT</span>-Toolbox on a parallel cluster (<span class="caps">MPI</span>).</li>
+<li><a href="#Volume-integral-equation-solvers-using-QTT">Volume integral equation solvers using <span class="caps">QTT</span>:</a> Given a volume integral equation, develop an efficient <span class="caps">QTT</span>-solver for&nbsp;it. </li>
+<li><a href="#Logistic-matrix-factorization-using-Riemannian-optimization">Logistic matrix factorization using Riemannian optimization:</a> In many problems, instead of the Frobenious norm, other loss functionals are&nbsp;used.</li>
+</ol>
+<h2>Deep <span class="caps">PDE</span></h2>
+<h2>Background</h2>
+<p>Deep learning is now extremely popular for many different tasks, including image processing, speech recognition and many others.
+On the other hand, PDEs require a lot of computing  power. The goal of this project is to study the applicability of deep learning methods
+(based on standard software) to approximate the functionals of solution of&nbsp;PDEs.</p>
+<h3>Problem&nbsp;description.</h3>
+<p>Consider a thermal conductivity problem
+<mathjax>$$
+   \nabla \cdot k \nabla u = f,
+$$</mathjax>
+where <mathjax>$k$</mathjax> is a given coefficient. Then we want to approximate the functional <mathjax>$F(u)$</mathjax> of the solution (i.e., maximal temperature, mean temperature).
+The goal is to design a neural network that will be able to approximate this quantity to sufficient&nbsp;accuracy.</p>
+<h3>Tasks.</h3>
 <ul>
-<li>Low rank matrix and tensor approximation for recommender&nbsp;systems</li>
-<li><a href="/pdfs/ttgraphmod.pdf">Tensor train approximation for learning graphical&nbsp;models</a></li>
-<li><a href="/pdfs/wtt.pdf">Digital data compression of video (and beyond) using Wavelet Tensor Train&nbsp;decomposition</a></li>
+<li>Learn how to solve thermal conductivity problem&nbsp;numerically</li>
+<li>Create a database of solutions/values of the&nbsp;functional</li>
+<li>Design a deep architecture capable of approximating the&nbsp;functional.</li>
 </ul>
-<h2>Grants and&nbsp;contracts</h2>
-<p>Our research is supported by several&nbsp;grants.</p>
-<ul>
-<li><span class="caps">RFBR</span> grant 12-01-00546-a &#8220;Tensor methods for complex configurations of&nbsp;particles&#8221;</li>
-</ul>
+<h2>Multi-classifier</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>We propose the following classifier. Given a feature vector <mathjax>$p$</mathjax>, the
+classification is performed by the selection of the path
+<mathjax>$i_1, \ldots, i_d$</mathjax> that maximizes the &#8220;softmax&#8221; criteria [
+    F(p, i_1, \ldots, i_d) = \frac{p W_1(i_1) \ldots W_d(i_d)}{ p W_1(i_1) \ldots W_{d-1}(i_{d-1}) W}, 
+] where <mathjax>$W_d = \sum_{i_d = 1}^c W_d(i_d)$</mathjax> and the last variable <mathjax>$i_d$</mathjax>
+is the class variable (which we want to discover). The learning of the
+matrices <mathjax>$W_k(i_k)$</mathjax> can be done by a gradient-descent type algorithm:
+for each training sample <mathjax>$(p_s, c_s)$</mathjax> given <mathjax>$W$</mathjax> we update the best path
+<mathjax>$i^{(s)}<em d-1="d-1">1, \ldots, i^{(s)}</em>$</mathjax> by maximizing the classification, and
+then for a given set <mathjax>$(p_s, i_1, \ldots, i_d)$</mathjax> we minimize the loss (for
+example, logistic regression on the softmax criteria, or just the
+softmax itself) by taking a Riemanian gradient&nbsp;descent.</p>
+<p>This can be viewed as a \textbf{multiple linear classificator}, but with
+a special structure of the classificator matrices, otherwise the
+overfitting would be obvious. For small number of layers the inference
+the classification would not be hard (i.e. <mathjax>$10$</mathjax> layers each of size
+<mathjax>$2$</mathjax>).</p>
+<p>It is also close to the <a href="http://arxiv.org/abs/1505.00387">highway networks</a>.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with logistic&nbsp;regression</li>
+<li>Get familiar with Riemannian&nbsp;optimization</li>
+<li>Get familar with <a href="http://github.com/oseledets/ttpy"><span class="caps">TT</span>-Toolbox</a></li>
+<li>Implement the multi-classifier&nbsp;approach </li>
+</ol>
+<h2>Linear&nbsp;classification</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>A typical linear regression uses the following classifier. Given a feature vector <mathjax>$x$</mathjax> and number of classes <mathjax>$c$</mathjax>, we learn an <mathjax>$F \times C$</mathjax> weight matrix <mathjax>$W$</mathjax> and the probabilities for different classes are given by the vector
+<mathjax>$$
+  p = \frac{1}{Z} \exp(W x), 
+$$</mathjax>
+where <mathjax>$Z$</mathjax> is the normalization constant. For large number of features and large number of classes (maybe infinite, when the class variable is continious), storing matrix <mathjax>$W$</mathjax> is difficult, and we propose to constraint it to the rank-<mathjax>$r$</mathjax> case.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with rank-<mathjax>$r$</mathjax> matrices</li>
+<li>Get familiar with Riemannian optimization over rank-<mathjax>$r$</mathjax> manifolds</li>
+<li>Find a good problem with many&nbsp;classes</li>
+<li>Test the&nbsp;method!</li>
+</ol>
+<h2>Maxvol feature&nbsp;selection</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>A machine learning task with many features can be difficult to solve; however, many features are not so important, and only important features can be used for learning larger and more accurate classifiers. But how to select those features?
+The idea that we want to test is based on the <strong>maximal volume submatrices</strong>. Represent the 
+data as <mathjax>$N_{obj} \times N_F$</mathjax>, and find there the submatrix with <strong>maximal determinant</strong>. </p>
+<h3>Tasks.</h3>
+<ol>
+<li>Look for different feature selection algorithms in the&nbsp;literature</li>
+<li>Find appropriate many-features&nbsp;datasets</li>
+<li>Implement the maximal volume submatrix approach (see, for example,&nbsp;https://bitbucket.org/muxas/rect_maxvol)</li>
+</ol>
+<h2>Risk analysis and high-dimensional&nbsp;integrals</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>Many stock prices can modelled using <strong>Brownian motion</strong>, i.e. the next state depends on the previous state plus some random event. Important statistical options (for example,  option calls) can be then estimated as expectations of random process. The straightforward way is to do Monte-Carlo simulation, but it can not give high accuracy. Another way is to write down the expectation as a path integral and then approximate it by a multi-dimensional integral. For similar integrals we have recently developed a new technique, http://arxiv.org/abs/1504.06149.
+The idea is to test it for examples from risk&nbsp;analysis.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Read the papers on high-dimensional integrals in risk&nbsp;analysis</li>
+<li>Read the paper&nbsp;http://arxiv.org/abs/1504.06149</li>
+<li>Implement the code from http://arxiv.org/abs/1504.06149 for high-dimensional financial&nbsp;integrals</li>
+</ol>
+<h2>Sum-product-network and Metropolis&nbsp;algorithm</h2>
+<h3>Problem&nbsp;description.</h3>
+<p><a href="http://homes.cs.washington.edu/~pedrod/papers/uai11a.pdf">Sum-product-networks</a> is a new deep architecture. One of its interesting property is that there a constructive algorithm for learning the structure of such network from the observations. On the other hand, one can look at <span class="caps">SPN</span> as an approximation of multivariate functions. The idea is then to use Metropolis-type algorithm that samples the given function as it was the probability density, and then apply the <span class="caps">SPN</span> learning to recover the <span class="caps">SPN</span>&nbsp;structure. </p>
+<h3>Tasks.</h3>
+<ol>
+<li>Read literature about&nbsp;sum-product-networks</li>
+<li>Get familiar with software that learns the network&nbsp;structure</li>
+<li>Get familiar with the Metropolis sampling&nbsp;algorithm</li>
+<li>Try to compute <span class="caps">SPN</span> for deterministic&nbsp;functions</li>
+</ol>
+<h2>Fast direct solver for sparse&nbsp;matrices</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>Sparse matrices are important and have <mathjax>$\mathcal{O}(N)$</mathjax> parameters. However solving a linear system is much more difficult. The goal of this project is to get familiar with the subject, and implement the fast direct solver based on so-called <span class="caps">HSS</span>&nbsp;structure. </p>
+<h3>Tasks.</h3>
+<ol>
+<li>Read literature on fast low-rank direct&nbsp;solvers </li>
+<li>Study our&nbsp;code</li>
+<li>Implement a variant for <span class="caps">HSS</span>&nbsp;structure</li>
+</ol>
+<h2>Boltzmann collision&nbsp;integral</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>Boltzmann collission integral is an integral transform that takes two functions from <mathjax>$L^2(\mathbb{R}^3)$</mathjax> to a one function in <mathjax>$L^2(\mathbb{R}^3)$</mathjax>. For example, see http://www.sam.math.ethz.ch/sam_reports/reports_final/reports2012/2012-28.pdf.
+Discretizated on a grid, it can be defined as a <mathjax>$N^3 \times N^3 \times N^3$</mathjax> array, and evaluation requires <mathjax>$\mathcal{O}(N^9)$</mathjax> complexity. However, it has many symmetries. Our goal is to compare different method for the evaluation of the Boltzmann&nbsp;integral.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Read the literature for numerical evaluation of Boltzmann collision&nbsp;integrals </li>
+<li>Come up with the discretization&nbsp;scheme</li>
+<li>Implement it and evaluate its&nbsp;efficiency</li>
+</ol>
+<h2>Parallel tensor-train&nbsp;optimization</h2>
+<h3>Problem&nbsp;description.</h3>
+<p><span class="caps">TT</span>-format (Tensor Train) is a representation of <mathjax>$d$</mathjax>-dimensional tensors of the form 
+<mathjax>$$A(i_1, \ldots, i_d) = G_1(i_1) \ldots G_d(i_d),$$</mathjax>
+where <mathjax>$G_k(i_k)$</mathjax> has size <mathjax>$r_{k-1} \times r_k$</mathjax> for fixed <mathjax>$i_k$</mathjax>. A typical task to find the <span class="caps">TT</span>-representation is to optimize over the cores <mathjax>$G_k$</mathjax> in a sequential manner (all fixed, update one and so on). Our goal is to present an asynchonous versions of such algorithm, based on the connection with <strong>loopy belief&nbsp;propagation</strong></p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with tensor&nbsp;trains</li>
+<li>Get familiar with loopy belief&nbsp;propagation</li>
+<li>Implement an asynchonous optimization for <span class="caps">TT</span>-fromat and study its&nbsp;efficiency.</li>
+</ol>
+<h2>Finite element solver for topology optimization in 3D&nbsp;printing</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>The &#8220;mega-goal&#8221; is given a functional <mathjax>$F$</mathjax> find a topology that optimizes this functional given some constaints (weight of the structure, for example).  One of the typical task is linear elasticity, and it is being solved by iteration over the material properties. One can formulate the problem as a minimization problem with constraints&nbsp;(regularization). </p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with <span class="caps">FEM</span> approaches for topology&nbsp;optimization</li>
+<li>Select an appropriate topology optimization&nbsp;problem</li>
+<li>Formulate it as an inverse problem with a suitable&nbsp;regularization</li>
+<li>Implement a prototype&nbsp;code</li>
+<li>(Bonus) Print the&nbsp;structure</li>
+</ol>
+<h2><span class="caps">TT</span>-cross approximation for topology optimization in 3D&nbsp;printing</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>The &#8220;mega-goal&#8221; is given a functional <mathjax>$F$</mathjax> find a topology that optimizes this functional given some constaints (for example, weight  of the structure). One of the ways to do so is to use &#8220;ball and sticks&#8221; method to create the structure: a set of primitives that can be connected in different ways and also parametrized with several parameters. Checking all possible parameters has exponential complexity, and each computation requires a solution of a <span class="caps">PDE</span>. The idea is to use <span class="caps">TT</span>-cross method to adaptively sample the parameter&nbsp;space.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with <span class="caps">FEM</span> approaches for topology&nbsp;optimization</li>
+<li>Select a suitable local model, determine the number of&nbsp;parameters</li>
+<li>Get familar with <span class="caps">TT</span>-cross approximation&nbsp;algorithm</li>
+<li>Write a prototype&nbsp;code</li>
+</ol>
+<h2>Quantized tensor train solver topology optimization in 3D&nbsp;printing</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>The &#8220;mega-goal&#8221; is given a functional <mathjax>$F$</mathjax> find a topology that optimizes this functional given some constaints (weights).  One of the typical task is linear elasticity, and it is being solved by iteration over the material properties. One can formulate the problem as a minimization problem with constraints (regularization). 
+Our goal here is to use the weirdest regularization: contraint the material properties to low-<span class="caps">QTT</span> rank case. However, you can be smarter, and come up with other ideas, for example coming from deep networks as well (that would allow for very curved shapes to be generated). However to work on this project you should get familiar both with the <span class="caps">FEM</span> solvers for a topology optimization codes, and with optimization with low-rank&nbsp;constraints.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with <span class="caps">FEM</span> approaches for topology&nbsp;optimization</li>
+<li>Get familiar with Tensor-Train&nbsp;optimization</li>
+<li>Try to apply <span class="caps">TT</span>/<span class="caps">QTT</span> contraints to the material coefficients to get new optimized&nbsp;shapes.</li>
+</ol>
+<h2>Optimal sparse&nbsp;grids</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>Approximation of multivariate functions is a notoriously difficult tasks. One of the most efficient approaches, based on so-called <strong>sparse grids</strong> is based on using the set polynomials with bounded <strong>total degree</strong>. This provides a sparse basis set in the set of multidimensional functions. Interpolation is the simplest task, and in the standard setting gives rise to the so-called <strong>sparse grids</strong>. However, given the basis, the problem of selecting optimal interpolation points can be solved by the <strong>maximum volume algorithm</strong>=. The goal of this project is to compute those interpolation sets and evaluate their&nbsp;efficiency.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with sparse&nbsp;grids</li>
+<li>Get familiar with max-vol&nbsp;algorithm</li>
+<li>Implement a functional version of the maxvol&nbsp;algorithm</li>
+<li>Estimate the efficiency of the&nbsp;approach</li>
+</ol>
+<h2>QTTfun&nbsp;project</h2>
+<h3>Problem&nbsp;description.</h3>
+<p><span class="caps">QTT</span> (Quantized Tensor Train) is a very elegant <span class="amp">&amp;</span> efficient representation of functions, which in many cases allows to achieve complexity logarithmic in the number of samples. However, even for 1d-functions using the basic software (http://github.com/oseledets/ttpy) it is not that straightforward to compute integrals, find roots. This is all implemented in the Chebfun system in a very nice and lucrative way. The goal of this project is implement a <span class="caps">QTT</span> alternative to the Chebfun project, and it should be much more&nbsp;efficient. </p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with tensor train/<span class="caps">QTT</span>. Install the basic&nbsp;software</li>
+<li>Get familiar with Chebfun&nbsp;system</li>
+<li>Implement QTTFun 0.1 with basic overloaded functions (arithmetics, integrals,&nbsp;etc.)</li>
+</ol>
+<h2><span class="caps">TT</span>-Toolbox&nbsp;production</h2>
+<h3>Problem&nbsp;description.</h3>
+<p><span class="caps">TT</span>-Toolbox (http://github.com/oseledets/ttpy), there is also a <span class="caps">MATLAB</span> version, is our basic software for working with tensors, and it is actively used in many groups around the world. However it is not <strong>well-documented</strong> and the number of examples is limited. The codebase should be also cleaned as&nbsp;well.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with tensor train&nbsp;Toolbox </li>
+<li>Implement basic&nbsp;examples</li>
+<li>Try to document the code, find bugs, propose new&nbsp;functionality</li>
+</ol>
+<h2>Tensors on <span class="caps">GPU</span></h2>
+<h3>Problem&nbsp;description.</h3>
+<p>Tensor train is a very efficient representation of multidimensional tensors. However, there are use-cases when not only an asymptotic complexity is needed, but the actual computation speed matters. Our main application in mind is machine learning with low-rank constraints, when someone has to do many iterations, and if it is possible to speedup the computations on <span class="caps">GPU</span>, it also improved the results. The <span class="caps">TT</span>-Toolbox (http://github.com/oseledets/ttpy) is implemented in Python with no <span class="caps">GPU</span> support. The goal of this project is two-fold: get familiar with modern <span class="caps">GPU</span> programming techniques, including pyopencl and Loo.py and based upon those, build a <span class="caps">GPU</span> version of basic tensor&nbsp;algorithms</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with tensor train&nbsp;Toolbox</li>
+<li>Get familiar with <span class="caps">GPU</span> programming with pyopencl and&nbsp;Loo.py</li>
+<li>Implement a prototype code for basic <span class="caps">TT</span> algorithms on <span class="caps">GPU</span>, evaluate their performance compared to the peak&nbsp;one</li>
+</ol>
+<h2>Tensors on <span class="caps">MPI</span></h2>
+<h3>Problem&nbsp;description.</h3>
+<p>Tensor train is a very efficient representation of multidimensional tensors. There are use-cases, when the representation is so large that is does not fit into the memory (i.e., large <span class="caps">TT</span>-ranks) and parallelization is required.  The goal of this project is to try to figure out how the algorithms implemented in the <span class="caps">TT</span>-Toolbox (http://github.com/oseledets/ttpy) can be parallelized (for example, using mpi4py) and test the resulting prototype. Moreover,the actual parametrization of <span class="caps">TT</span> is very sequential, and it would be really interesting to consider asyncronous approaches to <span class="caps">TT</span>&nbsp;optimization. </p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with tensor train&nbsp;Toolbox</li>
+<li>Get familiar with <span class="caps">MPI</span> programming using&nbsp;mpi4py</li>
+<li>Implement a prototype code for basis <span class="caps">TT</span>-algorithms using <span class="caps">MPI</span>, evaluate their&nbsp;performance</li>
+</ol>
+<h2>Volume integral equation solvers using <span class="caps">QTT</span></h2>
+<h3>Problem&nbsp;description.</h3>
+<p>Probably you have some understanding, what a partial differential equation is. However, there are cases, when <strong>volume integral equations</strong> (i.e., the system has the form <mathjax>$K u = f$</mathjax>, and <mathjax>$K$</mathjax> is a non-local operator, for example,
+<mathjax>$$
+   \int \frac{q(y) dy}{\Vert x - y \Vert} = f.
+$$</mathjax>
+After discretization, we are left with <mathjax>$N^3 \times N^3$</mathjax> dense matrix. For a uniform grid, the complexity is then greatly reduced by using Fast Fourier Transform (<span class="caps">FFT</span>) to <mathjax>$\mathcal{O}(N^3 \log N)$</mathjax> for one matrix-by-vector product. 
+The goal of this project is to reduce this complexity much further, to <mathjax>$\mathcal{O}(N)$</mathjax> or even <mathjax>$\mathcal{O}(\log^{\alpha}(N)$</mathjax> using <strong>quantized tensor train</strong>&nbsp;representation.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Get familiar with volume integral&nbsp;equations</li>
+<li>Pick one interesting <span class="caps">VIE</span> (probably with some application in&nbsp;mind)</li>
+<li>Get familiar with Tensor Train/ <span class="caps">QTT</span>&nbsp;formats</li>
+<li>Implement a basic solver for <span class="caps">VIE</span> using <span class="caps">TT</span>/<span class="caps">QTT</span> formats using <span class="caps">TT</span>-Toolbox</li>
+</ol>
+<h2>Logistic matrix factorization using Riemannian&nbsp;optimization</h2>
+<h3>Problem&nbsp;description.</h3>
+<p>Low-rank matrix factorization of the form
+<mathjax>$$
+   A \approx U V^{\top}, 
+$$</mathjax>
+where <mathjax>$U$</mathjax> is <mathjax>$n \times r$</mathjax> and <mathjax>$V$</mathjax> is <mathjax>$m \times r$</mathjax>, appears in many applications, for example in recommender systems, where the rows enumerate the users, and the columns - the product. However, the typical norm used is the Frobenius norm, and it actually does not fit very well: we are interested only in the prediction of like/dislike, but not the actual numerical value. Thus, the optimization should be formulated in a non-standard way. Logistic matrix factorization is one of the possible ways to do so. Optimization of non-quadratic functionals can be done using Riemannian optimization in a very efficient way. This is the goal of this&nbsp;project.</p>
+<h3>Tasks.</h3>
+<ol>
+<li>Understand where the logistic matrix factorization comes&nbsp;from</li>
+<li>Get familiar with basic Riemannian optimization&nbsp;techniques</li>
+<li>Implement a Riemannian optimization approach for logistic matrix&nbsp;factorization</li>
+<li>Compare with existing software on standard&nbsp;examples.</li>
+</ol><script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
+
 </div>
             </section>
 
@@ -156,7 +448,8 @@ universities and institutes may contact me as&nbsp;well. </p>
 
 <h2> Contact </h2>
 <p>
-We are located at the 6th floor of the “Hypercube” building in Skolkovo (few kilometers outside Moscow Ring Road). The building is accessible from Skolkovo Road (Сколковское шоссе) and Minskoe Highway (Минское шоссе).
+We are located at the 2-nd floor of the new "Technopark-3” building in Skolkovo (few kilometers outside Moscow Ring Road). 
+The building is accessible from Skolkovo Road (Сколковское шоссе) and Minskoe Highway (Минское шоссе).
 </p>
 <p> email: <img src="/images/email.png"></p> 
 

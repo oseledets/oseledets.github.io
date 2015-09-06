@@ -9,12 +9,8 @@ financial modelling, quantum chemistry and many&amp;nbsp;others. &lt;/p&gt;
 with initial distribution &lt;mathjax&gt;$f(x): \mathbb{R} \to \mathbb{R}^{+}$&lt;/mathjax&gt;
 and a constant diffusion coefficient~&lt;mathjax&gt;$\sigma$&lt;/mathjax&gt;
 &lt;mathjax&gt;\begin{equation}
-\left{
-\begin{aligned}
- &amp;amp; \frac{\partial}{\partial t} u(x,t)
- = \sigma \frac{\partial^2}{\partial x^2} u(x,t) - V(x,t) u(x,t),\
-&amp;amp; u(x,0)=f(x)
-\end{aligned}
+ \frac{\partial}{\partial t} u(x,t)
+ = \sigma \frac{\partial^2}{\partial x^2} u(x,t) - V(x,t) u(x,t), \quad  u(x,0)=f(x)
 \right.
 \qquad t \in [0, T],
 \quad x \in \mathbb{R}.
@@ -32,7 +28,7 @@ starting at &lt;mathjax&gt;$\xi(0)=x$&lt;/mathjax&gt; and stopping at arbitrary 
 The integration is then replaced by an &lt;mathjax&gt;$n$&lt;/mathjax&gt;-dimensional&amp;nbsp;integral.&lt;/p&gt;
 &lt;p&gt;We present an efficient method for the computation of such path integrals with &lt;mathjax&gt;$\mathcal{O}(n + M \log M)$&lt;/mathjax&gt; complexity 
 where &lt;mathjax&gt;$n$&lt;/mathjax&gt; is the number of time steps and &lt;mathjax&gt;$M$&lt;/mathjax&gt; is the size of the spatial mesh, where the solution is sought. 
-Using such approach, we can treat problems with non-periodic / non-decaying potentials. An&amp;nbsp;exam.&lt;/p&gt;
+Using such approach, we can treat problems with non-periodic / non-decaying potentials. For the details, see the&amp;nbsp;preprint.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1504.06149"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;script type= "text/javascript"&gt;
