@@ -1,89 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2015-05-24T00:00:00+03:00</updated><entry><title>Path integrals &amp; low-rank for unbounded domains</title><link href="/news/path-integrals-low-rank-for-unbounded-domains/" rel="alternate"></link><updated>2015-05-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-05-24:news/path-integrals-low-rank-for-unbounded-domains/</id><summary type="html">&lt;p&gt;Path integrals play a dominant role in description of a wide range of problems in physics and mathematics.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/news.atom.xml" rel="self"></link><id>/</id><updated>2015-05-24T00:00:00+03:00</updated><entry><title>Path integrals &amp; low-rank for unbounded domains</title><link href="/news/path-integrals-low-rank-for-unbounded-domains/" rel="alternate"></link><updated>2015-05-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-05-24:news/path-integrals-low-rank-for-unbounded-domains/</id><summary type="html">&lt;p&gt;Path integrals play a dominant role in description of a wide range of problems in physics and mathematics.
 They are a universal and powerful tool 
 for condensed matter and  high-energy physics,
 theory of stochastic processes 
 and parabolic differential equations,
 financial modelling, quantum chemistry and many&amp;nbsp;others. &lt;/p&gt;
 &lt;p&gt;The solution of the one-dimensional reaction-diffusion equation
-with initial distribution &lt;mathjax&gt;$f(x): \mathbb{R} \to \mathbb{R}^{+}$&lt;/mathjax&gt;
-and a constant diffusion coefficient~&lt;mathjax&gt;$\sigma$&lt;/mathjax&gt;
-&lt;mathjax&gt;\begin{equation}
+with initial distribution &lt;span class="math"&gt;\(f(x): \mathbb{R} \to \mathbb{R}^{+}\)&lt;/span&gt;
+and a constant diffusion coefficient~&lt;span class="math"&gt;\(\sigma\)&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{equation}
  \frac{\partial}{\partial t} u(x,t)
  = \sigma \frac{\partial^2}{\partial x^2} u(x,t) - V(x,t) u(x,t), \quad  u(x,0)=f(x)
 \right.
 \qquad t \in [0, T],
 \quad x \in \mathbb{R}.
-\end{equation}&lt;/mathjax&gt;
-can be expressed by the Feynman-Kac 
-&lt;mathjax&gt;\begin{equation}
-u_{f}(x,T)=\int_{\mathcal C{x,0; T }}  f(\xi(T))
- e^{-\int_{0}^{T}! V(\xi(\tau),T-\tau) d\tau }
+\end{equation}&lt;/div&gt;
+&lt;p&gt;
+can be expressed by the&amp;nbsp;Feynman-Kac 
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{equation}
+u_{f}(x,T)=\int_{\mathcal C\{x,0; T \}}  f(\xi(T))
+ e^{-\int_{0}^{T}\! V(\xi(\tau),T-\tau) d\tau }
 \mathcal{D}_{\xi},
-\end{equation}&lt;/mathjax&gt;
+\end{equation}&lt;/div&gt;
+&lt;p&gt;
 where the integration is done over a set of all
-continuous paths &lt;mathjax&gt;$\xi(T): [0,T]\to \mathbb{R}$&lt;/mathjax&gt;
-from the Banach space &lt;mathjax&gt;$\Xi([0,T], \mathbb{R})$&lt;/mathjax&gt;
-starting at &lt;mathjax&gt;$\xi(0)=x$&lt;/mathjax&gt; and stopping at arbitrary endpoints at time~&lt;mathjax&gt;$T$&lt;/mathjax&gt;.
-The integration is then replaced by an &lt;mathjax&gt;$n$&lt;/mathjax&gt;-dimensional&amp;nbsp;integral.&lt;/p&gt;
-&lt;p&gt;We present an efficient method for the computation of such path integrals with &lt;mathjax&gt;$\mathcal{O}(n + M \log M)$&lt;/mathjax&gt; complexity 
-where &lt;mathjax&gt;$n$&lt;/mathjax&gt; is the number of time steps and &lt;mathjax&gt;$M$&lt;/mathjax&gt; is the size of the spatial mesh, where the solution is sought. 
+continuous paths &lt;span class="math"&gt;\(\xi(T): [0,T]\to \mathbb{R}\)&lt;/span&gt;
+from the Banach space &lt;span class="math"&gt;\(\Xi([0,T], \mathbb{R})\)&lt;/span&gt;
+starting at &lt;span class="math"&gt;\(\xi(0)=x\)&lt;/span&gt; and stopping at arbitrary endpoints at time~&lt;span class="math"&gt;\(T\)&lt;/span&gt;.
+The integration is then replaced by an &lt;span class="math"&gt;\(n\)&lt;/span&gt;-dimensional&amp;nbsp;integral.&lt;/p&gt;
+&lt;p&gt;We present an efficient method for the computation of such path integrals with &lt;span class="math"&gt;\(\mathcal{O}(n + M \log M)\)&lt;/span&gt; complexity 
+where &lt;span class="math"&gt;\(n\)&lt;/span&gt; is the number of time steps and &lt;span class="math"&gt;\(M\)&lt;/span&gt; is the size of the spatial mesh, where the solution is sought. 
 Using such approach, we can treat problems with non-periodic / non-decaying potentials. For the details, see the&amp;nbsp;preprint.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1504.06149"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
     }
-&lt;/script&gt;
-</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains published!</title><link href="/news/time-integration-of-tensor-trains-published/" rel="alternate"></link><updated>2015-04-02T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-04-02:news/time-integration-of-tensor-trains-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../time-integration-of-tensor-trains"&gt;paper on time integration of tensor trains&lt;/a&gt; 
-&amp;#8220;Time integration of tensor trains&amp;#8221;
-by C. Lubich,  &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;, B. Vandereycken
-is now &lt;a href="http://epubs.siam.org/doi/abs/10.1137/140976546"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Numerical&amp;nbsp;Analysis&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Cross-conv paper published!</title><link href="/news/cross-conv-paper-published/" rel="alternate"></link><updated>2015-03-04T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-03-04:news/cross-conv-paper-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../convolution-via-cross-approximation"&gt;cross-convolution paper&lt;/a&gt; 
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Cross-conv paper published!</title><link href="/news/cross-conv-paper-published/" rel="alternate"></link><updated>2015-04-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-04-03:news/cross-conv-paper-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../convolution-via-cross-approximation"&gt;cross-convolution paper&lt;/a&gt; 
 &amp;#8220;Fast Multidimensional Convolution in Low-Rank Tensor Formats via Cross Approximation&amp;#8221;
 by &lt;a href="../../people/rakhuba"&gt;M. Rakhuba&lt;/a&gt;, &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
 is now 
-&lt;a href="http://epubs.siam.org/doi/abs/10.1137/140958529"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Scientific&amp;nbsp;Computing&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Maximum-volume principle for rectangular matrices</title><link href="/news/maximum-volume-principle-for-rectangular-matrices/" rel="alternate"></link><updated>2015-03-02T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-03-02:news/maximum-volume-principle-for-rectangular-matrices/</id><summary type="html">&lt;p&gt;A definition of p-volume of rectangular matrices is given. We generalize the results for square maximum-volume submatrices to the case rectangular maximal-volume submatrices and provide estimates for the growth of the coefficients. Three promising applications of such submatrices are presented: recommender systems, finding maximal elements in low-rank matrices and preconditioning of overdetermined linear&amp;nbsp;systems.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://arxiv.org/abs/1502.07838"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Similarity for heterogeneous networks</title><link href="/news/similarity-for-heterogeneous-networks/" rel="alternate"></link><updated>2015-02-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-24:news/similarity-for-heterogeneous-networks/</id><summary type="html">&lt;p&gt;We propose a generalization of SimRank similarity measure for heterogeneous information networks.
+&lt;a href="http://epubs.siam.org/doi/abs/10.1137/140958529"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Scientific&amp;nbsp;Computing&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Similarity for heterogeneous networks</title><link href="/news/similarity-for-heterogeneous-networks/" rel="alternate"></link><updated>2015-02-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-24:news/similarity-for-heterogeneous-networks/</id><summary type="html">&lt;p&gt;We propose a generalization of SimRank similarity measure for heterogeneous information networks.
 Each node is associated with a set of objects and there are different possible relations. This is 
 encoded into the &lt;strong&gt;adjacency tensor&lt;/strong&gt;, and the TensorSimRank equation is given&amp;nbsp;as&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$s_{\alpha \beta} = \sum_{\gamma} w_{\alpha \beta \gamma} r_{\alpha \beta \gamma} s_{\alpha \beta} r_{\beta \alpha \gamma}, 
-\quad s_{\alpha \alpha} = 1.$$&lt;/mathjax&gt;
+&lt;div class="math"&gt;$$s_{\alpha \beta} = \sum_{\gamma} w_{\alpha \beta \gamma} r_{\alpha \beta \gamma} s_{\alpha \beta} r_{\beta \alpha \gamma}, 
+\quad s_{\alpha \alpha} = 1.$$&lt;/div&gt;
+&lt;p&gt;
 This equation generalizes the &lt;a href="http://en.wikipedia.org/wiki/SimRank"&gt;classical SimRank similarity measure&lt;/a&gt;.
-The simple iteration combined with low-rank approximation of &lt;mathjax&gt;$S$&lt;/mathjax&gt; was proposed as a computational algorithm.&lt;br /&gt;
+The simple iteration combined with low-rank approximation of &lt;span class="math"&gt;\(S\)&lt;/span&gt; was proposed as a computational algorithm.&lt;br /&gt;
 The model was tested both on synthetic datasets and a real &lt;a href="http://www2.informatik.uni-freiburg.de/~cziegler/BX/"&gt;Book-Crossing Dataset&lt;/a&gt;.
 The final network has the structure (Book, Author, Year, Publisher), and an example of a &amp;#8220;closest book&amp;#8221; request to the 
 Psychic Sisters
 is given in the Table&amp;nbsp;below.&lt;/p&gt;
-&lt;div class=newstable&gt;
-
+&lt;div class="newstable"&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -112,69 +136,93 @@ is given in the Table&amp;nbsp;below.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1502.06818"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
     }
-&lt;/script&gt;
-</summary><category term="paper"></category></entry><entry><title>Alexander Mikhalev defends his PhD</title><link href="/news/alexander-mikhalev-defends-his-phd/" rel="alternate"></link><updated>2014-12-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-30:news/alexander-mikhalev-defends-his-phd/</id><summary type="html">&lt;p&gt;Congratulations to Alexander Mikhalev for his successful PhD defense in &lt;span class="caps"&gt;INM&lt;/span&gt; &lt;span class="caps"&gt;RAS&lt;/span&gt;!&lt;/p&gt;
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains published!</title><link href="/news/time-integration-of-tensor-trains-published/" rel="alternate"></link><updated>2015-02-04T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-04:news/time-integration-of-tensor-trains-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../time-integration-of-tensor-trains"&gt;paper on time integration of tensor trains&lt;/a&gt; 
+&amp;#8220;Time integration of tensor trains&amp;#8221;
+by C. Lubich,  &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;, B. Vandereycken
+is now &lt;a href="http://epubs.siam.org/doi/abs/10.1137/140976546"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Numerical&amp;nbsp;Analysis&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Maximum-volume principle for rectangular matrices</title><link href="/news/maximum-volume-principle-for-rectangular-matrices/" rel="alternate"></link><updated>2015-02-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-03:news/maximum-volume-principle-for-rectangular-matrices/</id><summary type="html">&lt;p&gt;A definition of p-volume of rectangular matrices is given. We generalize the results for square maximum-volume submatrices to the case rectangular maximal-volume submatrices and provide estimates for the growth of the coefficients. Three promising applications of such submatrices are presented: recommender systems, finding maximal elements in low-rank matrices and preconditioning of overdetermined linear&amp;nbsp;systems.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1502.07838"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Alexander Mikhalev defends his PhD</title><link href="/news/alexander-mikhalev-defends-his-phd/" rel="alternate"></link><updated>2014-12-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-30:news/alexander-mikhalev-defends-his-phd/</id><summary type="html">&lt;p&gt;Congratulations to Alexander Mikhalev for his successful PhD defense in &lt;span class="caps"&gt;INM&lt;/span&gt; &lt;span class="caps"&gt;RAS&lt;/span&gt;!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.inm.ras.ru/avtoreferat/%D0%9C%D0%B8%D1%85%D0%B0%D0%BB%D0%B5%D0%B2_dissertation.pdf"&gt;Dissertation (in&amp;nbsp;Russian)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>Convolutional neural networks and tensors</title><link href="/news/convolutional-neural-networks-and-tensors/" rel="alternate"></link><updated>2014-12-19T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-19:news/convolutional-neural-networks-and-tensors/</id><summary type="html">&lt;p&gt;Deep learning is a huge topic today; speeding up the computation with convolutional 
+&lt;/ul&gt;</summary></entry><entry><title>Convolutional neural networks and tensors</title><link href="/news/convolutional-neural-networks-and-tensors/" rel="alternate"></link><updated>2014-12-19T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-19:news/convolutional-neural-networks-and-tensors/</id><summary type="html">&lt;p&gt;Deep learning is a huge topic today; speeding up the computation with convolutional 
 neural network is crucial for fast classification. In &lt;a href="http://arxiv.org/abs/1412.6553"&gt;this work&lt;/a&gt;
 we show how fine-tuned canonical polyadic (&lt;span class="caps"&gt;CP&lt;/span&gt;) decomposition can be used to speedup &lt;span class="caps"&gt;CNN&lt;/span&gt; by a factor 
 of&amp;nbsp;8-10.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.6553"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Preconditioners for hierarchical matrices</title><link href="/news/preconditioners-for-hierarchical-matrices/" rel="alternate"></link><updated>2014-12-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-03:news/preconditioners-for-hierarchical-matrices/</id><summary type="html">&lt;p&gt;We continue to develop our &lt;a href="https://bitbucket.org/muxas/h2tools"&gt;h2tools&lt;/a&gt; package with the new functionality.
-The solution of linear systems with hierarchical matrices plays a crucial role in many applications. 
-We use the sparse extended form of the H2-matrices to reduce the initial linear system to a block-structured
-linear system and then use this block structure to construct different preconditioners. The most efficient
-preconditioner is the preconditioner based on the 
-so-called &lt;a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3465730/"&gt;&amp;#8220;reverse-Schur complement&amp;#8221;&lt;/a&gt; method: we solve
-the initial system using the availability of the fast matrix-by-vector product, and to solve the corretion equation&lt;br /&gt;
-we construct the extended system and make several preconditioned iterative steps with&amp;nbsp;it. &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.1253"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Alternating low-rank method for the Lyapunov equation</title><link href="/news/alternating-low-rank-method-for-the-lyapunov-equation/" rel="alternate"></link><updated>2014-10-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-10-13:news/alternating-low-rank-method-for-the-lyapunov-equation/</id><summary type="html">&lt;p&gt;Time-stepping free method based on the rational Krylov subspaces play an important role in many 
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Alternating low-rank method for the Lyapunov equation</title><link href="/news/alternating-low-rank-method-for-the-lyapunov-equation/" rel="alternate"></link><updated>2014-10-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-10-13:news/alternating-low-rank-method-for-the-lyapunov-equation/</id><summary type="html">&lt;p&gt;Time-stepping free method based on the rational Krylov subspaces play an important role in many 
 applications. The adaptative selection of the shifts for the construction of the &lt;span class="caps"&gt;RKS&lt;/span&gt; is crucial.
 In this paper we propose a new algorithm for the selection of the shifts. It is based 
 on the connection between the solution of the Lyapunov&amp;nbsp;equation&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$$
+&lt;div class="math"&gt;$$
    AX + XA^{\top} = y_0 y_0^{\top}
-$$&lt;/mathjax&gt;
+$$&lt;/div&gt;
+&lt;p&gt;
 and the solution of a linear &lt;span class="caps"&gt;ODE&lt;/span&gt;
-&lt;mathjax&gt;$$
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
    \frac{dy}{dt} = Ay, \quad y(0) = y_0.
-$$&lt;/mathjax&gt;
+$$&lt;/div&gt;
+&lt;p&gt;
 We have compared the efficiency of the new method with &lt;span class="caps"&gt;KPIK&lt;/span&gt; and &lt;span class="caps"&gt;RKSM&lt;/span&gt; methods (implementation
 were taken from the &lt;a href="http://www.dm.unibo.it/~simoncin/software.html"&gt;homepage of Valeria Simonchini&lt;/a&gt;.
 The &lt;span class="caps"&gt;ALR&lt;/span&gt; method we propose was the most efficient one (and it is&amp;nbsp;parameter-free).&lt;/p&gt;
@@ -183,44 +231,70 @@ The &lt;span class="caps"&gt;ALR&lt;/span&gt; method we propose was the most eff
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1410.3335"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr"&gt;Code on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr-paper"&gt;Code &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; data from the paper on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
     }
-&lt;/script&gt;
-</summary><category term="paper"></category></entry><entry><title>Time evolution and optimization with MPS</title><link href="/news/time-evolution-and-optimization-with-mps/" rel="alternate"></link><updated>2014-08-21T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-08-21:news/time-evolution-and-optimization-with-mps/</id><summary type="html">&lt;p&gt;The &lt;a href="http://arxiv.org/abs/1407.2042"&gt;projector-splitting scheme in the &lt;span class="caps"&gt;TT&lt;/span&gt;/&lt;span class="caps"&gt;MPS&lt;/span&gt; format&lt;/a&gt; is a natural way 
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Time evolution and optimization with MPS</title><link href="/news/time-evolution-and-optimization-with-mps/" rel="alternate"></link><updated>2014-08-21T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-08-21:news/time-evolution-and-optimization-with-mps/</id><summary type="html">&lt;p&gt;The &lt;a href="http://arxiv.org/abs/1407.2042"&gt;projector-splitting scheme in the &lt;span class="caps"&gt;TT&lt;/span&gt;/&lt;span class="caps"&gt;MPS&lt;/span&gt; format&lt;/a&gt; is a natural way 
 to computing dynamics of quantum spin systems Hamiltonians with long-range interaction. We have proposed a unified 
 approach that leads to a cheap and efficient computational scheme that can be applied to any Hamiltonian, 
 represented in the &lt;span class="caps"&gt;MPO&lt;/span&gt;/&lt;span class="caps"&gt;TT&lt;/span&gt; form.
 &lt;img width="600" class="center" src="/images/jutho.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1408.5056"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains</title><link href="/news/time-integration-of-tensor-trains/" rel="alternate"></link><updated>2014-07-08T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-07-08:news/time-integration-of-tensor-trains/</id><summary type="html">&lt;p&gt;Dynamical low-rank approximation is an efficient framework for solving continious and discrete-time 
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains</title><link href="/news/time-integration-of-tensor-trains/" rel="alternate"></link><updated>2014-08-07T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-08-07:news/time-integration-of-tensor-trains/</id><summary type="html">&lt;p&gt;Dynamical low-rank approximation is an efficient framework for solving continious and discrete-time 
 problems in high-dimensions. Using the Dirac-Frenkel principle applied to the tensor-train format, 
 we have propose a robust and efficient time integrator for the resulting system of nonlinear&amp;nbsp;equations.&lt;/p&gt;
 &lt;ul&gt;
@@ -239,7 +313,7 @@ we have propose a robust and efficient time integrator for the resulting system 
 &lt;td&gt;&lt;img width="300" class="center" src="/images/optim.png"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</summary><category term="paper"></category></entry><entry><title>Multidimensional integrals in ion-atom collisions</title><link href="/news/multidimensional-integrals-in-ion-atom-collisions/" rel="alternate"></link><updated>2014-03-19T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-19:news/multidimensional-integrals-in-ion-atom-collisions/</id><summary type="html">&lt;p&gt;Simulation in physics is full of multidimensional integrals. In the paper &lt;a href="http://arxiv.org/abs/1403.4068"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev and &lt;span class="caps"&gt;I. V.&lt;/span&gt; Oseledets. Low rank approximations for the &lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; computer code. arXiv preprint 1403.4068, 2014&lt;/a&gt; we consider the
+&lt;/table&gt;</summary><category term="paper"></category></entry><entry><title>Multidimensional integrals in ion-atom collisions</title><link href="/news/multidimensional-integrals-in-ion-atom-collisions/" rel="alternate"></link><updated>2014-03-19T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-19:news/multidimensional-integrals-in-ion-atom-collisions/</id><summary type="html">&lt;p&gt;Simulation in physics is full of multidimensional integrals. In the paper &lt;a href="http://arxiv.org/abs/1403.4068"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev and &lt;span class="caps"&gt;I. V.&lt;/span&gt; Oseledets. Low rank approximations for the &lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; computer code. arXiv preprint 1403.4068, 2014&lt;/a&gt; we consider the
 &lt;a href="http://www.sciencedirect.com/science/article/pii/S0010465512003153"&gt;&lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; code&lt;/a&gt; that is suited 
 for the computation of ion-atomic collisons. The main computational bottleneck is the computation 
 of a three-dimensional integral. We exploit its structure by computing low-rank separated representation
@@ -248,64 +322,101 @@ function.
 Implementation of this technique decreases the total computational
 time by a &lt;strong&gt;factor of 1000&lt;/strong&gt;. What is more important, the general concept can be applied to more complicated models
 (like ion-molecule&amp;nbsp;collision).&lt;/p&gt;
-&lt;p&gt;&lt;mathjax&gt;$ 
-\begin{array}{cccccc}
-\hline
-\hline
-System &amp;amp;  \gamma\mbox{-Shell} &amp;amp;  N_w  &amp;amp;  T_s  ( \times10^{-3}  sec) &amp;amp;  T_{D}  (sec) &amp;amp;  T_{D}/T_s   \\
-\hline
- Au^{26+}+ O  &amp;amp;  4df^{17}  &amp;amp;  74  &amp;amp;  7.94  &amp;amp;  3.89  &amp;amp;  490   \\
- &amp;amp;  4sp^{8}  &amp;amp;  69  &amp;amp;  4.92  &amp;amp;  3.83  &amp;amp;  778   \\
- &amp;amp;  3d^{10}  &amp;amp;  73  &amp;amp;  3.59  &amp;amp;  3.88  &amp;amp;  1080   \\
- &amp;amp;  3sp^{8}  &amp;amp;  72  &amp;amp;  3.81  &amp;amp;  3.82  &amp;amp;  1003   \\ 
- &amp;amp;  2sp^{8}  &amp;amp;  107  &amp;amp;  2.42  &amp;amp;  3.86  &amp;amp;  1592   \\
- &amp;amp;  1sp^{2}  &amp;amp;  209  &amp;amp;  1.24  &amp;amp;  3.88  &amp;amp;  3120   \\&lt;br /&gt;
-\hline
- U^{28+}+ Xe  &amp;amp;  5sp^{4}  &amp;amp;  62  &amp;amp;  10.1  &amp;amp;  3.94  &amp;amp;  390  \\
- &amp;amp;  4df^{24}  &amp;amp;  70  &amp;amp;  6.05  &amp;amp;  3.90  &amp;amp;  644  \\
- &amp;amp;  4sp^{8}  &amp;amp;  67  &amp;amp;  5.00  &amp;amp;  3.94  &amp;amp;  788  \\
- &amp;amp;  3d^{10}  &amp;amp;  71  &amp;amp;  3.88  &amp;amp;  3.92  &amp;amp;  1011  \\
- &amp;amp;  3sp^{8}  &amp;amp;  70  &amp;amp;  3.52  &amp;amp;  3.90  &amp;amp;  1106  \\
- &amp;amp;  2sp^{8}  &amp;amp;  105  &amp;amp;  1.99  &amp;amp;  3.87  &amp;amp;  1945  \\
- &amp;amp;  1sp^{2}  &amp;amp;  207  &amp;amp;  1.04  &amp;amp;  3.88  &amp;amp;  3723  \\
-\hline
-\hline
-\end{array}
-$&lt;/mathjax&gt;&lt;/p&gt;
-&lt;p&gt;Time for the old code (&lt;mathjax&gt;$T_D)$&lt;/mathjax&gt; versus the time for the new code (&lt;mathjax&gt;$T_s$&lt;/mathjax&gt;).&lt;/p&gt;
+&lt;p&gt;$&amp;nbsp;\&lt;/p&gt;
+&lt;div class="math"&gt;\begin{array}{cccccc}
+\\hline
+\\hline
+System &amp;amp;  \\gamma\mbox{-Shell} &amp;amp;  N_w  &amp;amp;  T_s  ( \\times10^{-3}  sec) &amp;amp;  T_{D}  (sec) &amp;amp;  T_{D}/T_s   \\\\
+\\hline
+ Au^{26+}+ O  &amp;amp;  4df^{17}  &amp;amp;  74  &amp;amp;  7.94  &amp;amp;  3.89  &amp;amp;  490   \\\\
+ &amp;amp;  4sp^{8}  &amp;amp;  69  &amp;amp;  4.92  &amp;amp;  3.83  &amp;amp;  778   \\\\
+ &amp;amp;  3d^{10}  &amp;amp;  73  &amp;amp;  3.59  &amp;amp;  3.88  &amp;amp;  1080   \\\\
+ &amp;amp;  3sp^{8}  &amp;amp;  72  &amp;amp;  3.81  &amp;amp;  3.82  &amp;amp;  1003   \\\\ 
+ &amp;amp;  2sp^{8}  &amp;amp;  107  &amp;amp;  2.42  &amp;amp;  3.86  &amp;amp;  1592   \\\\
+ &amp;amp;  1sp^{2}  &amp;amp;  209  &amp;amp;  1.24  &amp;amp;  3.88  &amp;amp;  3120   \\\\  
+\\hline
+ U^{28+}+ Xe  &amp;amp;  5sp^{4}  &amp;amp;  62  &amp;amp;  10.1  &amp;amp;  3.94  &amp;amp;  390  \\\\
+ &amp;amp;  4df^{24}  &amp;amp;  70  &amp;amp;  6.05  &amp;amp;  3.90  &amp;amp;  644  \\\\
+ &amp;amp;  4sp^{8}  &amp;amp;  67  &amp;amp;  5.00  &amp;amp;  3.94  &amp;amp;  788  \\\\
+ &amp;amp;  3d^{10}  &amp;amp;  71  &amp;amp;  3.88  &amp;amp;  3.92  &amp;amp;  1011  \\\\
+ &amp;amp;  3sp^{8}  &amp;amp;  70  &amp;amp;  3.52  &amp;amp;  3.90  &amp;amp;  1106  \\\\
+ &amp;amp;  2sp^{8}  &amp;amp;  105  &amp;amp;  1.99  &amp;amp;  3.87  &amp;amp;  1945  \\\\
+ &amp;amp;  1sp^{2}  &amp;amp;  207  &amp;amp;  1.04  &amp;amp;  3.88  &amp;amp;  3723  \\\\
+\\hline
+\\hline
+\\end{array}&lt;/div&gt;
+&lt;p&gt;
+$&lt;/p&gt;
+&lt;p&gt;Time for the old code (&lt;span class="math"&gt;\(T_D)\)&lt;/span&gt; versus the time for the new code (&lt;span class="math"&gt;\(T_s\)&lt;/span&gt;).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1403.4068"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
     }
-&lt;/script&gt;
-</summary><category term="paper"></category></entry><entry><title>Convolution via cross approximation</title><link href="/news/convolution-via-cross-approximation/" rel="alternate"></link><updated>2014-02-25T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-25:news/convolution-via-cross-approximation/</id><summary type="html">&lt;p&gt;Multidimensional convolution plays a crucial role in many 
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Preconditioners for hierarchical matrices</title><link href="/news/preconditioners-for-hierarchical-matrices/" rel="alternate"></link><updated>2014-03-12T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-12:news/preconditioners-for-hierarchical-matrices/</id><summary type="html">&lt;p&gt;We continue to develop our &lt;a href="https://bitbucket.org/muxas/h2tools"&gt;h2tools&lt;/a&gt; package with the new functionality.
+The solution of linear systems with hierarchical matrices plays a crucial role in many applications. 
+We use the sparse extended form of the H2-matrices to reduce the initial linear system to a block-structured
+linear system and then use this block structure to construct different preconditioners. The most efficient
+preconditioner is the preconditioner based on the 
+so-called &lt;a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3465730/"&gt;&amp;#8220;reverse-Schur complement&amp;#8221;&lt;/a&gt; method: we solve
+the initial system using the availability of the fast matrix-by-vector product, and to solve the corretion equation&lt;br /&gt;
+we construct the extended system and make several preconditioned iterative steps with&amp;nbsp;it. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.1253"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Convolution via cross approximation</title><link href="/news/convolution-via-cross-approximation/" rel="alternate"></link><updated>2014-02-25T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-25:news/convolution-via-cross-approximation/</id><summary type="html">&lt;p&gt;Multidimensional convolution plays a crucial role in many 
 applications. We have proposed a new method for approximate computation of the convolution 
 in &lt;em&gt;low-rank tensor formats&lt;/em&gt;
 that is based on the
@@ -313,7 +424,7 @@ that is based on the
 The method is applicable to any &lt;span class="caps"&gt;SVD&lt;/span&gt;-based tensor format (skeleton, Tucker,  Tensor Train, Hierachical Tucker).
 We have computed Newton potentials of different electronic densities, and also presented preliminary 
 results for the solution of the Hartree-Fock equation on tensor product grids.
-For a practically interesting range of one-dimensional grid sizes &lt;mathjax&gt;$n \sim 10^{3}-10^{5}$&lt;/mathjax&gt; our algorithm is&amp;nbsp;faster.&lt;/p&gt;
+For a practically interesting range of one-dimensional grid sizes &lt;span class="math"&gt;\(n \sim 10^{3}-10^{5}\)&lt;/span&gt; our algorithm is&amp;nbsp;faster.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -332,35 +443,61 @@ For a practically interesting range of one-dimensional grid sizes &lt;mathjax&gt
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1402.5649"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/rakhuba/tucker3d"&gt;MiniTucker Toolbox on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://bitbucket.org/rakhuba/crossconv-experiment"&gt;Data from the paper on&amp;nbsp;Bitbucket&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;script type= "text/javascript"&gt;
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
     }
-&lt;/script&gt;
-</summary><category term="paper"></category></entry><entry><title>Theses topics</title><link href="/news/theses-topics/" rel="alternate"></link><updated>2014-02-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-13:news/theses-topics/</id><summary type="html">&lt;p&gt;I have put short descriptions of the available student
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Theses topics</title><link href="/news/theses-topics/" rel="alternate"></link><updated>2014-02-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-13:news/theses-topics/</id><summary type="html">&lt;p&gt;I have put short descriptions of the available student
 project online. &lt;a href="/theses/"&gt;Please&amp;nbsp;check&lt;/a&gt;&lt;/p&gt;</summary><category term="Students"></category></entry></feed>

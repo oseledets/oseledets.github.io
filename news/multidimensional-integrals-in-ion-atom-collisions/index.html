@@ -43,8 +43,8 @@
 </nav> <!-- /#nav -->
 
 <div class="column span-24">
-    <h2>Multidimensional integrals in ion-atom collisions</h2>
-<div class="more"> 19 March 2014 </div>
+    <h2>Multidimensional integrals in ion-atom&nbsp;collisions</h2>
+<div class="more"> 19 марта 2014 </div>
 <p>Simulation in physics is full of multidimensional integrals. In the paper <a href="http://arxiv.org/abs/1403.4068"><span class="caps">M. S.</span> Litsarev and <span class="caps">I. V.</span> Oseledets. Low rank approximations for the <span class="caps">DEPOSIT</span> computer code. arXiv preprint 1403.4068, 2014</a> we consider the
 <a href="http://www.sciencedirect.com/science/article/pii/S0010465512003153"><span class="caps">DEPOSIT</span> code</a> that is suited 
 for the computation of ion-atomic collisons. The main computational bottleneck is the computation 
@@ -54,64 +54,91 @@ function.
 Implementation of this technique decreases the total computational
 time by a <strong>factor of 1000</strong>. What is more important, the general concept can be applied to more complicated models
 (like ion-molecule&nbsp;collision).</p>
-<p><mathjax>$ 
-\begin{array}{cccccc}
-\hline
-\hline
-System &amp;  \gamma\mbox{-Shell} &amp;  N_w  &amp;  T_s  ( \times10^{-3}  sec) &amp;  T_{D}  (sec) &amp;  T_{D}/T_s   \\
-\hline
- Au^{26+}+ O  &amp;  4df^{17}  &amp;  74  &amp;  7.94  &amp;  3.89  &amp;  490   \\
- &amp;  4sp^{8}  &amp;  69  &amp;  4.92  &amp;  3.83  &amp;  778   \\
- &amp;  3d^{10}  &amp;  73  &amp;  3.59  &amp;  3.88  &amp;  1080   \\
- &amp;  3sp^{8}  &amp;  72  &amp;  3.81  &amp;  3.82  &amp;  1003   \\ 
- &amp;  2sp^{8}  &amp;  107  &amp;  2.42  &amp;  3.86  &amp;  1592   \\
- &amp;  1sp^{2}  &amp;  209  &amp;  1.24  &amp;  3.88  &amp;  3120   \\<br />
-\hline
- U^{28+}+ Xe  &amp;  5sp^{4}  &amp;  62  &amp;  10.1  &amp;  3.94  &amp;  390  \\
- &amp;  4df^{24}  &amp;  70  &amp;  6.05  &amp;  3.90  &amp;  644  \\
- &amp;  4sp^{8}  &amp;  67  &amp;  5.00  &amp;  3.94  &amp;  788  \\
- &amp;  3d^{10}  &amp;  71  &amp;  3.88  &amp;  3.92  &amp;  1011  \\
- &amp;  3sp^{8}  &amp;  70  &amp;  3.52  &amp;  3.90  &amp;  1106  \\
- &amp;  2sp^{8}  &amp;  105  &amp;  1.99  &amp;  3.87  &amp;  1945  \\
- &amp;  1sp^{2}  &amp;  207  &amp;  1.04  &amp;  3.88  &amp;  3723  \\
-\hline
-\hline
-\end{array}
-$</mathjax></p>
-<p>Time for the old code (<mathjax>$T_D)$</mathjax> versus the time for the new code (<mathjax>$T_s$</mathjax>).</p>
+<p>$&nbsp;\</p>
+<div class="math">\begin{array}{cccccc}
+\\hline
+\\hline
+System &amp;  \\gamma\mbox{-Shell} &amp;  N_w  &amp;  T_s  ( \\times10^{-3}  sec) &amp;  T_{D}  (sec) &amp;  T_{D}/T_s   \\\\
+\\hline
+ Au^{26+}+ O  &amp;  4df^{17}  &amp;  74  &amp;  7.94  &amp;  3.89  &amp;  490   \\\\
+ &amp;  4sp^{8}  &amp;  69  &amp;  4.92  &amp;  3.83  &amp;  778   \\\\
+ &amp;  3d^{10}  &amp;  73  &amp;  3.59  &amp;  3.88  &amp;  1080   \\\\
+ &amp;  3sp^{8}  &amp;  72  &amp;  3.81  &amp;  3.82  &amp;  1003   \\\\ 
+ &amp;  2sp^{8}  &amp;  107  &amp;  2.42  &amp;  3.86  &amp;  1592   \\\\
+ &amp;  1sp^{2}  &amp;  209  &amp;  1.24  &amp;  3.88  &amp;  3120   \\\\  
+\\hline
+ U^{28+}+ Xe  &amp;  5sp^{4}  &amp;  62  &amp;  10.1  &amp;  3.94  &amp;  390  \\\\
+ &amp;  4df^{24}  &amp;  70  &amp;  6.05  &amp;  3.90  &amp;  644  \\\\
+ &amp;  4sp^{8}  &amp;  67  &amp;  5.00  &amp;  3.94  &amp;  788  \\\\
+ &amp;  3d^{10}  &amp;  71  &amp;  3.88  &amp;  3.92  &amp;  1011  \\\\
+ &amp;  3sp^{8}  &amp;  70  &amp;  3.52  &amp;  3.90  &amp;  1106  \\\\
+ &amp;  2sp^{8}  &amp;  105  &amp;  1.99  &amp;  3.87  &amp;  1945  \\\\
+ &amp;  1sp^{2}  &amp;  207  &amp;  1.04  &amp;  3.88  &amp;  3723  \\\\
+\\hline
+\\hline
+\\end{array}</div>
+<p>
+$</p>
+<p>Time for the old code (<span class="math">\(T_D)\)</span> versus the time for the new code (<span class="math">\(T_s\)</span>).</p>
 <ul>
 <li><a href="http://arxiv.org/abs/1403.4068">Preprint on&nbsp;arXiv</a></li>
-</ul><script type= "text/javascript">
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-</script>
+</ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
 
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 </div>
 
 </div>
@@ -161,50 +188,45 @@ $</mathjax></p>
     <td>
         24/05/2015
     </td>
-    <td><a href='/news/path-integrals-low-rank-for-unbounded-domains/' >Path integrals & low-rank for unbounded domains</a>
+    <td><a href='/news/path-integrals-low-rank-for-unbounded-domains/' >Path integrals <span class="amp">&amp;</span> low-rank for unbounded&nbsp;domains</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
     <td>
-        02/04/2015
+        03/04/2015
     </td>
-    <td><a href='/news/time-integration-of-tensor-trains-published/' >Time integration of tensor trains published!</a>
-    </td>
-    <td>
-        Papers 
-    </td>
-</tr>   
-<tr> 
-    <td>
-        04/03/2015
-    </td>
-    <td><a href='/news/cross-conv-paper-published/' >Cross-conv paper published!</a>
+    <td><a href='/news/cross-conv-paper-published/' >Cross-conv paper&nbsp;published!</a>
     </td>
     <td>
-        Papers 
-    </td>
-</tr>   
-<tr> 
-    <td>
-        02/03/2015
-    </td>
-    <td><a href='/news/maximum-volume-principle-for-rectangular-matrices/' >Maximum-volume principle for rectangular matrices</a>
-    </td>
-    <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
     <td>
         24/02/2015
     </td>
-    <td><a href='/news/similarity-for-heterogeneous-networks/' >Similarity for heterogeneous networks</a>
+    <td><a href='/news/similarity-for-heterogeneous-networks/' >Similarity for heterogeneous&nbsp;networks</a>
     </td>
     <td>
-        Papers 
+    </td>
+</tr>   
+<tr> 
+    <td>
+        04/02/2015
+    </td>
+    <td><a href='/news/time-integration-of-tensor-trains-published/' >Time integration of tensor trains&nbsp;published!</a>
+    </td>
+    <td>
+    </td>
+</tr>   
+<tr> 
+    <td>
+        03/02/2015
+    </td>
+    <td><a href='/news/maximum-volume-principle-for-rectangular-matrices/' >Maximum-volume principle for rectangular&nbsp;matrices</a>
+    </td>
+    <td>
     </td>
 </tr>   
 </tbody>

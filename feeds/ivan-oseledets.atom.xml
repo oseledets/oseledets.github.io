@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/ivan-oseledets.atom.xml" rel="self"></link><id>/</id><updated>2015-05-24T00:00:00+03:00</updated><entry><title>Path integrals &amp; low-rank for unbounded domains</title><link href="/news/path-integrals-low-rank-for-unbounded-domains/" rel="alternate"></link><updated>2015-05-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-05-24:news/path-integrals-low-rank-for-unbounded-domains/</id><summary type="html">&lt;p&gt;Path integrals play a dominant role in description of a wide range of problems in physics and mathematics.
+They are a universal and powerful tool 
+for condensed matter and  high-energy physics,
+theory of stochastic processes 
+and parabolic differential equations,
+financial modelling, quantum chemistry and many&amp;nbsp;others. &lt;/p&gt;
+&lt;p&gt;The solution of the one-dimensional reaction-diffusion equation
+with initial distribution &lt;span class="math"&gt;\(f(x): \mathbb{R} \to \mathbb{R}^{+}\)&lt;/span&gt;
+and a constant diffusion coefficient~&lt;span class="math"&gt;\(\sigma\)&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{equation}
+ \frac{\partial}{\partial t} u(x,t)
+ = \sigma \frac{\partial^2}{\partial x^2} u(x,t) - V(x,t) u(x,t), \quad  u(x,0)=f(x)
+\right.
+\qquad t \in [0, T],
+\quad x \in \mathbb{R}.
+\end{equation}&lt;/div&gt;
+&lt;p&gt;
+can be expressed by the&amp;nbsp;Feynman-Kac 
+&lt;/p&gt;
+&lt;div class="math"&gt;\begin{equation}
+u_{f}(x,T)=\int_{\mathcal C\{x,0; T \}}  f(\xi(T))
+ e^{-\int_{0}^{T}\! V(\xi(\tau),T-\tau) d\tau }
+\mathcal{D}_{\xi},
+\end{equation}&lt;/div&gt;
+&lt;p&gt;
+where the integration is done over a set of all
+continuous paths &lt;span class="math"&gt;\(\xi(T): [0,T]\to \mathbb{R}\)&lt;/span&gt;
+from the Banach space &lt;span class="math"&gt;\(\Xi([0,T], \mathbb{R})\)&lt;/span&gt;
+starting at &lt;span class="math"&gt;\(\xi(0)=x\)&lt;/span&gt; and stopping at arbitrary endpoints at time~&lt;span class="math"&gt;\(T\)&lt;/span&gt;.
+The integration is then replaced by an &lt;span class="math"&gt;\(n\)&lt;/span&gt;-dimensional&amp;nbsp;integral.&lt;/p&gt;
+&lt;p&gt;We present an efficient method for the computation of such path integrals with &lt;span class="math"&gt;\(\mathcal{O}(n + M \log M)\)&lt;/span&gt; complexity 
+where &lt;span class="math"&gt;\(n\)&lt;/span&gt; is the number of time steps and &lt;span class="math"&gt;\(M\)&lt;/span&gt; is the size of the spatial mesh, where the solution is sought. 
+Using such approach, we can treat problems with non-periodic / non-decaying potentials. For the details, see the&amp;nbsp;preprint.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1504.06149"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Cross-conv paper published!</title><link href="/news/cross-conv-paper-published/" rel="alternate"></link><updated>2015-04-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-04-03:news/cross-conv-paper-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../convolution-via-cross-approximation"&gt;cross-convolution paper&lt;/a&gt; 
+&amp;#8220;Fast Multidimensional Convolution in Low-Rank Tensor Formats via Cross Approximation&amp;#8221;
+by &lt;a href="../../people/rakhuba"&gt;M. Rakhuba&lt;/a&gt;, &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
+is now 
+&lt;a href="http://epubs.siam.org/doi/abs/10.1137/140958529"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Scientific&amp;nbsp;Computing&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Similarity for heterogeneous networks</title><link href="/news/similarity-for-heterogeneous-networks/" rel="alternate"></link><updated>2015-02-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-24:news/similarity-for-heterogeneous-networks/</id><summary type="html">&lt;p&gt;We propose a generalization of SimRank similarity measure for heterogeneous information networks.
+Each node is associated with a set of objects and there are different possible relations. This is 
+encoded into the &lt;strong&gt;adjacency tensor&lt;/strong&gt;, and the TensorSimRank equation is given&amp;nbsp;as&lt;/p&gt;
+&lt;div class="math"&gt;$$s_{\alpha \beta} = \sum_{\gamma} w_{\alpha \beta \gamma} r_{\alpha \beta \gamma} s_{\alpha \beta} r_{\beta \alpha \gamma}, 
+\quad s_{\alpha \alpha} = 1.$$&lt;/div&gt;
+&lt;p&gt;
+This equation generalizes the &lt;a href="http://en.wikipedia.org/wiki/SimRank"&gt;classical SimRank similarity measure&lt;/a&gt;.
+The simple iteration combined with low-rank approximation of &lt;span class="math"&gt;\(S\)&lt;/span&gt; was proposed as a computational algorithm.&lt;br /&gt;
+The model was tested both on synthetic datasets and a real &lt;a href="http://www2.informatik.uni-freiburg.de/~cziegler/BX/"&gt;Book-Crossing Dataset&lt;/a&gt;.
+The final network has the structure (Book, Author, Year, Publisher), and an example of a &amp;#8220;closest book&amp;#8221; request to the 
+Psychic Sisters
+is given in the Table&amp;nbsp;below.&lt;/p&gt;
+&lt;div class="newstable"&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Psychic Sisters (Sweet Valley Twins and Friends, No 70)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;The Love Potion (Sweet Valley Twins and Friends, No 72)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The Curse of the Ruby Necklace (Sweet Valley Twins and Friends Super, No 5)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;She&amp;#8217;s Not What She Seems (Sweet Valley High No. 92)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Are We in Love? (Sweet Valley High, No 94)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Don&amp;#8217;t Go Home With John (Sweet Valley High No. 90)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;In Love With a Prince (Sweet Valley High, No 91)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1502.06818"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains published!</title><link href="/news/time-integration-of-tensor-trains-published/" rel="alternate"></link><updated>2015-02-04T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-04:news/time-integration-of-tensor-trains-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../time-integration-of-tensor-trains"&gt;paper on time integration of tensor trains&lt;/a&gt; 
+&amp;#8220;Time integration of tensor trains&amp;#8221;
+by C. Lubich,  &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;, B. Vandereycken
+is now &lt;a href="http://epubs.siam.org/doi/abs/10.1137/140976546"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Numerical&amp;nbsp;Analysis&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Maximum-volume principle for rectangular matrices</title><link href="/news/maximum-volume-principle-for-rectangular-matrices/" rel="alternate"></link><updated>2015-02-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-03:news/maximum-volume-principle-for-rectangular-matrices/</id><summary type="html">&lt;p&gt;A definition of p-volume of rectangular matrices is given. We generalize the results for square maximum-volume submatrices to the case rectangular maximal-volume submatrices and provide estimates for the growth of the coefficients. Three promising applications of such submatrices are presented: recommender systems, finding maximal elements in low-rank matrices and preconditioning of overdetermined linear&amp;nbsp;systems.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1502.07838"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Alexander Mikhalev defends his PhD</title><link href="/news/alexander-mikhalev-defends-his-phd/" rel="alternate"></link><updated>2014-12-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-30:news/alexander-mikhalev-defends-his-phd/</id><summary type="html">&lt;p&gt;Congratulations to Alexander Mikhalev for his successful PhD defense in &lt;span class="caps"&gt;INM&lt;/span&gt; &lt;span class="caps"&gt;RAS&lt;/span&gt;!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.inm.ras.ru/avtoreferat/%D0%9C%D0%B8%D1%85%D0%B0%D0%BB%D0%B5%D0%B2_dissertation.pdf"&gt;Dissertation (in&amp;nbsp;Russian)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary></entry><entry><title>Convolutional neural networks and tensors</title><link href="/news/convolutional-neural-networks-and-tensors/" rel="alternate"></link><updated>2014-12-19T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-19:news/convolutional-neural-networks-and-tensors/</id><summary type="html">&lt;p&gt;Deep learning is a huge topic today; speeding up the computation with convolutional 
+neural network is crucial for fast classification. In &lt;a href="http://arxiv.org/abs/1412.6553"&gt;this work&lt;/a&gt;
+we show how fine-tuned canonical polyadic (&lt;span class="caps"&gt;CP&lt;/span&gt;) decomposition can be used to speedup &lt;span class="caps"&gt;CNN&lt;/span&gt; by a factor 
+of&amp;nbsp;8-10.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.6553"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Alternating low-rank method for the Lyapunov equation</title><link href="/news/alternating-low-rank-method-for-the-lyapunov-equation/" rel="alternate"></link><updated>2014-10-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-10-13:news/alternating-low-rank-method-for-the-lyapunov-equation/</id><summary type="html">&lt;p&gt;Time-stepping free method based on the rational Krylov subspaces play an important role in many 
+applications. The adaptative selection of the shifts for the construction of the &lt;span class="caps"&gt;RKS&lt;/span&gt; is crucial.
+In this paper we propose a new algorithm for the selection of the shifts. It is based 
+on the connection between the solution of the Lyapunov&amp;nbsp;equation&lt;/p&gt;
+&lt;div class="math"&gt;$$
+   AX + XA^{\top} = y_0 y_0^{\top}
+$$&lt;/div&gt;
+&lt;p&gt;
+and the solution of a linear &lt;span class="caps"&gt;ODE&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
+   \frac{dy}{dt} = Ay, \quad y(0) = y_0.
+$$&lt;/div&gt;
+&lt;p&gt;
+We have compared the efficiency of the new method with &lt;span class="caps"&gt;KPIK&lt;/span&gt; and &lt;span class="caps"&gt;RKSM&lt;/span&gt; methods (implementation
+were taken from the &lt;a href="http://www.dm.unibo.it/~simoncin/software.html"&gt;homepage of Valeria Simonchini&lt;/a&gt;.
+The &lt;span class="caps"&gt;ALR&lt;/span&gt; method we propose was the most efficient one (and it is&amp;nbsp;parameter-free).&lt;/p&gt;
+&lt;p&gt;&lt;img width="600" class="center" src="/images/diffusion.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1410.3335"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr"&gt;Code on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr-paper"&gt;Code &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; data from the paper on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Time evolution and optimization with MPS</title><link href="/news/time-evolution-and-optimization-with-mps/" rel="alternate"></link><updated>2014-08-21T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-08-21:news/time-evolution-and-optimization-with-mps/</id><summary type="html">&lt;p&gt;The &lt;a href="http://arxiv.org/abs/1407.2042"&gt;projector-splitting scheme in the &lt;span class="caps"&gt;TT&lt;/span&gt;/&lt;span class="caps"&gt;MPS&lt;/span&gt; format&lt;/a&gt; is a natural way 
+to computing dynamics of quantum spin systems Hamiltonians with long-range interaction. We have proposed a unified 
+approach that leads to a cheap and efficient computational scheme that can be applied to any Hamiltonian, 
+represented in the &lt;span class="caps"&gt;MPO&lt;/span&gt;/&lt;span class="caps"&gt;TT&lt;/span&gt; form.
+&lt;img width="600" class="center" src="/images/jutho.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1408.5056"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains</title><link href="/news/time-integration-of-tensor-trains/" rel="alternate"></link><updated>2014-08-07T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-08-07:news/time-integration-of-tensor-trains/</id><summary type="html">&lt;p&gt;Dynamical low-rank approximation is an efficient framework for solving continious and discrete-time 
+problems in high-dimensions. Using the Dirac-Frenkel principle applied to the tensor-train format, 
+we have propose a robust and efficient time integrator for the resulting system of nonlinear&amp;nbsp;equations.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1407.2042"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Algorithm scheme&lt;/th&gt;
+&lt;th&gt;Approximate Laplace inversion&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img width="300" class="center" src="/images/sweep.png"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img width="300" class="center" src="/images/optim.png"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</summary><category term="paper"></category></entry><entry><title>Multidimensional integrals in ion-atom collisions</title><link href="/news/multidimensional-integrals-in-ion-atom-collisions/" rel="alternate"></link><updated>2014-03-19T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-19:news/multidimensional-integrals-in-ion-atom-collisions/</id><summary type="html">&lt;p&gt;Simulation in physics is full of multidimensional integrals. In the paper &lt;a href="http://arxiv.org/abs/1403.4068"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev and &lt;span class="caps"&gt;I. V.&lt;/span&gt; Oseledets. Low rank approximations for the &lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; computer code. arXiv preprint 1403.4068, 2014&lt;/a&gt; we consider the
+&lt;a href="http://www.sciencedirect.com/science/article/pii/S0010465512003153"&gt;&lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; code&lt;/a&gt; that is suited 
+for the computation of ion-atomic collisons. The main computational bottleneck is the computation 
+of a three-dimensional integral. We exploit its structure by computing low-rank separated representation
+using cross approximation for a two-dimensional function, and exponential sums approach for the Slater density 
+function. 
+Implementation of this technique decreases the total computational
+time by a &lt;strong&gt;factor of 1000&lt;/strong&gt;. What is more important, the general concept can be applied to more complicated models
+(like ion-molecule&amp;nbsp;collision).&lt;/p&gt;
+&lt;p&gt;$&amp;nbsp;\&lt;/p&gt;
+&lt;div class="math"&gt;\begin{array}{cccccc}
+\\hline
+\\hline
+System &amp;amp;  \\gamma\mbox{-Shell} &amp;amp;  N_w  &amp;amp;  T_s  ( \\times10^{-3}  sec) &amp;amp;  T_{D}  (sec) &amp;amp;  T_{D}/T_s   \\\\
+\\hline
+ Au^{26+}+ O  &amp;amp;  4df^{17}  &amp;amp;  74  &amp;amp;  7.94  &amp;amp;  3.89  &amp;amp;  490   \\\\
+ &amp;amp;  4sp^{8}  &amp;amp;  69  &amp;amp;  4.92  &amp;amp;  3.83  &amp;amp;  778   \\\\
+ &amp;amp;  3d^{10}  &amp;amp;  73  &amp;amp;  3.59  &amp;amp;  3.88  &amp;amp;  1080   \\\\
+ &amp;amp;  3sp^{8}  &amp;amp;  72  &amp;amp;  3.81  &amp;amp;  3.82  &amp;amp;  1003   \\\\ 
+ &amp;amp;  2sp^{8}  &amp;amp;  107  &amp;amp;  2.42  &amp;amp;  3.86  &amp;amp;  1592   \\\\
+ &amp;amp;  1sp^{2}  &amp;amp;  209  &amp;amp;  1.24  &amp;amp;  3.88  &amp;amp;  3120   \\\\  
+\\hline
+ U^{28+}+ Xe  &amp;amp;  5sp^{4}  &amp;amp;  62  &amp;amp;  10.1  &amp;amp;  3.94  &amp;amp;  390  \\\\
+ &amp;amp;  4df^{24}  &amp;amp;  70  &amp;amp;  6.05  &amp;amp;  3.90  &amp;amp;  644  \\\\
+ &amp;amp;  4sp^{8}  &amp;amp;  67  &amp;amp;  5.00  &amp;amp;  3.94  &amp;amp;  788  \\\\
+ &amp;amp;  3d^{10}  &amp;amp;  71  &amp;amp;  3.88  &amp;amp;  3.92  &amp;amp;  1011  \\\\
+ &amp;amp;  3sp^{8}  &amp;amp;  70  &amp;amp;  3.52  &amp;amp;  3.90  &amp;amp;  1106  \\\\
+ &amp;amp;  2sp^{8}  &amp;amp;  105  &amp;amp;  1.99  &amp;amp;  3.87  &amp;amp;  1945  \\\\
+ &amp;amp;  1sp^{2}  &amp;amp;  207  &amp;amp;  1.04  &amp;amp;  3.88  &amp;amp;  3723  \\\\
+\\hline
+\\hline
+\\end{array}&lt;/div&gt;
+&lt;p&gt;
+$&lt;/p&gt;
+&lt;p&gt;Time for the old code (&lt;span class="math"&gt;\(T_D)\)&lt;/span&gt; versus the time for the new code (&lt;span class="math"&gt;\(T_s\)&lt;/span&gt;).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1403.4068"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Preconditioners for hierarchical matrices</title><link href="/news/preconditioners-for-hierarchical-matrices/" rel="alternate"></link><updated>2014-03-12T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-12:news/preconditioners-for-hierarchical-matrices/</id><summary type="html">&lt;p&gt;We continue to develop our &lt;a href="https://bitbucket.org/muxas/h2tools"&gt;h2tools&lt;/a&gt; package with the new functionality.
+The solution of linear systems with hierarchical matrices plays a crucial role in many applications. 
+We use the sparse extended form of the H2-matrices to reduce the initial linear system to a block-structured
+linear system and then use this block structure to construct different preconditioners. The most efficient
+preconditioner is the preconditioner based on the 
+so-called &lt;a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3465730/"&gt;&amp;#8220;reverse-Schur complement&amp;#8221;&lt;/a&gt; method: we solve
+the initial system using the availability of the fast matrix-by-vector product, and to solve the corretion equation&lt;br /&gt;
+we construct the extended system and make several preconditioned iterative steps with&amp;nbsp;it. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.1253"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Cross approximation: intro</title><link href="/news/cross-approximation-intro/" rel="alternate"></link><updated>2014-02-26T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-26:news/cross-approximation-intro/</id><summary type="html">&lt;h3 id="skeleton-decomposition"&gt;Skeleton&amp;nbsp;decomposition&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Cross approximation&lt;/em&gt; and &lt;em&gt;skeleton decomposition&lt;/em&gt; are one of the basic concepts in our research. 
+It is all about low-rank matrices which appear in many different applications: integral equations, tensor approximations and 
+many others.
+Cross approximation is simple and elegant,
+but it is not widely known as it should be. Suppose that an &lt;span class="math"&gt;\(n \times m\)&lt;/span&gt; matrix &lt;span class="math"&gt;\(A\)&lt;/span&gt; has rank &lt;span class="math"&gt;\(r\)&lt;/span&gt;. Then it can be &lt;em&gt;exactly recovered&lt;/em&gt; 
+from &lt;span class="math"&gt;\(r\)&lt;/span&gt; columns and &lt;span class="math"&gt;\(r\)&lt;/span&gt; rows&amp;nbsp;as
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
+    A = C \widehat{A}^{-1} R,
+$$&lt;/div&gt;
+&lt;p&gt;
+where &lt;span class="math"&gt;\(C\)&lt;/span&gt; are &lt;span class="math"&gt;\(r\)&lt;/span&gt; columns of &lt;span class="math"&gt;\(A\)&lt;/span&gt;, &lt;span class="math"&gt;\(R\)&lt;/span&gt; are &lt;span class="math"&gt;\(r\)&lt;/span&gt; rows of &lt;span class="math"&gt;\(A\)&lt;/span&gt; and &lt;span class="math"&gt;\(\widehat{A}\)&lt;/span&gt; is a submatrix on their intersection.
+That means, that only &lt;span class="math"&gt;\((n + m) r\)&lt;/span&gt; elements are required. What about the stability of this decomposition?
+Suppose &lt;span class="math"&gt;\(A\)&lt;/span&gt; can be approximated with low rank only&amp;nbsp;approximately:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
+    A = A_r + E,
+$$&lt;/div&gt;
+&lt;p&gt;
+with &lt;span class="math"&gt;\(\Vert E \Vert = \varepsilon\)&lt;/span&gt;.
+How to select an good submatrix. A good guide is the &lt;em&gt;maximum volume&lt;/em&gt; : among all &lt;span class="math"&gt;\(r \times r\)&lt;/span&gt; submatrices select the 
+one that has largest volume, i.e. the maximum absolute value of the determinant. Then, the corresponding&amp;nbsp;approximation
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
+   \Vert A - A_{maxvol} \Vert_C \leq (r + 1) \sigma_{r + 1},
+$$&lt;/div&gt;
+&lt;p&gt;
+where &lt;span class="math"&gt;\(\sigma_{r + 1}\)&lt;/span&gt; is the &lt;span class="math"&gt;\((r + 1)\)&lt;/span&gt;-th singular value of &lt;span class="math"&gt;\(A\)&lt;/span&gt; and the error is measured in the Chebyshev norm (maximum absolute&amp;nbsp;value).  &lt;/p&gt;
+&lt;h3 id="cross-approximation"&gt;Cross&amp;nbsp;approximation&lt;/h3&gt;
+&lt;p&gt;A good question is how to compute (quasi)-optimal submatrices. 
+One the possibility is the cross approximation algorithm, which is equivalent to the Gaussian elimination. 
+The steps of the algorithm are&amp;nbsp;simple:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Find some pivot &lt;span class="math"&gt;\((i',&amp;nbsp;j')\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Subtract a rank-&lt;span class="math"&gt;\(1\)&lt;/span&gt; cross from the matrix: 
+   &lt;div class="math"&gt;$$ A_{ij} := A_{ij} - \frac{A_{i j'}A_{i' j}}{A_{i' j'}}. $$&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;Cycle until the norm of &lt;span class="math"&gt;\(A\)&lt;/span&gt; is small&amp;nbsp;enough.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Different pivoting strategies are possible. The full pivoting assumes that &lt;span class="math"&gt;\((i', j')\)&lt;/span&gt; maximizes the absolute value 
+of the residue. This involves &lt;span class="math"&gt;\(\mathcal{O}(nm)\)&lt;/span&gt; complexity and is unacceptable. Partial pivoting can be different: from 
+the simplest row pivoting scheme to rook schemes and random&amp;nbsp;sampling. &lt;/p&gt;
+&lt;h3 id="maximum-volume"&gt;Maximum-volume&lt;/h3&gt;
+&lt;p&gt;Maximum-volume principle is the cornerstone of the low-rank approximation algorithms. 
+Although it is often claimed that maximum-volume submatrix is hard to compute, 
+there are very efficient algorithms for doing that. Maybe the most promiment one is the algorithm
+that computes a maximum-volume submatrix in a tall &lt;span class="math"&gt;\(n \times r\)&lt;/span&gt; matrix. 
+It is an iterative algorithm: it starts from a non-singular &lt;span class="math"&gt;\(r \times r\)&lt;/span&gt; submatrix and 
+then substitutes one row at a step (greedy approach). For this problem, the convergence is very fast. 
+There are few tricks to make it really efficient. The efficient implementations of the &lt;strong&gt;maxvol&lt;/strong&gt; algorithm are
+available both in the &lt;span class="caps"&gt;MATLAB&lt;/span&gt; and Python version of the &lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[50]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;tt&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;tt.maxvol&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;maxvol&lt;/span&gt;
+&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;256&lt;/span&gt;
+&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Hilbert matrix --- classic low-rank example &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;xrange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;xrange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;1.0&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linalg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;svd&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;semilogy&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[50]:&lt;/div&gt;
+
+
+&lt;div class="output_text output_subarea output_execute_result"&gt;
+&lt;pre&gt;[&amp;lt;matplotlib.lines.Line2D at 0x10cc69b50&amp;gt;]&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_png output_subarea "&gt;
+&lt;img src="data:image/png;base64,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
+"
+&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Computing the maxvol-skeleton&amp;nbsp;approximation&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[51]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+    &lt;span class="n"&gt;u1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;v1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;v&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;:]&lt;/span&gt;
+    &lt;span class="n"&gt;v1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;v1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;
+    &lt;span class="n"&gt;s1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[:&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;er_svd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linalg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;norm&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;diag&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s1&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;v1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot; Computing maxvol indices &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;indu&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;maxvol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="n"&gt;indv&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sort&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;maxvol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;v1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="n"&gt;C&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[:,&lt;/span&gt; &lt;span class="n"&gt;indv&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;C&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linalg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;indu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;:]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt; &lt;span class="c"&gt;# Computing CC^{-1}&lt;/span&gt;
+    &lt;span class="n"&gt;R&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;indu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;:]&lt;/span&gt;
+    
+    &lt;span class="n"&gt;er_skel&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;linalg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;norm&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;R&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    
+    &lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;SVD er:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;er_svd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;Skeleton er:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;er_skel&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;SVD er: 1.05910918542 Skeleton er: 1.62572489102
+SVD er: 0.00594784107656 Skeleton er: 0.0181112433106
+SVD er: 2.76537410866e-06 Skeleton er: 5.17080332494e-06
+SVD er: 5.96043397807e-10 Skeleton er: 1.55873142365e-09
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="tutorial"></category></entry><entry><title>Convolution via cross approximation</title><link href="/news/convolution-via-cross-approximation/" rel="alternate"></link><updated>2014-02-25T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-25:news/convolution-via-cross-approximation/</id><summary type="html">&lt;p&gt;Multidimensional convolution plays a crucial role in many 
+applications. We have proposed a new method for approximate computation of the convolution 
+in &lt;em&gt;low-rank tensor formats&lt;/em&gt;
+that is based on the
+&lt;em&gt;cross approximation&lt;/em&gt; in the frequency domain. 
+The method is applicable to any &lt;span class="caps"&gt;SVD&lt;/span&gt;-based tensor format (skeleton, Tucker,  Tensor Train, Hierachical Tucker).
+We have computed Newton potentials of different electronic densities, and also presented preliminary 
+results for the solution of the Hartree-Fock equation on tensor product grids.
+For a practically interesting range of one-dimensional grid sizes &lt;span class="math"&gt;\(n \sim 10^{3}-10^{5}\)&lt;/span&gt; our algorithm is&amp;nbsp;faster.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;He density&lt;/th&gt;
+&lt;th&gt;H2 density&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img width="270" class="center" src="/images/He_density.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img width="270" class="center" src="/images/H2_density.jpg"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1402.5649"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rakhuba/tucker3d"&gt;MiniTucker Toolbox on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bitbucket.org/rakhuba/crossconv-experiment"&gt;Data from the paper on&amp;nbsp;Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Theses topics</title><link href="/news/theses-topics/" rel="alternate"></link><updated>2014-02-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-13:news/theses-topics/</id><summary type="html">&lt;p&gt;I have put short descriptions of the available student
+project online. &lt;a href="/theses/"&gt;Please&amp;nbsp;check&lt;/a&gt;&lt;/p&gt;</summary><category term="Students"></category></entry></feed>

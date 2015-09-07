@@ -43,85 +43,353 @@
 </nav> <!-- /#nav -->
 
 <div class="column span-24">
-    <h2>Cross approximation: intro</h2>
-<div class="more"> 26 February 2014 </div>
+    <h2>Cross approximation:&nbsp;intro</h2>
+<div class="more"> 26 февраля 2014 </div>
 <link rel="stylesheet" href="/theme/css/ipython.min.css">
-<h3>Skeleton&nbsp;decomposition</h3>
+<h3 id="skeleton-decomposition">Skeleton&nbsp;decomposition</h3>
 <p><em>Cross approximation</em> and <em>skeleton decomposition</em> are one of the basic concepts in our research. 
 It is all about low-rank matrices which appear in many different applications: integral equations, tensor approximations and 
 many others.
 Cross approximation is simple and elegant,
-but it is not widely known as it should be. Suppose that an <mathjax>$n \times m$</mathjax> matrix <mathjax>$A$</mathjax> has rank <mathjax>$r$</mathjax>. Then it can be <em>exactly recovered</em> 
-from <mathjax>$r$</mathjax> columns and <mathjax>$r$</mathjax> rows as
-<mathjax>$$
+but it is not widely known as it should be. Suppose that an <span class="math">\(n \times m\)</span> matrix <span class="math">\(A\)</span> has rank <span class="math">\(r\)</span>. Then it can be <em>exactly recovered</em> 
+from <span class="math">\(r\)</span> columns and <span class="math">\(r\)</span> rows&nbsp;as
+</p>
+<div class="math">$$
     A = C \widehat{A}^{-1} R,
-$$</mathjax>
-where <mathjax>$C$</mathjax> are <mathjax>$r$</mathjax> columns of <mathjax>$A$</mathjax>, <mathjax>$R$</mathjax> are <mathjax>$r$</mathjax> rows of <mathjax>$A$</mathjax> and <mathjax>$\widehat{A}$</mathjax> is a submatrix on their intersection.
-That means, that only <mathjax>$(n + m) r$</mathjax> elements are required. What about the stability of this decomposition?
-Suppose <mathjax>$A$</mathjax> can be approximated with low rank only approximately:
-<mathjax>$$
+$$</div>
+<p>
+where <span class="math">\(C\)</span> are <span class="math">\(r\)</span> columns of <span class="math">\(A\)</span>, <span class="math">\(R\)</span> are <span class="math">\(r\)</span> rows of <span class="math">\(A\)</span> and <span class="math">\(\widehat{A}\)</span> is a submatrix on their intersection.
+That means, that only <span class="math">\((n + m) r\)</span> elements are required. What about the stability of this decomposition?
+Suppose <span class="math">\(A\)</span> can be approximated with low rank only&nbsp;approximately:
+</p>
+<div class="math">$$
     A = A_r + E,
-$$</mathjax>
-with <mathjax>$\Vert E \Vert = \varepsilon$</mathjax>.
-How to select an good submatrix. A good guide is the <em>maximum volume</em> : among all <mathjax>$r \times r$</mathjax> submatrices select the 
-one that has largest volume, i.e. the maximum absolute value of the determinant. Then, the corresponding approximation
-<mathjax>$$
+$$</div>
+<p>
+with <span class="math">\(\Vert E \Vert = \varepsilon\)</span>.
+How to select an good submatrix. A good guide is the <em>maximum volume</em> : among all <span class="math">\(r \times r\)</span> submatrices select the 
+one that has largest volume, i.e. the maximum absolute value of the determinant. Then, the corresponding&nbsp;approximation
+</p>
+<div class="math">$$
    \Vert A - A_{maxvol} \Vert_C \leq (r + 1) \sigma_{r + 1},
-$$</mathjax>
-where <mathjax>$\sigma_{r + 1}$</mathjax> is the <mathjax>$(r + 1)$</mathjax>-th singular value of <mathjax>$A$</mathjax> and the error is measured in the Chebyshev norm (maximum absolute&nbsp;value).  </p>
-<h3>Cross&nbsp;approximation</h3>
+$$</div>
+<p>
+where <span class="math">\(\sigma_{r + 1}\)</span> is the <span class="math">\((r + 1)\)</span>-th singular value of <span class="math">\(A\)</span> and the error is measured in the Chebyshev norm (maximum absolute&nbsp;value).  </p>
+<h3 id="cross-approximation">Cross&nbsp;approximation</h3>
 <p>A good question is how to compute (quasi)-optimal submatrices. 
 One the possibility is the cross approximation algorithm, which is equivalent to the Gaussian elimination. 
 The steps of the algorithm are&nbsp;simple:</p>
 <ol>
-<li>Find some pivot <mathjax>$(i', j')$</mathjax></li>
-<li>Subtract a rank-<mathjax>$1$</mathjax> cross from the matrix: 
-   <mathjax>$$ A_{ij} := A_{ij} - \frac{A_{i j'}A_{i' j}}{A_{i' j'}}. $$</mathjax></li>
-<li>Cycle until the norm of <mathjax>$A$</mathjax> is small&nbsp;enough.</li>
+<li>Find some pivot <span class="math">\((i',&nbsp;j')\)</span></li>
+<li>Subtract a rank-<span class="math">\(1\)</span> cross from the matrix: 
+   <div class="math">$$ A_{ij} := A_{ij} - \frac{A_{i j'}A_{i' j}}{A_{i' j'}}. $$</div>
+</li>
+<li>Cycle until the norm of <span class="math">\(A\)</span> is small&nbsp;enough.</li>
 </ol>
-<p>Different pivoting strategies are possible. The full pivoting assumes that <mathjax>$(i', j')$</mathjax> maximizes the absolute value 
-of the residue. This involves <mathjax>$\mathcal{O}(nm)$</mathjax> complexity and is unacceptable. Partial pivoting can be different: from 
+<p>Different pivoting strategies are possible. The full pivoting assumes that <span class="math">\((i', j')\)</span> maximizes the absolute value 
+of the residue. This involves <span class="math">\(\mathcal{O}(nm)\)</span> complexity and is unacceptable. Partial pivoting can be different: from 
 the simplest row pivoting scheme to rook schemes and random&nbsp;sampling. </p>
-<h3>Maximum-volume</h3>
+<h3 id="maximum-volume">Maximum-volume</h3>
 <p>Maximum-volume principle is the cornerstone of the low-rank approximation algorithms. 
 Although it is often claimed that maximum-volume submatrix is hard to compute, 
 there are very efficient algorithms for doing that. Maybe the most promiment one is the algorithm
-that computes a maximum-volume submatrix in a tall <mathjax>$n \times r$</mathjax> matrix. 
-It is an iterative algorithm: it starts from a non-singular <mathjax>$r \times r$</mathjax> submatrix and 
+that computes a maximum-volume submatrix in a tall <span class="math">\(n \times r\)</span> matrix. 
+It is an iterative algorithm: it starts from a non-singular <span class="math">\(r \times r\)</span> submatrix and 
 then substitutes one row at a step (greedy approach). For this problem, the convergence is very fast. 
 There are few tricks to make it really efficient. The efficient implementations of the <strong>maxvol</strong> algorithm are
 available both in the <span class="caps">MATLAB</span> and Python version of the <span class="caps">TT</span>-Toolbox.</p>
-<p>{% notebook test.ipynb cells[1:]&nbsp;%}</p><script type= "text/javascript">
-    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-        var mathjaxscript = document.createElement('script');
-        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-        mathjaxscript.type = 'text/javascript';
-        mathjaxscript.src = 'https:' == document.location.protocol
-                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
-                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-            "MathJax.Hub.Config({" +
-            "    config: ['MMLorHTML.js']," +
-            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-            "    displayAlign: 'center'," +
-            "    displayIndent: '0em'," +
-            "    showMathMenu: true," +
-            "    tex2jax: { " +
-            "        inlineMath: [ ['$','$'] ], " +
-            "        displayMath: [ ['$$','$$'] ]," +
-            "        processEscapes: true," +
-            "        preview: 'TeX'," +
-            "    }, " +
-            "    'HTML-CSS': { " +
-            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-            "    } " +
-            "}); ";
-        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-    }
-</script>
+<p>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">tt</span>
+<span class="kn">from</span> <span class="nn">tt.maxvol</span> <span class="k">import</span> <span class="n">maxvol</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">256</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<span class="sd">&quot;&quot;&quot; Hilbert matrix --- classic low-rank example &quot;&quot;&quot;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">semilogy</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
 
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[50]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&lt;matplotlib.lines.Line2D at 0x10cc69b50&gt;]</pre>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Computing the maxvol-skeleton&nbsp;approximation</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]:</span>
+    <span class="n">u1</span> <span class="o">=</span> <span class="n">u</span><span class="p">[:,</span> <span class="p">:</span><span class="n">r</span><span class="p">]</span>
+    <span class="n">v1</span> <span class="o">=</span> <span class="n">v</span><span class="p">[:</span><span class="n">r</span><span class="p">,</span> <span class="p">:]</span>
+    <span class="n">v1</span> <span class="o">=</span> <span class="n">v1</span><span class="o">.</span><span class="n">T</span>
+    <span class="n">s1</span> <span class="o">=</span> <span class="n">s</span><span class="p">[:</span><span class="n">r</span><span class="p">]</span>
+    <span class="n">er_svd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">u1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">s1</span><span class="p">),</span> <span class="n">v1</span><span class="o">.</span><span class="n">T</span><span class="p">)))</span>
+    <span class="sd">&quot;&quot;&quot; Computing maxvol indices &quot;&quot;&quot;</span>
+    <span class="n">indu</span> <span class="o">=</span> <span class="n">sort</span><span class="p">(</span><span class="n">maxvol</span><span class="p">(</span><span class="n">u1</span><span class="p">))</span>
+    <span class="n">indv</span> <span class="o">=</span> <span class="n">sort</span><span class="p">(</span><span class="n">maxvol</span><span class="p">(</span><span class="n">v1</span><span class="p">))</span>
+    <span class="n">C</span> <span class="o">=</span> <span class="n">a</span><span class="p">[:,</span> <span class="n">indv</span><span class="p">]</span>
+    <span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">C</span><span class="p">[</span><span class="n">indu</span><span class="p">,</span> <span class="p">:]</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">C</span><span class="o">.</span><span class="n">T</span><span class="p">)</span><span class="o">.</span><span class="n">T</span> <span class="c"># Computing CC^{-1}</span>
+    <span class="n">R</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">indu</span><span class="p">,</span> <span class="p">:]</span>
+    
+    <span class="n">er_skel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">R</span><span class="p">))</span>
+    
+    <span class="nb">print</span> <span class="s">&#39;SVD er:&#39;</span><span class="p">,</span> <span class="n">er_svd</span><span class="p">,</span> <span class="s">&#39;Skeleton er:&#39;</span><span class="p">,</span> <span class="n">er_skel</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>SVD er: 1.05910918542 Skeleton er: 1.62572489102
+SVD er: 0.00594784107656 Skeleton er: 0.0181112433106
+SVD er: 2.76537410866e-06 Skeleton er: 5.17080332494e-06
+SVD er: 5.96043397807e-10 Skeleton er: 1.55873142365e-09
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 </div>
 
 </div>
@@ -169,51 +437,47 @@ available both in the <span class="caps">MATLAB</span> and Python version of the
 <tbody>
 <tr> 
     <td>
-        04/03/2015
+        24/05/2015
     </td>
-    <td><a href='/news/cross-conv-paper-published/' >Cross-conv paper published!</a>
+    <td><a href='/news/path-integrals-low-rank-for-unbounded-domains/' >Path integrals <span class="amp">&amp;</span> low-rank for unbounded&nbsp;domains</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
     <td>
-        02/03/2015
+        03/04/2015
     </td>
-    <td><a href='/news/maximum-volume-principle-for-rectangular-matrices/' >Maximum-volume principle for rectangular matrices</a>
+    <td><a href='/news/cross-conv-paper-published/' >Cross-conv paper&nbsp;published!</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
     <td>
         24/02/2015
     </td>
-    <td><a href='/news/similarity-for-heterogeneous-networks/' >Similarity for heterogeneous networks</a>
-    </td>
-    <td>
-        Papers 
-    </td>
-</tr>   
-<tr> 
-    <td>
-        30/12/2014
-    </td>
-    <td><a href='/news/alexander-mikhalev-defends-his-phd/' >Alexander Mikhalev defends his PhD</a>
+    <td><a href='/news/similarity-for-heterogeneous-networks/' >Similarity for heterogeneous&nbsp;networks</a>
     </td>
     <td>
     </td>
 </tr>   
 <tr> 
     <td>
-        19/12/2014
+        04/02/2015
     </td>
-    <td><a href='/news/convolutional-neural-networks-and-tensors/' >Convolutional neural networks and tensors</a>
+    <td><a href='/news/time-integration-of-tensor-trains-published/' >Time integration of tensor trains&nbsp;published!</a>
     </td>
     <td>
-        Papers 
+    </td>
+</tr>   
+<tr> 
+    <td>
+        03/02/2015
+    </td>
+    <td><a href='/news/maximum-volume-principle-for-rectangular-matrices/' >Maximum-volume principle for rectangular&nbsp;matrices</a>
+    </td>
+    <td>
     </td>
 </tr>   
 </tbody>
@@ -221,7 +485,8 @@ available both in the <span class="caps">MATLAB</span> and Python version of the
 
 <h2> Contact </h2>
 <p>
-We are located at the 6th floor of the “Hypercube” building in Skolkovo (few kilometers outside Moscow Ring Road). The building is accessible from Skolkovo Road (Сколковское шоссе) and Minskoe Highway (Минское шоссе).
+We are located at the 2-nd floor of the new "Technopark-3” building in Skolkovo (few kilometers outside Moscow Ring Road). 
+The building is accessible from Skolkovo Road (Сколковское шоссе) and Minskoe Highway (Минское шоссе).
 </p>
 <p> email: <img src="/images/email.png"></p> 
 
