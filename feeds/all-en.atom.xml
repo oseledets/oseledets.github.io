@@ -96,7 +96,11 @@ Using such approach, we can treat problems with non-periodic / non-decaying pote
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Cross-conv paper published!</title><link href="/news/cross-conv-paper-published/" rel="alternate"></link><updated>2015-04-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-04-03:news/cross-conv-paper-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../convolution-via-cross-approximation"&gt;cross-convolution paper&lt;/a&gt; 
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>New paper in J. Chem. Phys</title><link href="/news/new-paper-in-j-chem-phys/" rel="alternate"></link><updated>2015-04-11T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-04-11:news/new-paper-in-j-chem-phys/</id><summary type="html">&lt;p&gt;Our paper on [multidimensional potential energy surfaces approximation] using a combination of active subspace methods and tensor train&amp;nbsp;decomposition &lt;/p&gt;
+&lt;p&gt;&lt;span class="dquo"&gt;&amp;#8220;&lt;/span&gt;Fitting high-dimensional potential energy surface using active subspace and tensor train (&lt;span class="caps"&gt;AS&lt;/span&gt;+&lt;span class="caps"&gt;TT&lt;/span&gt;) method&amp;#8221;
+by V. Baranov and &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
+is now 
+&lt;a href="http://dx.doi.org/10.1063/1.4935017"&gt;published in Journal of Chemical&amp;nbsp;Physics&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Cross-conv paper published!</title><link href="/news/cross-conv-paper-published/" rel="alternate"></link><updated>2015-04-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-04-03:news/cross-conv-paper-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../convolution-via-cross-approximation"&gt;cross-convolution paper&lt;/a&gt; 
 &amp;#8220;Fast Multidimensional Convolution in Low-Rank Tensor Formats via Cross Approximation&amp;#8221;
 by &lt;a href="../../people/rakhuba"&gt;M. Rakhuba&lt;/a&gt;, &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
 is now 
