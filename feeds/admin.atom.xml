@@ -6,9 +6,9 @@ time-stepping scheme for the dynamical low-rank approximation&lt;/a&gt; &amp;#82
 so-called &lt;span class="caps"&gt;KLS&lt;/span&gt;-scheme, which is remarkably simple but efficient to
 compute the dynamics on low-rank manifolds. It presents a full analysis
 for the two-dimensional case, with multidimensional case (&lt;span class="caps"&gt;TT&lt;/span&gt;-format) in&amp;nbsp;progress.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
 &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 </summary><category term="paper"></category></entry><entry><title>One more paper</title><link href="/news/one-more-paper/" rel="alternate"></link><updated>2012-12-22T22:52:00+04:00</updated><author><name>Admin</name></author><id>tag:,2012-12-22:news/one-more-paper/</id><summary type="html">&lt;p&gt;One more old paper on &lt;a class="reference external" href="http://dx.doi.org/10.1007/s00365-012-9175-x"&gt;explicit representations of simple functions in
 tensor formats&lt;/a&gt; is published in the Constructive&amp;nbsp;Approximation!&lt;/p&gt;
