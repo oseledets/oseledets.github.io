@@ -99,12 +99,12 @@ is given in the Table&nbsp;below.</p>
         indent = (screen.width < 768) ? "0em" : indent;
         linebreak = (screen.width < 768) ? 'true' : linebreak;
     }
-    
+
     var mathjaxscript = document.createElement('script');
     var location_protocol = (false) ? 'https' : document.location.protocol;
     if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.type = 'text/javascript';
     mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
@@ -115,6 +115,7 @@ is given in the Table&nbsp;below.</p>
         "    displayAlign: '"+ align +"'," +
         "    displayIndent: '"+ indent +"'," +
         "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
         "    tex2jax: { " +
         "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
         "        displayMath: [ ['$$','$$'] ]," +
@@ -192,18 +193,27 @@ is given in the Table&nbsp;below.</p>
 <tbody>
 <tr> 
     <td>
-        01/12/2015
+        04/06/2016
     </td>
-    <td><a href='/news/new-paper-in-simax/' >New paper in <span class="caps">SIMAX</span></a>
+    <td><a href='/news/convergence-analysis-of-a-projected-fixed-point-iteration/' >Convergence analysis of a projected fixed-point&nbsp;iteration</a>
     </td>
     <td>
     </td>
 </tr>   
 <tr> 
     <td>
-        05/11/2015
+        30/03/2016
     </td>
-    <td><a href='/news/grid-based-electronic-structure-published-in-j-comp-phys/' >Grid-based electronic structure published in J. Comp.&nbsp;Phys</a>
+    <td><a href='/news/compress-and-eliminate-solver-for-sparse-matrices/' >Compress-and-eliminate solver for sparse&nbsp;matrices</a>
+    </td>
+    <td>
+    </td>
+</tr>   
+<tr> 
+    <td>
+        01/12/2015
+    </td>
+    <td><a href='/news/new-paper-in-simax/' >New paper in <span class="caps">SIMAX</span></a>
     </td>
     <td>
     </td>
@@ -222,15 +232,6 @@ is given in the Table&nbsp;below.</p>
         04/11/2015
     </td>
     <td><a href='/news/new-paper-in-j-chem-phys/' >New paper in J. Chem.&nbsp;Phys</a>
-    </td>
-    <td>
-    </td>
-</tr>   
-<tr> 
-    <td>
-        07/09/2015
-    </td>
-    <td><a href='/news/anton-sukhinov-leaves-the-group/' >Anton Sukhinov leaves the&nbsp;group</a>
     </td>
     <td>
     </td>
