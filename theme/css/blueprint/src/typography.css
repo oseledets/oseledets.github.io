@@ -7,9 +7,9 @@
 
 /* Default font settings.
    The font-size percentage is of 16px. (0.75 * 16px = 12px) */
-html { font-size:85.3331%; }
+html { font-size: 1.3vw; }
 body {
-  font-size: 95.3331%;
+  font-size: 1.3vw;
   //font-size: 100%;
   color: #222;
   background: #fff;
