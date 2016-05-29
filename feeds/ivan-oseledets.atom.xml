@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/ivan-oseledets.atom.xml" rel="self"></link><id>/</id><updated>2016-04-06T00:00:00+03:00</updated><entry><title>Convergence analysis of a projected fixed-point iteration</title><link href="/news/convergence-analysis-of-a-projected-fixed-point-iteration/" rel="alternate"></link><published>2016-04-06T00:00:00+03:00</published><author><name>Ivan Oseledets</name></author><id>tag:,2016-04-06:news/convergence-analysis-of-a-projected-fixed-point-iteration/</id><summary type="html">&lt;p&gt;In &lt;a href="http://arxiv/abs/1604.02111"&gt;this paper&lt;/a&gt; by &lt;a href="../../people/kolesnikov"&gt;Denis Kolesnikov&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt; 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/ivan-oseledets.atom.xml" rel="self"></link><id>/</id><updated>2016-05-26T00:00:00+03:00</updated><entry><title>A TT-eigenvalue solver that finally works</title><link href="/news/a-tt-eigenvalue-solver-that-finally-works/" rel="alternate"></link><published>2016-05-26T00:00:00+03:00</published><author><name>Ivan Oseledets</name></author><id>tag:,2016-05-26:news/a-tt-eigenvalue-solver-that-finally-works/</id><summary type="html">&lt;p&gt;In a &lt;a href="http://arxiv.org/abs/1605.08422"&gt;recent preprint&lt;/a&gt; by &lt;a href="../../people/rakhuba"&gt;Maxim Rakhuba&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt; we propose a new algorithm for calculation of vibrational spectra of molecules using tensor train decomposition. Under the assumption that eigenfunctions lie on a low-parametric manifold of low-rank tensors we introduce the concept of manifold preconditioning of well-known iterative methods (inverse iteration and locally optimal block conjugate gradient method). As an application, we accurately compute vibrational spectra (84 states) of acetonitrile molecule on a laptop in one hour using only 180 &lt;span class="caps"&gt;MB&lt;/span&gt; of memory to represent all computed&amp;nbsp;eigenfunctions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1605.08422"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bitbucket.org/rakhuba/ttvibr"&gt;Code on&amp;nbsp;Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Exponential machines and tensor trains</title><link href="/news/exponential-machines-and-tensor-trains/" rel="alternate"></link><published>2016-05-12T00:00:00+03:00</published><author><name>Ivan Oseledets</name></author><id>tag:,2016-05-12:news/exponential-machines-and-tensor-trains/</id><summary type="html">&lt;p&gt;Modeling interactions between features improves the performance of machine learning solutions in many domains (e.g. recommender systems or sentiment analysis). In this paper, we introduce Exponential Machines (ExM), a predictor that models all interactions of every order. The key idea is to represent an exponentially large tensor of parameters in a factorized format called Tensor Train (&lt;span class="caps"&gt;TT&lt;/span&gt;). The Tensor Train format regularizes the model and lets you control the number of underlying parameters. To train the model, we develop a stochastic version of Riemannian optimization, which allows us to fit tensors with &lt;span class="math"&gt;\(2^{30}\)&lt;/span&gt; entries. 
+We show that the model achieves state-of-the-art performance on synthetic data with high-order&amp;nbsp;interactions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/bihaqo/exp-machines"&gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1605.03795"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Convergence analysis of a projected fixed-point iteration</title><link href="/news/convergence-analysis-of-a-projected-fixed-point-iteration/" rel="alternate"></link><published>2016-04-06T00:00:00+03:00</published><author><name>Ivan Oseledets</name></author><id>tag:,2016-04-06:news/convergence-analysis-of-a-projected-fixed-point-iteration/</id><summary type="html">&lt;p&gt;In &lt;a href="http://arxiv/abs/1604.02111"&gt;this paper&lt;/a&gt; by &lt;a href="../../people/kolesnikov"&gt;Denis Kolesnikov&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt; 
 we analyse convergence of projected fixed-point iteration on a Riemannian manifold of matrices with fixed rank. As a retraction method we use `projector splitting scheme&amp;#8217;. We prove that the projector splitting scheme converges at least with the same rate as standard fixed-point iteration without rank constraints. We also provide counter-example to the case when conditions of the theorem do not hold. Finally we support our theoretical results with numerical&amp;nbsp;experiments.&lt;/p&gt;
 &lt;p&gt;The most interesting finding is the splitting of the error into two components: normal component and tangent component.
 The normal component shows staircase convergence which &amp;#8220;feels&amp;#8221; the curvature, but this convergence is much faster, 
