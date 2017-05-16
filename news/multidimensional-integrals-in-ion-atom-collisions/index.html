@@ -54,33 +54,92 @@ function.
 Implementation of this technique decreases the total computational
 time by a <strong>factor of 1000</strong>. What is more important, the general concept can be applied to more complicated models
 (like ion-molecule&nbsp;collision).</p>
-<p>$ 
-\begin{array}{cccccc}
-\hline
-\hline
-System <span class="amp">&amp;</span>  \gamma\mbox{-Shell} <span class="amp">&amp;</span>  N_w  <span class="amp">&amp;</span>  T_s  ( \times10^{-3}  sec) <span class="amp">&amp;</span>  T_{D}  (sec) <span class="amp">&amp;</span>  T_{D}/T_s   &#92;
-\hline
- Au^{26+}+ O  <span class="amp">&amp;</span>  4df^{17}  <span class="amp">&amp;</span>  74  <span class="amp">&amp;</span>  7.94  <span class="amp">&amp;</span>  3.89  <span class="amp">&amp;</span>  490   &#92;
- <span class="amp">&amp;</span>  4sp^{8}  <span class="amp">&amp;</span>  69  <span class="amp">&amp;</span>  4.92  <span class="amp">&amp;</span>  3.83  <span class="amp">&amp;</span>  778   &#92;
- <span class="amp">&amp;</span>  3d^{10}  <span class="amp">&amp;</span>  73  <span class="amp">&amp;</span>  3.59  <span class="amp">&amp;</span>  3.88  <span class="amp">&amp;</span>  1080   &#92;
- <span class="amp">&amp;</span>  3sp^{8}  <span class="amp">&amp;</span>  72  <span class="amp">&amp;</span>  3.81  <span class="amp">&amp;</span>  3.82  <span class="amp">&amp;</span>  1003   &#92; 
- <span class="amp">&amp;</span>  2sp^{8}  <span class="amp">&amp;</span>  107  <span class="amp">&amp;</span>  2.42  <span class="amp">&amp;</span>  3.86  <span class="amp">&amp;</span>  1592   &#92;
- <span class="amp">&amp;</span>  1sp^{2}  <span class="amp">&amp;</span>  209  <span class="amp">&amp;</span>  1.24  <span class="amp">&amp;</span>  3.88  <span class="amp">&amp;</span>  3120   &#92;<br />
-\hline
- U^{28+}+ Xe  <span class="amp">&amp;</span>  5sp^{4}  <span class="amp">&amp;</span>  62  <span class="amp">&amp;</span>  10.1  <span class="amp">&amp;</span>  3.94  <span class="amp">&amp;</span>  390  &#92;
- <span class="amp">&amp;</span>  4df^{24}  <span class="amp">&amp;</span>  70  <span class="amp">&amp;</span>  6.05  <span class="amp">&amp;</span>  3.90  <span class="amp">&amp;</span>  644  &#92;
- <span class="amp">&amp;</span>  4sp^{8}  <span class="amp">&amp;</span>  67  <span class="amp">&amp;</span>  5.00  <span class="amp">&amp;</span>  3.94  <span class="amp">&amp;</span>  788  &#92;
- <span class="amp">&amp;</span>  3d^{10}  <span class="amp">&amp;</span>  71  <span class="amp">&amp;</span>  3.88  <span class="amp">&amp;</span>  3.92  <span class="amp">&amp;</span>  1011  &#92;
- <span class="amp">&amp;</span>  3sp^{8}  <span class="amp">&amp;</span>  70  <span class="amp">&amp;</span>  3.52  <span class="amp">&amp;</span>  3.90  <span class="amp">&amp;</span>  1106  &#92;
- <span class="amp">&amp;</span>  2sp^{8}  <span class="amp">&amp;</span>  105  <span class="amp">&amp;</span>  1.99  <span class="amp">&amp;</span>  3.87  <span class="amp">&amp;</span>  1945  &#92;
- <span class="amp">&amp;</span>  1sp^{2}  <span class="amp">&amp;</span>  207  <span class="amp">&amp;</span>  1.04  <span class="amp">&amp;</span>  3.88  <span class="amp">&amp;</span>  3723  &#92;
-\hline
-\hline
-\end{array}&nbsp;$</p>
-<p>Time for the old code ($T_D)$ versus the time for the new code&nbsp;($T_s$).</p>
+<p>$&nbsp;\</p>
+<div class="math">\begin{array}{cccccc}
+\\hline
+\\hline
+System &amp;  \\gamma\mbox{-Shell} &amp;  N_w  &amp;  T_s  ( \\times10^{-3}  sec) &amp;  T_{D}  (sec) &amp;  T_{D}/T_s   \\\\
+\\hline
+ Au^{26+}+ O  &amp;  4df^{17}  &amp;  74  &amp;  7.94  &amp;  3.89  &amp;  490   \\\\
+ &amp;  4sp^{8}  &amp;  69  &amp;  4.92  &amp;  3.83  &amp;  778   \\\\
+ &amp;  3d^{10}  &amp;  73  &amp;  3.59  &amp;  3.88  &amp;  1080   \\\\
+ &amp;  3sp^{8}  &amp;  72  &amp;  3.81  &amp;  3.82  &amp;  1003   \\\\ 
+ &amp;  2sp^{8}  &amp;  107  &amp;  2.42  &amp;  3.86  &amp;  1592   \\\\
+ &amp;  1sp^{2}  &amp;  209  &amp;  1.24  &amp;  3.88  &amp;  3120   \\\\  
+\\hline
+ U^{28+}+ Xe  &amp;  5sp^{4}  &amp;  62  &amp;  10.1  &amp;  3.94  &amp;  390  \\\\
+ &amp;  4df^{24}  &amp;  70  &amp;  6.05  &amp;  3.90  &amp;  644  \\\\
+ &amp;  4sp^{8}  &amp;  67  &amp;  5.00  &amp;  3.94  &amp;  788  \\\\
+ &amp;  3d^{10}  &amp;  71  &amp;  3.88  &amp;  3.92  &amp;  1011  \\\\
+ &amp;  3sp^{8}  &amp;  70  &amp;  3.52  &amp;  3.90  &amp;  1106  \\\\
+ &amp;  2sp^{8}  &amp;  105  &amp;  1.99  &amp;  3.87  &amp;  1945  \\\\
+ &amp;  1sp^{2}  &amp;  207  &amp;  1.04  &amp;  3.88  &amp;  3723  \\\\
+\\hline
+\\hline
+\\end{array}</div>
+<p>
+$</p>
+<p>Time for the old code (<span class="math">\(T_D)\)</span> versus the time for the new code (<span class="math">\(T_s\)</span>).</p>
 <ul>
 <li><a href="http://arxiv.org/abs/1403.4068">Preprint on&nbsp;arXiv</a></li>
 </ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 </div>
 
 </div>
@@ -133,7 +192,6 @@ System <span class="amp">&amp;</span>  \gamma\mbox{-Shell} <span class="amp">&am
     <td><a href='/news/a-tt-eigenvalue-solver-that-finally-works/' >A <span class="caps">TT</span>-eigenvalue solver that finally&nbsp;works</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
@@ -143,7 +201,6 @@ System <span class="amp">&amp;</span>  \gamma\mbox{-Shell} <span class="amp">&am
     <td><a href='/news/exponential-machines-and-tensor-trains/' >Exponential machines and tensor&nbsp;trains</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
@@ -153,7 +210,6 @@ System <span class="amp">&amp;</span>  \gamma\mbox{-Shell} <span class="amp">&am
     <td><a href='/news/convergence-analysis-of-a-projected-fixed-point-iteration/' >Convergence analysis of a projected fixed-point&nbsp;iteration</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
@@ -163,7 +219,6 @@ System <span class="amp">&amp;</span>  \gamma\mbox{-Shell} <span class="amp">&am
     <td><a href='/news/compress-and-eliminate-solver-for-sparse-matrices/' >Compress-and-eliminate solver for sparse&nbsp;matrices</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
@@ -173,7 +228,6 @@ System <span class="amp">&amp;</span>  \gamma\mbox{-Shell} <span class="amp">&am
     <td><a href='/news/new-paper-in-simax/' >New paper in <span class="caps">SIMAX</span></a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 </tbody>

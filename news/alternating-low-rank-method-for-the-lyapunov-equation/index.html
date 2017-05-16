@@ -49,22 +49,82 @@
 applications. The adaptative selection of the shifts for the construction of the <span class="caps">RKS</span> is crucial.
 In this paper we propose a new algorithm for the selection of the shifts. It is based 
 on the connection between the solution of the Lyapunov&nbsp;equation</p>
-<p>$$
-   <span class="caps">AX</span> + <span class="caps">XA</span>^{\top} = y_0 y_0^{\top}
-$$
+<div class="math">$$
+   AX + XA^{\top} = y_0 y_0^{\top}
+$$</div>
+<p>
 and the solution of a linear <span class="caps">ODE</span>
-$$
+</p>
+<div class="math">$$
    \frac{dy}{dt} = Ay, \quad y(0) = y_0.
-$$
+$$</div>
+<p>
 We have compared the efficiency of the new method with <span class="caps">KPIK</span> and <span class="caps">RKSM</span> methods (implementation
 were taken from the <a href="http://www.dm.unibo.it/~simoncin/software.html">homepage of Valeria Simonchini</a>.
 The <span class="caps">ALR</span> method we propose was the most efficient one (and it is&nbsp;parameter-free).</p>
-<p>{% img center {filename}/images/diffusion.png 600&nbsp;%}</p>
+<p><img width="600" class="center" src="/images/diffusion.png"></p>
 <ul>
 <li><a href="http://arxiv.org/abs/1410.3335">Preprint on&nbsp;arXiv</a></li>
 <li><a href="https://github.com/dkolesnikov/alr">Code on&nbsp;Github</a></li>
 <li><a href="https://github.com/dkolesnikov/alr-paper">Code <span class="amp">&amp;</span> data from the paper on&nbsp;Github</a></li>
 </ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 </div>
 
 </div>
@@ -117,7 +177,6 @@ The <span class="caps">ALR</span> method we propose was the most efficient one (
     <td><a href='/news/a-tt-eigenvalue-solver-that-finally-works/' >A <span class="caps">TT</span>-eigenvalue solver that finally&nbsp;works</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
@@ -127,7 +186,6 @@ The <span class="caps">ALR</span> method we propose was the most efficient one (
     <td><a href='/news/exponential-machines-and-tensor-trains/' >Exponential machines and tensor&nbsp;trains</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
@@ -137,7 +195,6 @@ The <span class="caps">ALR</span> method we propose was the most efficient one (
     <td><a href='/news/convergence-analysis-of-a-projected-fixed-point-iteration/' >Convergence analysis of a projected fixed-point&nbsp;iteration</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
@@ -147,7 +204,6 @@ The <span class="caps">ALR</span> method we propose was the most efficient one (
     <td><a href='/news/compress-and-eliminate-solver-for-sparse-matrices/' >Compress-and-eliminate solver for sparse&nbsp;matrices</a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 <tr> 
@@ -157,7 +213,6 @@ The <span class="caps">ALR</span> method we propose was the most efficient one (
     <td><a href='/news/new-paper-in-simax/' >New paper in <span class="caps">SIMAX</span></a>
     </td>
     <td>
-        Papers 
     </td>
 </tr>   
 </tbody>
