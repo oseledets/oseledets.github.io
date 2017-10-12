@@ -1,122 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>Scientific Computing group</title><link>/</link><description></description><lastBuildDate>Tue, 02 Dec 2014 00:00:00 +0300</lastBuildDate><item><title>This is a new page</title><link>/news/this-is-a-new-page/</link><description>&lt;p&gt;The website is finally&amp;nbsp;online!&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Tue, 02 Dec 2014 00:00:00 +0300</pubDate><guid isPermaLink="false">tag:,2014-12-02:news/this-is-a-new-page/</guid></item><item><title>Happy new year!</title><link>/news/happy-new-year/</link><description>&lt;p&gt;2013 is now in its full rights, so it is time to go on with research.
+<rss version="2.0"><channel><title>Scientific Computing group - Admin</title><link>/</link><description></description><lastBuildDate>Tue, 02 Dec 2014 00:00:00 +0300</lastBuildDate><item><title>This is a new page</title><link>/news/this-is-a-new-page/</link><description>&lt;p&gt;The website is finally&amp;nbsp;online!&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Tue, 02 Dec 2014 00:00:00 +0300</pubDate><guid isPermaLink="false">tag:None,2014-12-02:/news/this-is-a-new-page/</guid></item><item><title>Happy new year!</title><link>/news/happy-new-year/</link><description>&lt;p&gt;2013 is now in its full rights, so it is time to go on with research.
 With &lt;a class="reference external" href="http://na.uni-tuebingen.de/~lubich/"&gt;Christian Lubich&lt;/a&gt; we have finished a &lt;a class="reference external" href="http://arxiv.org/abs/1301.1058"&gt;paper on a very efficient
 time-stepping scheme for the dynamical low-rank approximation&lt;/a&gt; &amp;#8212;-
 so-called &lt;span class="caps"&gt;KLS&lt;/span&gt;-scheme, which is remarkably simple but efficient to
-compute the dynamics on low-rank manifolds. It presents a full analysis
-for the two-dimensional case, with multidimensional case (&lt;span class="caps"&gt;TT&lt;/span&gt;-format) in&amp;nbsp;progress.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
-&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;zeros&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 09 Jan 2013 00:21:00 +0400</pubDate><guid isPermaLink="false">tag:,2013-01-09:news/happy-new-year/</guid><category>paper</category></item><item><title>One more paper</title><link>/news/one-more-paper/</link><description>&lt;p&gt;One more old paper on &lt;a class="reference external" href="http://dx.doi.org/10.1007/s00365-012-9175-x"&gt;explicit representations of simple functions in
+compute the dynamics on low-rank …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 09 Jan 2013 00:21:00 +0400</pubDate><guid isPermaLink="false">tag:None,2013-01-09:/news/happy-new-year/</guid><category>paper</category></item><item><title>One more paper</title><link>/news/one-more-paper/</link><description>&lt;p&gt;One more old paper on &lt;a class="reference external" href="http://dx.doi.org/10.1007/s00365-012-9175-x"&gt;explicit representations of simple functions in
 tensor formats&lt;/a&gt; is published in the Constructive&amp;nbsp;Approximation!&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sat, 22 Dec 2012 22:52:00 +0400</pubDate><guid isPermaLink="false">tag:,2012-12-22:news/one-more-paper/</guid><category>paper</category></item><item><title>Solving parabolic systems (with application to Fokker-Planck)</title><link>/news/solving-parabolic-systems-with-application-to-fokker-planck/</link><description>&lt;p&gt;Our paper on the new time-stepping scheme based on the &lt;span class="caps"&gt;QTT&lt;/span&gt;-format &lt;a class="reference external" href="http://dx.doi.org/10.1137/120864210"&gt;has
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sat, 22 Dec 2012 22:52:00 +0400</pubDate><guid isPermaLink="false">tag:None,2012-12-22:/news/one-more-paper/</guid><category>paper</category></item><item><title>Solving parabolic systems (with application to Fokker-Planck)</title><link>/news/solving-parabolic-systems-with-application-to-fokker-planck/</link><description>&lt;p&gt;Our paper on the new time-stepping scheme based on the &lt;span class="caps"&gt;QTT&lt;/span&gt;-format &lt;a class="reference external" href="http://dx.doi.org/10.1137/120864210"&gt;has
 been published&lt;/a&gt; in &lt;span class="caps"&gt;SISC&lt;/span&gt;!&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 14 Dec 2012 09:57:00 +0400</pubDate><guid isPermaLink="false">tag:,2012-12-14:news/solving-parabolic-systems-with-application-to-fokker-planck/</guid><category>paper</category></item><item><title>News</title><link>/news/news/</link><description>&lt;p&gt;Four papers are in&amp;nbsp;progress : on&amp;nbsp;the block eigenvalue solver in&amp;nbsp;the
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 14 Dec 2012 09:57:00 +0400</pubDate><guid isPermaLink="false">tag:None,2012-12-14:/news/solving-parabolic-systems-with-application-to-fokker-planck/</guid><category>paper</category></item><item><title>News</title><link>/news/news/</link><description>&lt;p&gt;Four papers are in&amp;nbsp;progress : on&amp;nbsp;the block eigenvalue solver in&amp;nbsp;the
 &lt;span class="caps"&gt;TT&lt;/span&gt;-format, on&amp;nbsp;the dynamical low-rank approximation, on&amp;nbsp;the tensor
 structure of&amp;nbsp;the wavelet tensor train matrix and on&amp;nbsp;the fast solution
 of&amp;nbsp;the Stokes problem in&amp;nbsp;tensor format. Hope to finish them&amp;nbsp;soon.&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;Also, I&amp;nbsp;put some time to&amp;nbsp;get an&amp;nbsp;implementation of&amp;nbsp;the &lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox
-in&amp;nbsp;Python. &lt;a class="reference external" href="http://github.com/oseledets/ttpy"&gt;The preliminary version (ttpy 0.1) is&amp;nbsp;available on&amp;nbsp;the
-github.&lt;/a&gt; Please take a&amp;nbsp;look on&amp;nbsp;it, if&amp;nbsp;you are&amp;nbsp;interested.&lt;/p&gt;
-&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 14 Oct 2012 13:42:00 +0400</pubDate><guid isPermaLink="false">tag:,2012-10-14:news/news/</guid></item><item><title>Publications of our group</title><link>/news/publications-of-our-group/</link><description>&lt;p&gt;We have recently put the publications of our research group at the
+&lt;/p&gt;&lt;p&gt;Also, I&amp;nbsp;put some …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 14 Oct 2012 13:42:00 +0400</pubDate><guid isPermaLink="false">tag:None,2012-10-14:/news/news/</guid></item><item><title>Publications of our group</title><link>/news/publications-of-our-group/</link><description>&lt;p&gt;We have recently put the publications of our research group at the
 Institute of Numerical Mathematics &lt;span class="caps"&gt;RAS&lt;/span&gt; on the web. The list is not yet
 full, but is close. &lt;a class="reference external" href="http://pub.inm.ras.ru"&gt;Check&amp;nbsp;it!&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Tue, 17 Jul 2012 20:46:00 +0400</pubDate><guid isPermaLink="false">tag:,2012-07-17:news/publications-of-our-group/</guid></item><item><title>Fast adaptive interpolation of multidimensional arrays in TT-format</title><link>/news/fast-adaptive-interpolation-of-multidimensional-arrays-in-tt-format/</link><description>&lt;p&gt;&lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=29"&gt;This paper&lt;/a&gt; with Dmitry Savostyanov published in&amp;nbsp;the end of&amp;nbsp;2011
+&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Tue, 17 Jul 2012 20:46:00 +0400</pubDate><guid isPermaLink="false">tag:None,2012-07-17:/news/publications-of-our-group/</guid></item><item><title>Fast adaptive interpolation of multidimensional arrays in TT-format</title><link>/news/fast-adaptive-interpolation-of-multidimensional-arrays-in-tt-format/</link><description>&lt;p&gt;&lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=29"&gt;This paper&lt;/a&gt; with Dmitry Savostyanov published in&amp;nbsp;the end of&amp;nbsp;2011
 in&amp;nbsp;the Proceedings of&amp;nbsp;7th International Workshop on&amp;nbsp;Multidimensional
 Systems (nDS), doi: &lt;a class="reference external" href="http://dx.doi.org/10.1109/nDS.2011.6076873"&gt;10.1109/nDS.2011.6076873&lt;/a&gt;&amp;nbsp;is about fast adaptive
 methods for the approximation of&amp;nbsp;high-dimensional arrays by&amp;nbsp;cross-type
 methods (such methods are quite popular for&amp;nbsp;matrices).&lt;/p&gt;
-&lt;div&gt;&lt;p&gt;The method of&amp;nbsp;&lt;span class="caps"&gt;TT&lt;/span&gt;-ranks adaptation is&amp;nbsp;based on&amp;nbsp;the &lt;span class="caps"&gt;DMRG&lt;/span&gt;-scheme, which
-is&amp;nbsp;a&amp;nbsp;“universal tool” for &lt;span class="caps"&gt;TT&lt;/span&gt;-methods. A&amp;nbsp;prototype implementation (quite
-messy, but working) is&amp;nbsp;available in&amp;nbsp;the &lt;a class="reference external" href="https://github.com/oseledets/TT-Toolbox/blob/master/cross/dmrg_cross.m"&gt;Github repository of&amp;nbsp;the
-&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox&lt;/a&gt;. To&amp;nbsp;make it&amp;nbsp;work, you should install the &lt;a class="reference external" href="http://github.com/oseledets/TT-Toolbox"&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox&lt;/a&gt;&amp;nbsp;itself.&lt;/p&gt;
-&lt;/div&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 15 Jun 2012 12:59:00 +0400</pubDate><guid isPermaLink="false">tag:,2012-06-15:news/fast-adaptive-interpolation-of-multidimensional-arrays-in-tt-format/</guid></item><item><title>Dynamical TT-approximation</title><link>/news/dynamical-tt-approximation/</link><description>&lt;div&gt;&lt;/p&gt;&lt;p&gt;Dynamical low-rank approximation is&amp;nbsp;a&amp;nbsp;rather new and important topic,
+&lt;div&gt;&lt;p&gt;The …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 15 Jun 2012 12:59:00 +0400</pubDate><guid isPermaLink="false">tag:None,2012-06-15:/news/fast-adaptive-interpolation-of-multidimensional-arrays-in-tt-format/</guid></item><item><title>Dynamical TT-approximation</title><link>/news/dynamical-tt-approximation/</link><description>&lt;div&gt;&lt;/p&gt;&lt;p&gt;Dynamical low-rank approximation is&amp;nbsp;a&amp;nbsp;rather new and important topic,
 which was studied by&amp;nbsp;Lubich and Koch for low-rank matrices and low-rank
 (in&amp;nbsp;the sense of&amp;nbsp;Tucker format) tensor decomposition. Such kind
 of&amp;nbsp;techniques were well known in&amp;nbsp;physics in&amp;nbsp;chemistry, going back
-to&amp;nbsp;Dirac-Frenkel principle, and &lt;span class="caps"&gt;MCTDH&lt;/span&gt; method for the computation
-of&amp;nbsp;quantum molecular vibrations. It&amp;nbsp;was interesting to&amp;nbsp;extend this
-approach to&amp;nbsp;the &lt;span class="caps"&gt;TT&lt;/span&gt;-format.&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;&lt;/div&gt;&lt;/p&gt;&lt;p&gt;We&amp;nbsp;did it&amp;nbsp;in&amp;nbsp;our recent paper&lt;a class="reference external" href="http://www.mis.mpg.de/preprints/2012/preprint2012_24.pdf"&gt;**Efficient time-stepping scheme for
-dynamics on&amp;nbsp;&lt;span class="caps"&gt;TT&lt;/span&gt;-manifolds**&lt;/a&gt;, which is&amp;nbsp;published as&amp;nbsp;a&amp;nbsp;preprint in&amp;nbsp;&lt;span class="caps"&gt;MIS&lt;/span&gt;
-&lt;span class="caps"&gt;MPI&lt;/span&gt;&amp;nbsp;Leipzig. In&amp;nbsp;fact, we&amp;nbsp;managed to&amp;nbsp;provide an&amp;nbsp;efficient numerical
-scheme for the computation of&amp;nbsp;the &lt;span class="caps"&gt;TT&lt;/span&gt;-dynamics. The &lt;span class="caps"&gt;MATLAB&lt;/span&gt; implementation
-will be&amp;nbsp;soon included in&amp;nbsp;the development &lt;a class="reference external" href="http://github.com/oseledets/TT-Toolbox"&gt;github repository of&amp;nbsp;the
-&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox&lt;/a&gt;.&lt;/p&gt;
-&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 25 Apr 2012 23:17:00 +0400</pubDate><guid isPermaLink="false">tag:,2012-04-25:news/dynamical-tt-approximation/</guid></item><item><title>TT-Toolbox 2.2.</title><link>/news/tt-toolbox-22/</link><description>&lt;p&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox (&lt;span class="caps"&gt;TT&lt;/span&gt;=Tensor Train) Version&amp;nbsp;2.2&lt;/p&gt;
+to&amp;nbsp;Dirac-Frenkel principle, and &lt;span class="caps"&gt;MCTDH&lt;/span&gt; method for …&lt;/p&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 25 Apr 2012 23:17:00 +0400</pubDate><guid isPermaLink="false">tag:None,2012-04-25:/news/dynamical-tt-approximation/</guid></item><item><title>TT-Toolbox 2.2.</title><link>/news/tt-toolbox-22/</link><description>&lt;p&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox (&lt;span class="caps"&gt;TT&lt;/span&gt;=Tensor Train) Version&amp;nbsp;2.2&lt;/p&gt;
 &lt;p&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;(Tensor Train) format is an efficient way for&amp;nbsp;low-parametric&lt;/p&gt;
 &lt;p&gt;representation of high-dimensional tensors. The &lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox&lt;/p&gt;
 &lt;p&gt;is a &lt;span class="caps"&gt;MATLAB&lt;/span&gt; implementation of basic operations&amp;nbsp;with&lt;/p&gt;
 &lt;p&gt;tensors in &lt;span class="caps"&gt;TT&lt;/span&gt;-format. It&amp;nbsp;includes:&lt;/p&gt;
 &lt;p&gt;* tt_tensor and tt_matrix classes for storing vectors and&amp;nbsp;operators&lt;/p&gt;
-&lt;p&gt;* Basic linear algebra subroutines (addition, matrix-by-vector&amp;nbsp;product,&lt;/p&gt;
-&lt;p&gt;elementwise multiplication and many others) using standard &lt;span class="caps"&gt;MATLAB&lt;/span&gt;&amp;nbsp;syntax,&lt;/p&gt;
-&lt;p&gt;linear complexity in the dimension, reshape&amp;nbsp;function&lt;/p&gt;
-&lt;p&gt;* Fast rounding procedure with a prescribed&amp;nbsp;accuracy&lt;/p&gt;
-&lt;p&gt;* Advanced approximation and solution&amp;nbsp;techniques:&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;* Approximate solution of linear systems and eigenvalue&amp;nbsp;problems&lt;/p&gt;
-&lt;p&gt;* Cross methods to approximate &amp;#8220;black-box&amp;#8221;&amp;nbsp;tensors&lt;/p&gt;
-&lt;p&gt;* Wavelet tensor train&amp;nbsp;decomposition&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;* Construction of basic operators and functions (Laplace operator,
-function of a &lt;span class="caps"&gt;TT&lt;/span&gt;-tensor)&lt;/p&gt;
-&lt;p&gt;* Computation of maximal and minimal elements of a&amp;nbsp;tensor&lt;/p&gt;
-&lt;p&gt;* and several&amp;nbsp;others&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;New in Version&amp;nbsp;2.2&lt;/p&gt;
-&lt;p&gt;* Better&amp;nbsp;documentation&lt;/p&gt;
-&lt;p&gt;* Mixed &lt;span class="caps"&gt;QTT&lt;/span&gt;-Tucker format (qtt_tucker&amp;nbsp;class)&lt;/p&gt;
-&lt;p&gt;* reshape function for a &lt;span class="caps"&gt;TT&lt;/span&gt;-tensor/&lt;span class="caps"&gt;TT&lt;/span&gt;-matrix&lt;/p&gt;
-&lt;p&gt;* dmrg_cross method for black-box tensor&amp;nbsp;approximation&lt;/p&gt;
-&lt;p&gt;* Convolution in &lt;span class="caps"&gt;QTT&lt;/span&gt;-format&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;[drain file 9 url&amp;nbsp;You can get it here: &lt;strong&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox 2.2.&amp;nbsp;]&lt;/strong&gt;&lt;/p&gt;
-&lt;hr class="docutils" /&gt;
-&lt;p&gt;If you are interested in getting the current &amp;#8220;development&amp;#8221; version of
-the Toolbox, take a look at the github repository
-&lt;a class="reference external" href="http://github.com/oseledets/TT-Toolbox"&gt;http://github.com/oseledets/&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox/&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 08 Feb 2012 22:07:00 +0400</pubDate><guid isPermaLink="false">tag:,2012-02-08:news/tt-toolbox-22/</guid></item><item><title>Google My citations</title><link>/news/google-my-citations/</link><description>&lt;p&gt;Google mycitations service looks great. &lt;a class="reference external" href="http://scholar.google.com/citations?user=5kMqBQEAAAAJ&amp;amp;hl=en"&gt;Here is&amp;nbsp;mine&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 04 Dec 2011 21:10:00 +0400</pubDate><guid isPermaLink="false">tag:,2011-12-04:news/google-my-citations/</guid></item><item><title>Twitter</title><link>/news/twitter/</link><description>&lt;p&gt;I decided to by on a twitter also (now posts only in Russian, but who
+&lt;p&gt;* Basic linear …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 08 Feb 2012 22:07:00 +0400</pubDate><guid isPermaLink="false">tag:None,2012-02-08:/news/tt-toolbox-22/</guid></item><item><title>Google My citations</title><link>/news/google-my-citations/</link><description>&lt;p&gt;Google mycitations service looks great. &lt;a class="reference external" href="http://scholar.google.com/citations?user=5kMqBQEAAAAJ&amp;amp;hl=en"&gt;Here is&amp;nbsp;mine&lt;/a&gt;&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 04 Dec 2011 21:10:00 +0400</pubDate><guid isPermaLink="false">tag:None,2011-12-04:/news/google-my-citations/</guid></item><item><title>Twitter</title><link>/news/twitter/</link><description>&lt;p&gt;I decided to by on a twitter also (now posts only in Russian, but who
 knows :)&amp;nbsp;)&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://twitter.com/oseledetsivan"&gt;oseledetsivan&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sat, 26 Nov 2011 16:43:00 +0400</pubDate><guid isPermaLink="false">tag:,2011-11-26:news/twitter/</guid></item><item><title>Tensor-Train decomposition paper finally published!</title><link>/news/tensor-train-decomposition-paper-finally-published/</link><description>&lt;p&gt;Finally, after more than 2&amp;nbsp;years of&amp;nbsp;reviewing process, the basic paper
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sat, 26 Nov 2011 16:43:00 +0400</pubDate><guid isPermaLink="false">tag:None,2011-11-26:/news/twitter/</guid></item><item><title>Tensor-Train decomposition paper finally published!</title><link>/news/tensor-train-decomposition-paper-finally-published/</link><description>&lt;p&gt;Finally, after more than 2&amp;nbsp;years of&amp;nbsp;reviewing process, the basic paper
 on&amp;nbsp;the &lt;span class="caps"&gt;TT&lt;/span&gt;-format is&amp;nbsp;published in&amp;nbsp;&lt;span class="caps"&gt;SISC&lt;/span&gt;!&lt;/p&gt;
 &lt;p&gt;You can get the journal version &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=28"&gt;here&lt;/a&gt; or&amp;nbsp;directly at&amp;nbsp;the &lt;a class="reference external" href="http://dx.doi.org/10.1137/090752286"&gt;&lt;span class="caps"&gt;SIAM&lt;/span&gt;&amp;nbsp;website&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The first text was based on&amp;nbsp;the paper “Compact matrix form of&amp;nbsp;the
-d-dimensional tensor decomposition”. However, it&amp;nbsp;has improved
-(I&amp;nbsp;believe) a&amp;nbsp;lot, and can be&amp;nbsp;considered as&amp;nbsp;as&amp;nbsp;separate&amp;nbsp;paper.&lt;/p&gt;
-&lt;p&gt;Also, this paper is&amp;nbsp;the first one, where my&amp;nbsp;1-year old daugther Nastya
-has written a&amp;nbsp;small part: look at&amp;nbsp;the Algorithm&amp;nbsp;2, step 2&amp;nbsp;at the end.
-These slashes were typed by&amp;nbsp;her, but&amp;nbsp;I only noticed it&amp;nbsp;after publishing&amp;nbsp;:)&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Mon, 26 Sep 2011 11:33:00 +0400</pubDate><guid isPermaLink="false">tag:,2011-09-26:news/tensor-train-decomposition-paper-finally-published/</guid></item><item><title>Solution of linear systems in the TT-format</title><link>/news/solution-of-linear-systems-in-the-tt-format/</link><description>&lt;p&gt;The new paper, &lt;span class="caps"&gt;S.V.&lt;/span&gt; Dolgov, &lt;span class="caps"&gt;I.V.&lt;/span&gt; Oseledets, &lt;a class="reference external" href="http://www.mis.mpg.de/preprints/2011/preprint2011_19.pdf"&gt;Solution of&amp;nbsp;linear systems
+d-dimensional tensor decomposition”. However …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Mon, 26 Sep 2011 11:33:00 +0400</pubDate><guid isPermaLink="false">tag:None,2011-09-26:/news/tensor-train-decomposition-paper-finally-published/</guid></item><item><title>Solution of linear systems in the TT-format</title><link>/news/solution-of-linear-systems-in-the-tt-format/</link><description>&lt;p&gt;The new paper, &lt;span class="caps"&gt;S.V.&lt;/span&gt; Dolgov, &lt;span class="caps"&gt;I.V.&lt;/span&gt; Oseledets, &lt;a class="reference external" href="http://www.mis.mpg.de/preprints/2011/preprint2011_19.pdf"&gt;Solution of&amp;nbsp;linear systems
 and matrix inversion in&amp;nbsp;the &lt;span class="caps"&gt;TT&lt;/span&gt;-format&lt;/a&gt; describes a&amp;nbsp;&lt;span class="caps"&gt;DMRG&lt;/span&gt;-type method for
 the solution of&amp;nbsp;linear systems with both the matrix and the tensor
-in&amp;nbsp;the &lt;span class="caps"&gt;TT&lt;/span&gt;-format. The method is&amp;nbsp;able to&amp;nbsp;solve certain structured linear
-systems of&amp;nbsp;order 2^d, where d&amp;nbsp;can be&amp;nbsp;of&amp;nbsp;order several hundreds, and
-&lt;span class="caps"&gt;TT&lt;/span&gt;-ranks can be&amp;nbsp;of&amp;nbsp;order tensor or&amp;nbsp;hundreds. The solver is&amp;nbsp;available
-as&amp;nbsp;a&amp;nbsp;part of&amp;nbsp;the &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/?page_id=24"&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox 2.1&lt;/a&gt;. Moreover, some test data of&amp;nbsp;the
-article can be&amp;nbsp;downloaded (the new Toolbox is&amp;nbsp;required to&amp;nbsp;be&amp;nbsp;installed).
-You can download it&amp;nbsp;from the page &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/?page_id=89"&gt;Benchmarks and data&lt;/a&gt; or&amp;nbsp;[drain file
-8&amp;nbsp;url directly download test data as&amp;nbsp;gzipped tar archive] This archive
-contains .mat files with A,x,rhs, where&amp;nbsp;A is&amp;nbsp;a&amp;nbsp;&lt;span class="caps"&gt;TT&lt;/span&gt;-matrix, rhs
-is&amp;nbsp;a&amp;nbsp;&lt;span class="caps"&gt;TT&lt;/span&gt;-vector (&lt;span class="caps"&gt;TT&lt;/span&gt;-tensor), x&amp;nbsp;is&amp;nbsp;an&amp;nbsp;approximate solution of&amp;nbsp;A*x = rhs.
-You can check this directly by&amp;nbsp;computing in&amp;nbsp;&lt;span class="caps"&gt;MATLAB&lt;/span&gt; norm(A*x&amp;nbsp;—
-rhs)/norm(rhs) Be&amp;nbsp;aware, that computing full(A) is&amp;nbsp;prohibitive for all
-examples, but full(x) or&amp;nbsp;full(rhs) sometimes is&amp;nbsp;not! I&amp;nbsp;plan to&amp;nbsp;add more
-benchmarking data to&amp;nbsp;this page, with more &lt;span class="caps"&gt;TT&lt;/span&gt;-matrices and &lt;span class="caps"&gt;TT&lt;/span&gt;-vectors.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 05 May 2011 22:13:00 +0400</pubDate><guid isPermaLink="false">tag:,2011-05-05:news/solution-of-linear-systems-in-the-tt-format/</guid></item><item><title>TT-Toolbox 2.1</title><link>/news/tt-toolbox-21/</link><description>&lt;p&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox 2.1 is released. It contains several bug fixes. My great
+in&amp;nbsp;the &lt;span class="caps"&gt;TT&lt;/span&gt;-format. The method is&amp;nbsp;able to&amp;nbsp;solve certain structured …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 05 May 2011 22:13:00 +0400</pubDate><guid isPermaLink="false">tag:None,2011-05-05:/news/solution-of-linear-systems-in-the-tt-format/</guid></item><item><title>TT-Toolbox 2.1</title><link>/news/tt-toolbox-21/</link><description>&lt;p&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox 2.1 is released. It contains several bug fixes. My great
 thanks to Sergey Dolgov for writing many important routines and to
 Vladimir Kazeev for providing his code for the construction of the
 &lt;span class="caps"&gt;QTT&lt;/span&gt;-representation of discrete Laplace operator (it can be done for
-extremely high dimensions in a&amp;nbsp;second!).&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox 2.1 can be downloaded from [drain file 6 url here] or from
-&lt;a class="reference external" href="http://spring.inm.ras.ru/osel/?page_id=24"&gt;the&amp;nbsp;page&lt;/a&gt;&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;The [drain file 7 url short introduction] can be also&amp;nbsp;downloaded.&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;All comments and suggestions are welcome. In the next release we plan to
-add the conversion procedures from the T. Kolda/B. Bader Tensor Toolbox
-(conversion from ktensor and sptensor classes), and also to provide more
-benchmarking&amp;nbsp;examples.&lt;/p&gt;
-&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 04 May 2011 18:18:00 +0400</pubDate><guid isPermaLink="false">tag:,2011-05-04:news/tt-toolbox-21/</guid></item><item><title>TT-Toolbox 2.0</title><link>/news/tt-toolbox-20/</link><description>&lt;p&gt;New version of &lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox is&amp;nbsp;released.&lt;/p&gt;
+extremely high dimensions in …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 04 May 2011 18:18:00 +0400</pubDate><guid isPermaLink="false">tag:None,2011-05-04:/news/tt-toolbox-21/</guid></item><item><title>TT-Toolbox 2.0</title><link>/news/tt-toolbox-20/</link><description>&lt;p&gt;New version of &lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox is&amp;nbsp;released.&lt;/p&gt;
 &lt;p&gt;&lt;span class="caps"&gt;TT&lt;/span&gt; Toolbox version 2.0 introduces several major innovations compared to
 version&amp;nbsp;1.0.&lt;/p&gt;
 &lt;ul&gt;
@@ -125,201 +54,73 @@ and &lt;span class="caps"&gt;TT&lt;/span&gt;-matrices.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Object-oriented approach allowed to overload many standard &lt;span class="caps"&gt;MATLAB&lt;/span&gt;
 functions, including addition,&amp;nbsp;subtraction,&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;&lt;p&gt;multiplication by number, scalar product, norm, Kronecker products,
-matrix-by-vector product&amp;nbsp;etc&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Complex arithmetics is&amp;nbsp;supported&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Several subroutines to generate basic &lt;span class="caps"&gt;TT&lt;/span&gt;-tensors and &lt;span class="caps"&gt;TT&lt;/span&gt;-matrices:
-matrices of all ones, identity&amp;nbsp;matrix,&lt;/p&gt;
-&lt;/p&gt;&lt;p&gt;&lt;p&gt;random &lt;span class="caps"&gt;TT&lt;/span&gt;-tensors with fixed core&amp;nbsp;sizes&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Advances operations, like computation of F(&lt;span class="caps"&gt;TT&lt;/span&gt;) using cross method,
-matrix-by-vector product using Krylov methods, dmrg solver for linear&amp;nbsp;systems&amp;#8230;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;&lt;p&gt;&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox 2.0 can be &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/?page_id=24"&gt;downloaded from this page&lt;/a&gt;, or [drain file 4 url&amp;nbsp;directly].&lt;/p&gt;
-&lt;p&gt;&lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=27"&gt;Brief introduction to functionality and&amp;nbsp;changes&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sat, 05 Mar 2011 14:34:00 +0300</pubDate><guid isPermaLink="false">tag:,2011-03-05:news/tt-toolbox-20/</guid></item><item><title>DMRG+QTT</title><link>/news/dmrgqtt/</link><description>&lt;p&gt;&lt;span class="caps"&gt;DMRG&lt;/span&gt; (Density Matrix Renormalization Group) is a very efficient
+&lt;/p&gt;&lt;p&gt;&lt;p&gt;multiplication by number, scalar …&lt;/p&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sat, 05 Mar 2011 14:34:00 +0300</pubDate><guid isPermaLink="false">tag:None,2011-03-05:/news/tt-toolbox-20/</guid></item><item><title>DMRG+QTT</title><link>/news/dmrgqtt/</link><description>&lt;p&gt;&lt;span class="caps"&gt;DMRG&lt;/span&gt; (Density Matrix Renormalization Group) is a very efficient
 algorithm for computation of low-lying eigenstates of quantum spin
 systems. &lt;span class="caps"&gt;QTT&lt;/span&gt; (Quantics Tensor Train) consists in tensorization of
 one-dimensional objects (i.e. vectors of values of function on a grid
-with 2^d points) into a d-dimensional tensor, and application of Tensor
-Train (&lt;span class="caps"&gt;TT&lt;/span&gt;) format to such tensor. What do they have in common? Check our
-new paper, &lt;a class="reference external" href="http://www.mis.mpg.de/preprints/2010/preprint2010_69.pdf"&gt;&lt;span class="caps"&gt;DMRG&lt;/span&gt;+&lt;span class="caps"&gt;QTT&lt;/span&gt; approach to high-dimensional quantum molecular&amp;nbsp;dynamics&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 19 Nov 2010 03:13:00 +0300</pubDate><guid isPermaLink="false">tag:,2010-11-19:news/dmrgqtt/</guid></item><item><title>Tensor Train in a nutshell</title><link>/news/tensor-train-in-a-nutshell/</link><description>&lt;p&gt;I have written a &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=26"&gt;one-page article that describes vital operations in
+with 2^d points) into a d-dimensional tensor, and application of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 19 Nov 2010 03:13:00 +0300</pubDate><guid isPermaLink="false">tag:None,2010-11-19:/news/dmrgqtt/</guid></item><item><title>Tensor Train in a nutshell</title><link>/news/tensor-train-in-a-nutshell/</link><description>&lt;p&gt;I have written a &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=26"&gt;one-page article that describes vital operations in
 &lt;span class="caps"&gt;TT&lt;/span&gt;-format&lt;/a&gt;. Hope you will find it convincing, that &lt;span class="caps"&gt;TT&lt;/span&gt;-format is indeed
 a very elegant representation for&amp;nbsp;tensors.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Tue, 02 Nov 2010 21:12:00 +0300</pubDate><guid isPermaLink="false">tag:,2010-11-02:news/tensor-train-in-a-nutshell/</guid></item><item><title>Relation of tensors, quantics TT and wavelet tensor trains</title><link>/news/relation-of-tensors-quantics-tt-and-wavelet-tensor-trains/</link><description>&lt;p&gt;In our paper &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=25"&gt;Algebraic wavelet transform via quantics tensor train
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Tue, 02 Nov 2010 21:12:00 +0300</pubDate><guid isPermaLink="false">tag:None,2010-11-02:/news/tensor-train-in-a-nutshell/</guid></item><item><title>Relation of tensors, quantics TT and wavelet tensor trains</title><link>/news/relation-of-tensors-quantics-tt-and-wavelet-tensor-trains/</link><description>&lt;p&gt;In our paper &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=25"&gt;Algebraic wavelet transform via quantics tensor train
 decomposition&lt;/a&gt; we show, how quantics tensor train approach, which
 consists in tensorization of vectors and matrices, can be interpreted as
 &lt;em&gt;algebraic wavelet transform&lt;/em&gt;. Advantages are especially clear for two
 dimensional functions. Besides new results, this approach, called &lt;span class="caps"&gt;WTT&lt;/span&gt;
-(wavelet tensor trains) describes several open and interesting&amp;nbsp;problems&lt;/p&gt;
-&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 03 Oct 2010 08:36:00 +0400</pubDate><guid isPermaLink="false">tag:,2010-10-03:news/relation-of-tensors-quantics-tt-and-wavelet-tensor-trains/</guid></item><item><title>Preprint 2010-04: Explicit tensor-train representation of certain functions</title><link>/news/preprint-2010-04-explicit-tensor-train-representation-of-certain-functions/</link><description>&lt;p&gt;The aim of &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=24"&gt;Preprint 2010-04&lt;/a&gt; is to construct explicit tensor-train
+(wavelet tensor …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 03 Oct 2010 08:36:00 +0400</pubDate><guid isPermaLink="false">tag:None,2010-10-03:/news/relation-of-tensors-quantics-tt-and-wavelet-tensor-trains/</guid></item><item><title>Preprint 2010-04: Explicit tensor-train representation of certain functions</title><link>/news/preprint-2010-04-explicit-tensor-train-representation-of-certain-functions/</link><description>&lt;p&gt;The aim of &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=24"&gt;Preprint 2010-04&lt;/a&gt; is to construct explicit tensor-train
 representations for certain function-related tensors and vectors, which
 are constructed on the basis of introduced &lt;em&gt;functional tensor train
 decomposition.&lt;/em&gt;These results are then used to construct explicit
 quantics tensor train decomposition for polynomial and sine&amp;nbsp;functions.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sat, 28 Aug 2010 09:35:00 +0400</pubDate><guid isPermaLink="false">tag:,2010-08-28:news/preprint-2010-04-explicit-tensor-train-representation-of-certain-functions/</guid></item><item><title>Krylov methods for tensors</title><link>/news/krylov-methods-for-tensors/</link><description>&lt;p&gt;Using Wedderburn rank-reduction formulae (for reference what is that,
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sat, 28 Aug 2010 09:35:00 +0400</pubDate><guid isPermaLink="false">tag:None,2010-08-28:/news/preprint-2010-04-explicit-tensor-train-representation-of-certain-functions/</guid></item><item><title>Krylov methods for tensors</title><link>/news/krylov-methods-for-tensors/</link><description>&lt;p&gt;Using Wedderburn rank-reduction formulae (for reference what is that,
 please read a &lt;a class="reference external" href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.66.8644&amp;amp;rep=rep1&amp;amp;type=pdf"&gt;nice paper by Gene Golub and Moody Chu&lt;/a&gt;) , we managed to
 create several robust Krylov methods for the approximation of
 three-dimensional tensors. It is a preprint &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=23"&gt;2010-1&lt;/a&gt; of Institute of
-Numerical Mathematics. A new general interpretation is given for
-rank-revealing methods, which use only matrix-by-vector and
-tensor-by-vector-by-vector products. This seems to be also a new (and
-simple) derivation of the Lanczos&amp;nbsp;algorithm.&lt;/p&gt;
-&lt;p&gt;These methods are very crucial for sparse structured tensors (as
-pioneered by the work of Elden and Savas), but they become critical for
-the approximation of structured tensor operatiions, for example for the
-compression of matrix-by-vector product, where both matrix and vector
-are in the Tucker format. In the sequel that is under preparation, these
-methods will be extended to &lt;span class="caps"&gt;TT&lt;/span&gt; case, and included in future versions of
-&lt;span class="caps"&gt;TT&lt;/span&gt;-Toolbox. This will greatly speed up almost all approximate linear
-algebra in it (by a factor of 10 at&amp;nbsp;least).&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Mon, 12 Apr 2010 21:48:00 +0400</pubDate><guid isPermaLink="false">tag:,2010-04-12:news/krylov-methods-for-tensors/</guid></item><item><title>Tensor trees and tensor trains</title><link>/news/tensor-trees-and-tensor-trains/</link><description>&lt;p&gt;In a &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=22"&gt;new paper&lt;/a&gt;, we expose connections between tensor networks and
+Numerical Mathematics. A new general interpretation is given …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Mon, 12 Apr 2010 21:48:00 +0400</pubDate><guid isPermaLink="false">tag:None,2010-04-12:/news/krylov-methods-for-tensors/</guid></item><item><title>Tensor trees and tensor trains</title><link>/news/tensor-trees-and-tensor-trains/</link><description>&lt;p&gt;In a &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=22"&gt;new paper&lt;/a&gt;, we expose connections between tensor networks and
 recent recursive representations of high-dimensional tensors described
 by binary tensor trees and based on a sequence of skeleton (dyadic)
 decompositions for special unfolding matrices for a given
-tensor.Â&amp;nbsp;Â&amp;nbsp;Â&amp;nbsp;Â&amp;nbsp; As the main result, we prove that a tensor decomposition
-by any binary tensor tree with certain restrictions on the distribution
-of spatial and auxiliary indices reduces to one and same for a
-particular case of tree. Since the latter tree is of simple
-predetermined shape, it becomes not needed at all in the construction of
-numerical algorithms. The tree input is replaced with a permutation of
-spatial indices (modes). The corresponding decomposition is given by the
-so-called tensor trains and known as &lt;span class="caps"&gt;TT&lt;/span&gt;&amp;nbsp;decomposition.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 18 Sep 2009 19:32:00 +0400</pubDate><guid isPermaLink="false">tag:,2009-09-18:news/tensor-trees-and-tensor-trains/</guid></item><item><title>Black box cross approximation for multidimensional arrays</title><link>/news/black-box-cross-approximation-for-multidimensional-arrays/</link><description>&lt;p&gt;In our new paper, &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=21"&gt;&amp;#8220;&lt;span class="caps"&gt;TT&lt;/span&gt; cross approximation for multidimensional
+tensor.Â&amp;nbsp;Â&amp;nbsp;Â&amp;nbsp;Â&amp;nbsp; As the main result, we prove that …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 18 Sep 2009 19:32:00 +0400</pubDate><guid isPermaLink="false">tag:None,2009-09-18:/news/tensor-trees-and-tensor-trains/</guid></item><item><title>Black box cross approximation for multidimensional arrays</title><link>/news/black-box-cross-approximation-for-multidimensional-arrays/</link><description>&lt;p&gt;In our new paper, &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=21"&gt;&amp;#8220;&lt;span class="caps"&gt;TT&lt;/span&gt; cross approximation for multidimensional
 arrays&amp;#8221;&lt;/a&gt; a new formula is presented for the recovery of a
 high-dimensional array from a part of its entries, provided that the
 array possesses some low-rank structure, namely it has small compression
-ranks (for example, a tensor of low canonical rank satisfies this). The
-only previous work known to us is the work by Grasedyck, Espig and
-Hackbusch, which uses interpolation on &amp;#8220;fiber crosses&amp;#8221;. It is based on
-canonical decomposition, requires minimization methods and there is no
-guarantee that the method will work even in the exact. Our new
-representation solves this problem completely, and it is shown, in
-particular, that if the rank of the tensor is r, then it can be exactly
-recovered from O(dnr^2) of its entries. This is a natural generalization
-of the skeleton decomposition of matrices and it becomes possible due to
-the replacement of the canonical format by the &lt;span class="caps"&gt;TT&lt;/span&gt; format, which is
-related to a series of matrix decompositions. Â&amp;nbsp; It is also proven that
-the &lt;span class="caps"&gt;TT&lt;/span&gt; approximation obtained by a sequence of &lt;span class="caps"&gt;SVD&lt;/span&gt; decompositions can be
-worser only up to a factor of \sqrt(d-1)Â&amp;nbsp; then the optimal &lt;span class="caps"&gt;TT&lt;/span&gt;
-approximation in the Frobenious&amp;nbsp;norm.&lt;/p&gt;
-&lt;p&gt;The simple alternating maxvol algorithm is presented for the computation
-of the &lt;span class="caps"&gt;TT&lt;/span&gt;-cross decomposition of a black box tensors, which has
-complexity linear in the dimensions, and its effectiveness is
-illustratred on several examples inÂ&amp;nbsp; multidimensional integrations,
-with dimensions of order hundreds and even thousands. The algorithm is
-implemented as part of &lt;span class="caps"&gt;TT&lt;/span&gt; Toolbox and the code will be presented shortly&amp;nbsp;after.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 23 Jul 2009 14:15:00 +0400</pubDate><guid isPermaLink="false">tag:,2009-07-23:news/black-box-cross-approximation-for-multidimensional-arrays/</guid></item><item><title>TT toolbox</title><link>/news/tt-toolbox/</link><description>&lt;p&gt;A first version of &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/?page_id=24"&gt;&lt;span class="caps"&gt;TT&lt;/span&gt; toolbox&lt;/a&gt; for &lt;span class="caps"&gt;MATLAB&lt;/span&gt; is released. It seems to
+ranks (for example, a tensor of low canonical rank …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 23 Jul 2009 14:15:00 +0400</pubDate><guid isPermaLink="false">tag:None,2009-07-23:/news/black-box-cross-approximation-for-multidimensional-arrays/</guid></item><item><title>TT toolbox</title><link>/news/tt-toolbox/</link><description>&lt;p&gt;A first version of &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/?page_id=24"&gt;&lt;span class="caps"&gt;TT&lt;/span&gt; toolbox&lt;/a&gt; for &lt;span class="caps"&gt;MATLAB&lt;/span&gt; is released. It seems to
 works also under Octave &amp;#8212;- through not fully tested. Any comments,
 suggestions and bug reports are welcome at&amp;nbsp;ivan.oseledets(dog)gmail.com&lt;/p&gt;
 &lt;p&gt;All basic algorithms are implemented as a set of short &lt;span class="caps"&gt;MATLAB&lt;/span&gt; functions.
-You can try to design your own fast algorithm with these routines or
-test if there is indeed a hidden &lt;span class="caps"&gt;TT&lt;/span&gt; structure in your
-vector/matrix/tensor. Really high-dimensional black box &lt;span class="caps"&gt;TT&lt;/span&gt; approximation
-is underway and will be realized soon in the future versions of &lt;span class="caps"&gt;TT&lt;/span&gt;&amp;nbsp;toolbox.&lt;/p&gt;
-&lt;p&gt;The efficient Fortran (or C) versions of the &lt;span class="caps"&gt;TT&lt;/span&gt; toolbox are under
-development right&amp;nbsp;now.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 29 May 2009 18:36:00 +0400</pubDate><guid isPermaLink="false">tag:,2009-05-29:news/tt-toolbox/</guid></item><item><title>Excluded sums and quasiseparable matrices.</title><link>/news/excluded-sums-and-quasiseparable-matrices/</link><description>&lt;p&gt;The idea of Edelman et al. (published in 2005 in &lt;span class="caps"&gt;SIAM&lt;/span&gt; News) for fast
+You can try …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 29 May 2009 18:36:00 +0400</pubDate><guid isPermaLink="false">tag:None,2009-05-29:/news/tt-toolbox/</guid></item><item><title>Excluded sums and quasiseparable matrices.</title><link>/news/excluded-sums-and-quasiseparable-matrices/</link><description>&lt;p&gt;The idea of Edelman et al. (published in 2005 in &lt;span class="caps"&gt;SIAM&lt;/span&gt; News) for fast
 evaluation of excluded sums and their relation with the non-recursive
 multipole method was largely unnoticed. The authors promised to give a
 new implementation of the multipole method based on their (quite
-elegant) approach however up to now nothing is known. From my point of
-view the problem is that they didn&amp;#8217;t succeed with the efficient
-implementation of functional approximations. In our &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=19"&gt;new paper&lt;/a&gt; this
-idea is fully investigated in the one-dimensional case. It appears that
-it can be done in a simple manner by using successive low-rank skeleton
-approximation of a matrices in the lower triangular part and in the
-upper triangular part of the matrix and it can be shown that the
-obtained method works for an arbitrary quasiseparable matrix (i.e.,
-matrix where every submatrix strictly below or over the diagonal has low
-rank), and moreover, a new representation for the class of
-quasiseparable matrices is obtained. This is a first step in the project
-&amp;#8220;Matrix methods for the N-body&amp;nbsp;problems&amp;#8221;.&lt;/p&gt;
-&lt;p&gt;The future research will go in two directions. The first one concerns
-quasiseparable matrices and effective solvers and eigensolvers using the
-new representation and the second is the generalization to two or three&amp;nbsp;dimensions.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 03 May 2009 17:45:00 +0400</pubDate><guid isPermaLink="false">tag:,2009-05-03:news/excluded-sums-and-quasiseparable-matrices/</guid></item><item><title>Tensors inside of matrices give logarithmic complexity</title><link>/news/tensors-inside-of-matrices-give-logarithmic-complexity/</link><description>&lt;p&gt;The recently intoduced &lt;span class="caps"&gt;TT&lt;/span&gt;-format finds a surprising application for the
+elegant) approach however up to …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 03 May 2009 17:45:00 +0400</pubDate><guid isPermaLink="false">tag:None,2009-05-03:/news/excluded-sums-and-quasiseparable-matrices/</guid></item><item><title>Tensors inside of matrices give logarithmic complexity</title><link>/news/tensors-inside-of-matrices-give-logarithmic-complexity/</link><description>&lt;p&gt;The recently intoduced &lt;span class="caps"&gt;TT&lt;/span&gt;-format finds a surprising application for the
 compression of ordinary &amp;#8220;two&amp;#8221; or &amp;#8220;three&amp;#8221; dimensional matrices, related
 to the discretization of operators on tensor grids. For some examples
 the complexity is shown to be logarithmic in the matrix order. The new
-format (named &lt;span class="caps"&gt;TTM&lt;/span&gt; format) can be used to implement all basic operations
-efficiently. The Matlab codes will be posted here soon. The paper itself
-is &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=18"&gt;here&lt;/a&gt;&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 03 May 2009 17:37:00 +0400</pubDate><guid isPermaLink="false">tag:,2009-05-03:news/tensors-inside-of-matrices-give-logarithmic-complexity/</guid></item><item><title>New tensor decomposition</title><link>/news/new-tensor-decomposition/</link><description>&lt;p&gt;A new paper, &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=17"&gt;A compact matrix form of the d-dimensional tensor
+format (named &lt;span class="caps"&gt;TTM&lt;/span&gt; format) can be …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 03 May 2009 17:37:00 +0400</pubDate><guid isPermaLink="false">tag:None,2009-05-03:/news/tensors-inside-of-matrices-give-logarithmic-complexity/</guid></item><item><title>New tensor decomposition</title><link>/news/new-tensor-decomposition/</link><description>&lt;p&gt;A new paper, &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=17"&gt;A compact matrix form of the d-dimensional tensor
 decomposition&lt;/a&gt; is added. A new version of the &lt;span class="caps"&gt;TT&lt;/span&gt; (name is now not
 coming from &amp;#8220;Tree Tucker&amp;#8221;, but from &amp;#8220;Three dimensional Tensors&amp;#8221; which
 are the defining parameters of the format) format is presented, which is
-much simpler than the recursive &lt;span class="caps"&gt;TT&lt;/span&gt; format and the subspace format by
-Hackbusch and Kuhn (they do not present any numerical experiments). It
-presents a nice and clear way to implement basic operations, like
-matrix-by-vector product, multidimensional convolution, norms, and what
-is the most important, the recompression procedure is based entirely on
-the &lt;span class="caps"&gt;SVD&lt;/span&gt; and &lt;span class="caps"&gt;QR&lt;/span&gt; decompositions. Its implementation takes about 150 lines
-of Matlab code compared to thousand of lines for the recursive
-&lt;span class="caps"&gt;TT&lt;/span&gt;-format, andÂ&amp;nbsp; the results for the computation of the smallest
-eigenvalue of a 19-dimensional operator are&amp;nbsp;presented.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 15 Mar 2009 03:13:00 +0300</pubDate><guid isPermaLink="false">tag:,2009-03-15:news/new-tensor-decomposition/</guid></item><item><title>Breaking the curse of dimensionality</title><link>/news/breaking-the-curse-of-dimensionality/</link><description>&lt;p&gt;In our new publication, &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=16"&gt;&amp;#8220;Breaking the curse of dimensionality, or how
+much simpler than the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Sun, 15 Mar 2009 03:13:00 +0300</pubDate><guid isPermaLink="false">tag:None,2009-03-15:/news/new-tensor-decomposition/</guid></item><item><title>Breaking the curse of dimensionality</title><link>/news/breaking-the-curse-of-dimensionality/</link><description>&lt;p&gt;In our new publication, &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=16"&gt;&amp;#8220;Breaking the curse of dimensionality, or how
 to use &lt;span class="caps"&gt;SVD&lt;/span&gt; in many dimensions&amp;#8221;&lt;/a&gt; we present a simple recursive
 decomposition for multidimensional functions, operators, vectors and
 matrices. We prove that in the case when the canonical decomposition
-exists our new Tree-Tucker decomposition also exists with the same (and
-often fewer) number of parameters. However, unlike the canonical
-decomposition, the Tree-Tucker format is stable and robustly computable
-by exploiting the &lt;span class="caps"&gt;SVD&lt;/span&gt; decomposition (or any rank-revealing
-decomposition). We show how to perform a simple operation
-(multidimensional convolution) in such format and provide numerical
-experiments for the dimensions up to d=200 on a notebook in several&amp;nbsp;minutes.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 30 Jan 2009 20:29:00 +0300</pubDate><guid isPermaLink="false">tag:,2009-01-30:news/breaking-the-curse-of-dimensionality/</guid></item><item><title>How to find a good submatrix</title><link>/news/how-to-find-a-good-submatrix/</link><description>&lt;p&gt;Check out ourÂ&amp;nbsp; new paper, &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=15"&gt;&amp;#8220;How to find a good submatrix&amp;#8221;&lt;/a&gt; . It
+exists our new Tree-Tucker decomposition also exists with the same …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 30 Jan 2009 20:29:00 +0300</pubDate><guid isPermaLink="false">tag:None,2009-01-30:/news/breaking-the-curse-of-dimensionality/</guid></item><item><title>How to find a good submatrix</title><link>/news/how-to-find-a-good-submatrix/</link><description>&lt;p&gt;Check out ourÂ&amp;nbsp; new paper, &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=15"&gt;&amp;#8220;How to find a good submatrix&amp;#8221;&lt;/a&gt; . It
 contains the description of an algorithm to find the well-conditioned
 submatrix in a given matrix. This algorithm plays a crucial role in our
 low-rank approximation methods, both for matrices and tensors. [drain
-file 2 url Matlab code is&amp;nbsp;here].&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 17 Oct 2008 18:22:00 +0400</pubDate><guid isPermaLink="false">tag:,2008-10-17:news/how-to-find-a-good-submatrix/</guid></item><item><title>Working with tensor-structured matrices and vectors</title><link>/news/working-with-tensor-structured-matrices-and-vectors/</link><description>&lt;p&gt;A new publication on tensor-structured matrices, with a tentative title
+file 2 url Matlab code is …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Fri, 17 Oct 2008 18:22:00 +0400</pubDate><guid isPermaLink="false">tag:None,2008-10-17:/news/how-to-find-a-good-submatrix/</guid></item><item><title>Working with tensor-structured matrices and vectors</title><link>/news/working-with-tensor-structured-matrices-and-vectors/</link><description>&lt;p&gt;A new publication on tensor-structured matrices, with a tentative title
 &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=13"&gt;&amp;#8220;Linear algebra for tensor problems&amp;#8221;&lt;/a&gt; is added. It is submitted to the
 special issue of &lt;a class="reference external" href="http://www.springer.com/springerwiennewyork/mathematics/journal/607"&gt;Computing&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This paper is aboutÂ&amp;nbsp; structured iterations with matrices of low tensor
-rank in three dimensions. We show that in three dimensions we can use
-&lt;em&gt;Tucker decomposition&lt;/em&gt; instead of the canonical decomposition without
-any substantial increase in the computational cost. To achieve this goal
-we have to compute quite complex six-fold sum, but it is shown that they
-can be computed with calls to &lt;span class="caps"&gt;BLAS&lt;/span&gt;/&lt;span class="caps"&gt;LAPACK&lt;/span&gt;. Therefore Tucker format is
-highly recommended for 3-dimensional problems. With a current &lt;span class="caps"&gt;MATLAB&lt;/span&gt;
-code (will be posted here soon)Â&amp;nbsp; it is possible to handle dense
-matrices (i.e., approximate inversion) on a grid of size 256^3.Â&amp;nbsp; In a
-future research by using additional approximation techniques we will be
-able to increase this number to at least&amp;nbsp;1024^3.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Tue, 01 Jul 2008 00:08:00 +0400</pubDate><guid isPermaLink="false">tag:,2008-07-01:news/working-with-tensor-structured-matrices-and-vectors/</guid></item><item><title>One more paper on polynomials</title><link>/news/one-more-paper-on-polynomials/</link><description>&lt;p&gt;Added a paper &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=12"&gt;&amp;#8220;Improved n-term Karatsuba formulae in &lt;span class="caps"&gt;GF&lt;/span&gt;(2)&amp;#8221;&lt;/a&gt; that
+rank in three dimensions. We show that in three dimensions we can use …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Tue, 01 Jul 2008 00:08:00 +0400</pubDate><guid isPermaLink="false">tag:None,2008-07-01:/news/working-with-tensor-structured-matrices-and-vectors/</guid></item><item><title>One more paper on polynomials</title><link>/news/one-more-paper-on-polynomials/</link><description>&lt;p&gt;Added a paper &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=12"&gt;&amp;#8220;Improved n-term Karatsuba formulae in &lt;span class="caps"&gt;GF&lt;/span&gt;(2)&amp;#8221;&lt;/a&gt; that
 contains improved (and without proof &amp;#8212;- optimal!) formulae for
 multiplication of binary polynomials in &lt;span class="caps"&gt;GF&lt;/span&gt;(2). As noted in the end of
 this paper, the goal is not purely theoretic, but also practical &amp;#8212;-
-these optimal formulae will be used for the superfast implementation of
-the Coppersmith algorithm (as in the work by Thome), where the key step
-is the multiplication of binary&amp;nbsp;polynomials.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 18 Jun 2008 13:58:00 +0400</pubDate><guid isPermaLink="false">tag:,2008-06-18:news/one-more-paper-on-polynomials/</guid></item><item><title>Some news</title><link>/news/some-news/</link><description>&lt;p&gt;A new &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=10"&gt;publication&lt;/a&gt; has been added. To my knowledge, it is the first
+these optimal formulae will be used for …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Wed, 18 Jun 2008 13:58:00 +0400</pubDate><guid isPermaLink="false">tag:None,2008-06-18:/news/one-more-paper-on-polynomials/</guid></item><item><title>Some news</title><link>/news/some-news/</link><description>&lt;p&gt;A new &lt;a class="reference external" href="http://spring.inm.ras.ru/osel/wp-content/plugins/wp-publications-archive/openfile.php?action=open&amp;amp;file=10"&gt;publication&lt;/a&gt; has been added. To my knowledge, it is the first
 paper where nontrivial class of low-tensor rank matrices with inverses
 also of a low tensor rank is found. This class is also not very small
 and many useful matrices can be reduced to&amp;nbsp;it.&lt;/p&gt;
-&lt;p&gt;At present, I have several pieces of work to be done: to write down all
-results on the optimal multiplication of binary polynomials (generated
-code to multiply 128-degree with polynomials with coefficients in &lt;span class="caps"&gt;GF&lt;/span&gt;(2)
-optimally), some more &amp;#8220;old&amp;#8221; results need to be written down. What I&amp;#8217;m
-interested in really now, is the fast multipole method. After inspecting
-several papers by several people (Biros, Ying, Rokhlin and Martinsson,
-etc) I&amp;#8217;ve made some conclusions. First, multipole without multipole is
-really possible. Second, those authors do a good job, but they do not
-want to read the work of others, especially the works by Tyrtyshnikov,
-Goreinov and Zamarashkin, the group of Hackbusch. Such reading may
-prevent them from reinventing the wheel in some sense. Third, the best
-implementation of the fast multipole lies somewhere in between those
-several approaches. That is what is interesting to find out &amp;#8212;-
-near-to-optimal realization of the fast multipole algorithm. Maybe some
-tricks from the tensor approximation will be useful, especially in&amp;nbsp;3D&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Mon, 26 May 2008 02:04:00 +0400</pubDate><guid isPermaLink="false">tag:,2008-05-26:news/some-news/</guid></item><item><title>Contacts</title><link>/news/contacts/</link><description>&lt;p&gt;You can always contact&amp;nbsp;me&amp;nbsp;by&amp;nbsp;email:&lt;/p&gt;
+&lt;p&gt;At present, I …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Mon, 26 May 2008 02:04:00 +0400</pubDate><guid isPermaLink="false">tag:None,2008-05-26:/news/some-news/</guid></item><item><title>Contacts</title><link>/news/contacts/</link><description>&lt;p&gt;You can always contact&amp;nbsp;me&amp;nbsp;by&amp;nbsp;email:&lt;/p&gt;
 &lt;/p&gt;&lt;p&gt;ivan.oseledets &lt;span class="caps"&gt;DOG&lt;/span&gt;&amp;nbsp;gmail.com.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 03 Apr 2008 23:01:00 +0400</pubDate><guid isPermaLink="false">tag:,2008-04-03:news/contacts/</guid></item><item><title>Publications</title><link>/news/publications/</link><description></description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 03 Apr 2008 23:00:00 +0400</pubDate><guid isPermaLink="false">tag:,2008-04-03:news/publications/</guid></item><item><title>Started the creation</title><link>/news/started-the-creation/</link><description>&lt;p&gt;That is my personal webpage, and I started its creation in April, 2008.
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 03 Apr 2008 23:01:00 +0400</pubDate><guid isPermaLink="false">tag:None,2008-04-03:/news/contacts/</guid></item><item><title>Publications</title><link>/news/publications/</link><description></description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 03 Apr 2008 23:00:00 +0400</pubDate><guid isPermaLink="false">tag:None,2008-04-03:/news/publications/</guid></item><item><title>Started the creation</title><link>/news/started-the-creation/</link><description>&lt;p&gt;That is my personal webpage, and I started its creation in April, 2008.
 Hope it will be interesting to&amp;nbsp;somebody&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 03 Apr 2008 22:04:00 +0400</pubDate><guid isPermaLink="false">tag:,2008-04-03:news/started-the-creation/</guid></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Admin</dc:creator><pubDate>Thu, 03 Apr 2008 22:04:00 +0400</pubDate><guid isPermaLink="false">tag:None,2008-04-03:/news/started-the-creation/</guid></item></channel></rss>
