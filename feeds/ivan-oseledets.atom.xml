@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group</title><link href="/" rel="alternate"></link><link href="/feeds/ivan-oseledets.atom.xml" rel="self"></link><id>/</id><updated>2016-05-26T00:00:00+03:00</updated><entry><title>A TT-eigenvalue solver that finally works</title><link href="/news/a-tt-eigenvalue-solver-that-finally-works/" rel="alternate"></link><published>2016-05-26T00:00:00+03:00</published><updated>2016-05-26T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2016-05-26:news/a-tt-eigenvalue-solver-that-finally-works/</id><summary type="html">&lt;p&gt;In a &lt;a href="http://arxiv.org/abs/1605.08422"&gt;recent preprint&lt;/a&gt; by &lt;a href="../../people/rakhuba"&gt;Maxim Rakhuba&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt; we propose a new algorithm for calculation of vibrational spectra of molecules using tensor train decomposition. Under the assumption that eigenfunctions lie on a low-parametric manifold of low-rank tensors we introduce the concept of manifold preconditioning of well-known iterative methods (inverse iteration and locally optimal block conjugate gradient method). As an application, we accurately compute vibrational spectra (84 states) of acetonitrile molecule on a laptop in one hour using only 180 &lt;span class="caps"&gt;MB&lt;/span&gt; of memory to represent all computed&amp;nbsp;eigenfunctions.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scientific Computing group - Ivan Oseledets</title><link href="/" rel="alternate"></link><link href="/feeds/ivan-oseledets.atom.xml" rel="self"></link><id>/</id><updated>2016-05-26T00:00:00+03:00</updated><entry><title>A TT-eigenvalue solver that finally works</title><link href="/news/a-tt-eigenvalue-solver-that-finally-works/" rel="alternate"></link><published>2016-05-26T00:00:00+03:00</published><updated>2016-05-26T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2016-05-26:/news/a-tt-eigenvalue-solver-that-finally-works/</id><summary type="html">&lt;p&gt;In a &lt;a href="http://arxiv.org/abs/1605.08422"&gt;recent preprint&lt;/a&gt; by &lt;a href="../../people/rakhuba"&gt;Maxim Rakhuba&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt; we propose a new algorithm for calculation of vibrational spectra of molecules using tensor train decomposition. Under the assumption that eigenfunctions lie on a low-parametric manifold of low-rank tensors we introduce the concept of manifold preconditioning of well-known iterative methods …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In a &lt;a href="http://arxiv.org/abs/1605.08422"&gt;recent preprint&lt;/a&gt; by &lt;a href="../../people/rakhuba"&gt;Maxim Rakhuba&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt; we propose a new algorithm for calculation of vibrational spectra of molecules using tensor train decomposition. Under the assumption that eigenfunctions lie on a low-parametric manifold of low-rank tensors we introduce the concept of manifold preconditioning of well-known iterative methods (inverse iteration and locally optimal block conjugate gradient method). As an application, we accurately compute vibrational spectra (84 states) of acetonitrile molecule on a laptop in one hour using only 180 &lt;span class="caps"&gt;MB&lt;/span&gt; of memory to represent all computed&amp;nbsp;eigenfunctions.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1605.08422"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://bitbucket.org/rakhuba/ttvibr"&gt;Code on&amp;nbsp;Bitbucket&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Exponential machines and tensor trains</title><link href="/news/exponential-machines-and-tensor-trains/" rel="alternate"></link><published>2016-05-12T00:00:00+03:00</published><updated>2016-05-12T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2016-05-12:news/exponential-machines-and-tensor-trains/</id><summary type="html">&lt;p&gt;Modeling interactions between features improves the performance of machine learning solutions in many domains (e.g. recommender systems or sentiment analysis). In this paper, we introduce Exponential Machines (ExM), a predictor that models all interactions of every order. The key idea is to represent an exponentially large tensor of parameters in a factorized format called Tensor Train (&lt;span class="caps"&gt;TT&lt;/span&gt;). The Tensor Train format regularizes the model and lets you control the number of underlying parameters. To train the model, we develop a stochastic version of Riemannian optimization, which allows us to fit tensors with &lt;span class="math"&gt;\(2^{30}\)&lt;/span&gt; entries. 
+&lt;/ul&gt;</content><category term="paper"></category></entry><entry><title>Exponential machines and tensor trains</title><link href="/news/exponential-machines-and-tensor-trains/" rel="alternate"></link><published>2016-05-12T00:00:00+03:00</published><updated>2016-05-12T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2016-05-12:/news/exponential-machines-and-tensor-trains/</id><summary type="html">&lt;p&gt;Modeling interactions between features improves the performance of machine learning solutions in many domains (e.g. recommender systems or sentiment analysis). In this paper, we introduce Exponential Machines (ExM), a predictor that models all interactions of every order. The key idea is to represent an exponentially large tensor of parameters …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Modeling interactions between features improves the performance of machine learning solutions in many domains (e.g. recommender systems or sentiment analysis). In this paper, we introduce Exponential Machines (ExM), a predictor that models all interactions of every order. The key idea is to represent an exponentially large tensor of parameters in a factorized format called Tensor Train (&lt;span class="caps"&gt;TT&lt;/span&gt;). The Tensor Train format regularizes the model and lets you control the number of underlying parameters. To train the model, we develop a stochastic version of Riemannian optimization, which allows us to fit tensors with &lt;span class="math"&gt;\(2^{30}\)&lt;/span&gt; entries. 
 We show that the model achieves state-of-the-art performance on synthetic data with high-order&amp;nbsp;interactions.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/bihaqo/exp-machines"&gt;Github&lt;/a&gt;&lt;/li&gt;
@@ -21,11 +21,9 @@ We show that the model achieves state-of-the-art performance on synthetic data w
     }
 
     var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -65,21 +63,35 @@ We show that the model achieves state-of-the-art performance on synthetic data w
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Convergence analysis of a projected fixed-point iteration</title><link href="/news/convergence-analysis-of-a-projected-fixed-point-iteration/" rel="alternate"></link><published>2016-04-06T00:00:00+03:00</published><updated>2016-04-06T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2016-04-06:news/convergence-analysis-of-a-projected-fixed-point-iteration/</id><summary type="html">&lt;p&gt;In &lt;a href="http://arxiv/abs/1604.02111"&gt;this paper&lt;/a&gt; by &lt;a href="../../people/kolesnikov"&gt;Denis Kolesnikov&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt; 
+&lt;/script&gt;</content><category term="paper"></category></entry><entry><title>Convergence analysis of a projected fixed-point iteration</title><link href="/news/convergence-analysis-of-a-projected-fixed-point-iteration/" rel="alternate"></link><published>2016-04-06T00:00:00+03:00</published><updated>2016-04-06T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2016-04-06:/news/convergence-analysis-of-a-projected-fixed-point-iteration/</id><summary type="html">&lt;p&gt;In &lt;a href="http://arxiv/abs/1604.02111"&gt;this paper&lt;/a&gt; by &lt;a href="../../people/kolesnikov"&gt;Denis Kolesnikov&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt; 
+we analyse convergence of projected fixed-point iteration on a Riemannian manifold of matrices with fixed rank. As a retraction method we use `projector splitting scheme&amp;#8217;. We prove that the projector splitting scheme converges at least with the same rate as standard …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In &lt;a href="http://arxiv/abs/1604.02111"&gt;this paper&lt;/a&gt; by &lt;a href="../../people/kolesnikov"&gt;Denis Kolesnikov&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt; 
 we analyse convergence of projected fixed-point iteration on a Riemannian manifold of matrices with fixed rank. As a retraction method we use `projector splitting scheme&amp;#8217;. We prove that the projector splitting scheme converges at least with the same rate as standard fixed-point iteration without rank constraints. We also provide counter-example to the case when conditions of the theorem do not hold. Finally we support our theoretical results with numerical&amp;nbsp;experiments.&lt;/p&gt;
 &lt;p&gt;The most interesting finding is the splitting of the error into two components: normal component and tangent component.
 The normal component shows staircase convergence which &amp;#8220;feels&amp;#8221; the curvature, but this convergence is much faster, 
 thus the total error does not show&amp;nbsp;it.&lt;/p&gt;
-&lt;p&gt;&lt;img width="600" class="center" src="/images/als_conv.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="center" src="/images/als_conv.png" width="600"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1604.02111"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Compress-and-eliminate solver for sparse matrices</title><link href="/news/compress-and-eliminate-solver-for-sparse-matrices/" rel="alternate"></link><published>2016-03-30T00:00:00+03:00</published><updated>2016-03-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2016-03-30:news/compress-and-eliminate-solver-for-sparse-matrices/</id><summary type="html">&lt;p&gt;&lt;a href="http://arxiv/abs/1603.09133"&gt;We propose a new Compress-and-Eliminate Solver for sparse matrices&lt;/a&gt;.
+&lt;/ul&gt;</content><category term="paper"></category></entry><entry><title>Compress-and-eliminate solver for sparse matrices</title><link href="/news/compress-and-eliminate-solver-for-sparse-matrices/" rel="alternate"></link><published>2016-03-30T00:00:00+03:00</published><updated>2016-03-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2016-03-30:/news/compress-and-eliminate-solver-for-sparse-matrices/</id><summary type="html">&lt;p&gt;&lt;a href="http://arxiv/abs/1603.09133"&gt;We propose a new Compress-and-Eliminate Solver for sparse matrices&lt;/a&gt;.
 The approach is proposed by &lt;a href="../../people/sushnikova"&gt;Daria Sushnikova&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt;.
 The solver has a very simple algebraic structure, and outperfoms state-of-the art &lt;span class="caps"&gt;CHOLMOD&lt;/span&gt;&amp;nbsp;software.&lt;/p&gt;
-&lt;p&gt;&lt;img width="600" class="center" src="/images/ce_solver.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="center" src="/images/ce_solver.png" width="600"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1603.09133"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>New paper in SIMAX</title><link href="/news/new-paper-in-simax/" rel="alternate"></link><published>2015-12-01T00:00:00+03:00</published><updated>2015-12-01T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-12-01:news/new-paper-in-simax/</id><summary type="html">&lt;p&gt;Our paper on a &lt;a href="../../news/alternating-low-rank-method-for-the-lyapunov-equation"&gt;new rational Krylov method for solving large-scale Lyapunov equations&lt;/a&gt; &amp;#8220;From Low-Rank Approximation to a Rational Krylov Subspace Method for the Lyapunov Equation&amp;#8221;
+&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://arxiv/abs/1603.09133"&gt;We propose a new Compress-and-Eliminate Solver for sparse matrices&lt;/a&gt;.
+The approach is proposed by &lt;a href="../../people/sushnikova"&gt;Daria Sushnikova&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;Ivan Oseledets&lt;/a&gt;.
+The solver has a very simple algebraic structure, and outperfoms state-of-the art &lt;span class="caps"&gt;CHOLMOD&lt;/span&gt;&amp;nbsp;software.&lt;/p&gt;
+&lt;p&gt;&lt;img class="center" src="/images/ce_solver.png" width="600"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1603.09133"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="paper"></category></entry><entry><title>New paper in SIMAX</title><link href="/news/new-paper-in-simax/" rel="alternate"></link><published>2015-12-01T00:00:00+03:00</published><updated>2015-12-01T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-12-01:/news/new-paper-in-simax/</id><summary type="html">&lt;p&gt;Our paper on a &lt;a href="../../news/alternating-low-rank-method-for-the-lyapunov-equation"&gt;new rational Krylov method for solving large-scale Lyapunov equations&lt;/a&gt; &amp;#8220;From Low-Rank Approximation to a Rational Krylov Subspace Method for the Lyapunov Equation&amp;#8221;
+by &lt;a href="../../people/kolesnikov"&gt;D. Kolesnikov&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
+is now 
+&lt;a href="http://dx.doi.org/10.1137/140992266"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal oon Matrix Analysis and&amp;nbsp;Applications&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1410.3335"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr"&gt;Code on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr-paper"&gt;Code …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Our paper on a &lt;a href="../../news/alternating-low-rank-method-for-the-lyapunov-equation"&gt;new rational Krylov method for solving large-scale Lyapunov equations&lt;/a&gt; &amp;#8220;From Low-Rank Approximation to a Rational Krylov Subspace Method for the Lyapunov Equation&amp;#8221;
 by &lt;a href="../../people/kolesnikov"&gt;D. Kolesnikov&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
 is now 
 &lt;a href="http://dx.doi.org/10.1137/140992266"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal oon Matrix Analysis and&amp;nbsp;Applications&lt;/a&gt;&lt;/p&gt;
@@ -87,19 +99,36 @@ is now
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1410.3335"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr"&gt;Code on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr-paper"&gt;Code &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; data from the paper on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>New paper in J. Comp. Phys</title><link href="/news/new-paper-in-j-comp-phys/" rel="alternate"></link><published>2015-11-05T00:00:00+03:00</published><updated>2015-11-05T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-11-05:news/new-paper-in-j-comp-phys/</id><summary type="html">&lt;p&gt;Our paper on low-rank computation of huge-dimensional path integrals
+&lt;/ul&gt;</content><category term="paper"></category></entry><entry><title>New paper in J. Comp. Phys</title><link href="/news/new-paper-in-j-comp-phys/" rel="alternate"></link><published>2015-11-05T00:00:00+03:00</published><updated>2015-11-05T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-11-05:/news/new-paper-in-j-comp-phys/</id><summary type="html">&lt;p&gt;Our paper on low-rank computation of huge-dimensional path integrals
 &amp;#8220;A low-rank approach to the computation of path integrals&amp;#8221; by &lt;a href="../../people/litsarev"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev&lt;/a&gt; and 
 &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt; 
-&lt;a href="http://dx.doi.org/10.1016/j.jcp.2015.11.009"&gt;published in Journal of Computational&amp;nbsp;Physics&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>New paper in J. Chem. Phys</title><link href="/news/new-paper-in-j-chem-phys/" rel="alternate"></link><published>2015-11-04T00:00:00+03:00</published><updated>2015-11-04T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-11-04:news/new-paper-in-j-chem-phys/</id><summary type="html">&lt;p&gt;Our paper on multidimensional potential energy surfaces approximation] using a combination of active subspace methods and tensor train 
+&lt;a href="http://dx.doi.org/10.1016/j.jcp.2015.11.009"&gt;published in Journal of Computational&amp;nbsp;Physics&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Our paper on low-rank computation of huge-dimensional path integrals
+&amp;#8220;A low-rank approach to the computation of path integrals&amp;#8221; by &lt;a href="../../people/litsarev"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev&lt;/a&gt; and 
+&lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt; 
+&lt;a href="http://dx.doi.org/10.1016/j.jcp.2015.11.009"&gt;published in Journal of Computational&amp;nbsp;Physics&lt;/a&gt;&lt;/p&gt;</content><category term="paper"></category></entry><entry><title>New paper in J. Chem. Phys</title><link href="/news/new-paper-in-j-chem-phys/" rel="alternate"></link><published>2015-11-04T00:00:00+03:00</published><updated>2015-11-04T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-11-04:/news/new-paper-in-j-chem-phys/</id><summary type="html">&lt;p&gt;Our paper on multidimensional potential energy surfaces approximation] using a combination of active subspace methods and tensor train 
 decomposition &amp;#8220;Fitting high-dimensional potential energy surface using active subspace and tensor train (&lt;span class="caps"&gt;AS&lt;/span&gt;+&lt;span class="caps"&gt;TT&lt;/span&gt;) method&amp;#8221;
 by &lt;a href="../../people/baranov"&gt;V. Baranov&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
 is now 
-&lt;a href="http://dx.doi.org/10.1063/1.4935017"&gt;published in Journal of Chemical&amp;nbsp;Physics&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Anton Sukhinov leaves the group</title><link href="/news/anton-sukhinov-leaves-the-group/" rel="alternate"></link><published>2015-09-07T00:00:00+03:00</published><updated>2015-09-07T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-09-07:news/anton-sukhinov-leaves-the-group/</id><summary type="html">&lt;p&gt;Our research scientist &lt;a href="../../people/sukhinov"&gt;Anton Sukhinov&lt;/a&gt; has finished working at Scientific Computing group. We thank
+&lt;a href="http://dx.doi.org/10.1063/1.4935017"&gt;published in Journal of Chemical&amp;nbsp;Physics&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Our paper on multidimensional potential energy surfaces approximation] using a combination of active subspace methods and tensor train 
+decomposition &amp;#8220;Fitting high-dimensional potential energy surface using active subspace and tensor train (&lt;span class="caps"&gt;AS&lt;/span&gt;+&lt;span class="caps"&gt;TT&lt;/span&gt;) method&amp;#8221;
+by &lt;a href="../../people/baranov"&gt;V. Baranov&lt;/a&gt; and &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
+is now 
+&lt;a href="http://dx.doi.org/10.1063/1.4935017"&gt;published in Journal of Chemical&amp;nbsp;Physics&lt;/a&gt;&lt;/p&gt;</content><category term="paper"></category></entry><entry><title>Anton Sukhinov leaves the group</title><link href="/news/anton-sukhinov-leaves-the-group/" rel="alternate"></link><published>2015-09-07T00:00:00+03:00</published><updated>2015-09-07T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-09-07:/news/anton-sukhinov-leaves-the-group/</id><summary type="html">&lt;p&gt;Our research scientist &lt;a href="../../people/sukhinov"&gt;Anton Sukhinov&lt;/a&gt; has finished working at Scientific Computing group. We thank
 Anton for his valuable contributions to the research agenda and for his work with the industrial partners (Huawei, Intel) and 
-wish him good luck in his future&amp;nbsp;career.&lt;/p&gt;</summary><category term="people"></category></entry><entry><title>MMMA-2015</title><link href="/news/mmma-2015/" rel="alternate"></link><published>2015-08-29T00:00:00+03:00</published><updated>2015-08-29T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-08-29:news/mmma-2015/</id><summary type="html">&lt;p&gt;We have succesfully hosted at Skoltech &lt;a href="http://matrix.inm.ras.ru/mmma-2015"&gt;4-th international conference on Matrices in Mathematics and Applications&lt;/a&gt;, &lt;span class="caps"&gt;MMMA&lt;/span&gt;-2015.
+wish him good luck in his future&amp;nbsp;career.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Our research scientist &lt;a href="../../people/sukhinov"&gt;Anton Sukhinov&lt;/a&gt; has finished working at Scientific Computing group. We thank
+Anton for his valuable contributions to the research agenda and for his work with the industrial partners (Huawei, Intel) and 
+wish him good luck in his future&amp;nbsp;career.&lt;/p&gt;</content><category term="people"></category></entry><entry><title>MMMA-2015</title><link href="/news/mmma-2015/" rel="alternate"></link><published>2015-08-29T00:00:00+03:00</published><updated>2015-08-29T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-08-29:/news/mmma-2015/</id><summary type="html">&lt;p&gt;We have succesfully hosted at Skoltech &lt;a href="http://matrix.inm.ras.ru/mmma-2015"&gt;4-th international conference on Matrices in Mathematics and Applications&lt;/a&gt;, &lt;span class="caps"&gt;MMMA&lt;/span&gt;-2015.
+More than 100 talks from 6 countries and 10 universities. This is the first conference at our new building of such, and 
+we had many interesting talks and discussions. The talks and videos …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We have succesfully hosted at Skoltech &lt;a href="http://matrix.inm.ras.ru/mmma-2015"&gt;4-th international conference on Matrices in Mathematics and Applications&lt;/a&gt;, &lt;span class="caps"&gt;MMMA&lt;/span&gt;-2015.
 More than 100 talks from 6 countries and 10 universities. This is the first conference at our new building of such, and 
 we had many interesting talks and discussions. The talks and videos will be soon posted on the &lt;a href="http://matrix.inm.ras.ru/mmma-2015"&gt;conference website&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img width="600" class="center" src="/images/mmma-2015.jpg"&gt;&lt;/p&gt;</summary><category term="conference"></category></entry><entry><title>Path integrals &amp; low-rank for unbounded domains</title><link href="/news/path-integrals-low-rank-for-unbounded-domains/" rel="alternate"></link><published>2015-05-24T00:00:00+03:00</published><updated>2015-05-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-05-24:news/path-integrals-low-rank-for-unbounded-domains/</id><summary type="html">&lt;p&gt;Path integrals play a dominant role in description of a wide range of problems in physics and mathematics.
+&lt;p&gt;&lt;img class="center" src="/images/mmma-2015.jpg" width="600"&gt;&lt;/p&gt;</content><category term="conference"></category></entry><entry><title>Path integrals &amp; low-rank for unbounded domains</title><link href="/news/path-integrals-low-rank-for-unbounded-domains/" rel="alternate"></link><published>2015-05-24T00:00:00+03:00</published><updated>2015-05-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-05-24:/news/path-integrals-low-rank-for-unbounded-domains/</id><summary type="html">&lt;p&gt;Path integrals play a dominant role in description of a wide range of problems in physics and mathematics.
+They are a universal and powerful tool 
+for condensed matter and  high-energy physics,
+theory of stochastic processes 
+and parabolic differential equations,
+financial modelling, quantum chemistry and many&amp;nbsp;others. &lt;/p&gt;
+&lt;p&gt;The solution of the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Path integrals play a dominant role in description of a wide range of problems in physics and mathematics.
 They are a universal and powerful tool 
 for condensed matter and  high-energy physics,
 theory of stochastic processes 
@@ -148,11 +177,9 @@ Using such approach, we can treat problems with non-periodic / non-decaying pote
     }
 
     var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -192,31 +219,57 @@ Using such approach, we can treat problems with non-periodic / non-decaying pote
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Cross-conv paper published!</title><link href="/news/cross-conv-paper-published/" rel="alternate"></link><published>2015-04-03T00:00:00+03:00</published><updated>2015-04-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-04-03:news/cross-conv-paper-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../convolution-via-cross-approximation"&gt;cross-convolution paper&lt;/a&gt; 
+&lt;/script&gt;</content><category term="paper"></category></entry><entry><title>Cross-conv paper published!</title><link href="/news/cross-conv-paper-published/" rel="alternate"></link><published>2015-04-03T00:00:00+03:00</published><updated>2015-04-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-04-03:/news/cross-conv-paper-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../convolution-via-cross-approximation"&gt;cross-convolution paper&lt;/a&gt; 
 &amp;#8220;Fast Multidimensional Convolution in Low-Rank Tensor Formats via Cross Approximation&amp;#8221;
 by &lt;a href="../../people/rakhuba"&gt;M. Rakhuba&lt;/a&gt;, &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
 is now 
-&lt;a href="http://epubs.siam.org/doi/abs/10.1137/140958529"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Scientific&amp;nbsp;Computing&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Similarity for heterogeneous networks</title><link href="/news/similarity-for-heterogeneous-networks/" rel="alternate"></link><published>2015-02-24T00:00:00+03:00</published><updated>2015-02-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-24:news/similarity-for-heterogeneous-networks/</id><summary type="html">&lt;p&gt;We propose a generalization of SimRank similarity measure for heterogeneous information networks.
+&lt;a href="http://epubs.siam.org/doi/abs/10.1137/140958529"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Scientific&amp;nbsp;Computing&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Our &lt;a href="../convolution-via-cross-approximation"&gt;cross-convolution paper&lt;/a&gt; 
+&amp;#8220;Fast Multidimensional Convolution in Low-Rank Tensor Formats via Cross Approximation&amp;#8221;
+by &lt;a href="../../people/rakhuba"&gt;M. Rakhuba&lt;/a&gt;, &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;
+is now 
+&lt;a href="http://epubs.siam.org/doi/abs/10.1137/140958529"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Scientific&amp;nbsp;Computing&lt;/a&gt;&lt;/p&gt;</content><category term="paper"></category></entry><entry><title>Similarity for heterogeneous networks</title><link href="/news/similarity-for-heterogeneous-networks/" rel="alternate"></link><published>2015-02-24T00:00:00+03:00</published><updated>2015-02-24T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-02-24:/news/similarity-for-heterogeneous-networks/</id><summary type="html">&lt;p&gt;We propose a generalization of SimRank similarity measure for heterogeneous information networks.
+Each node is associated with a set of objects and there are different possible relations. This is 
+encoded into the &lt;strong&gt;adjacency tensor&lt;/strong&gt;, and the TensorSimRank equation is given&amp;nbsp;as&lt;/p&gt;
+&lt;div class="math"&gt;$$s_{\alpha \beta} = \sum_{\gamma} w_{\alpha \beta \gamma …&lt;/div&gt;</summary><content type="html">&lt;p&gt;We propose a generalization of SimRank similarity measure for heterogeneous information networks.
 Each node is associated with a set of objects and there are different possible relations. This is 
 encoded into the &lt;strong&gt;adjacency tensor&lt;/strong&gt;, and the TensorSimRank equation is given&amp;nbsp;as&lt;/p&gt;
 &lt;div class="math"&gt;$$s_{\alpha \beta} = \sum_{\gamma} w_{\alpha \beta \gamma} r_{\alpha \beta \gamma} s_{\alpha \beta} r_{\beta \alpha \gamma}, 
 \quad s_{\alpha \alpha} = 1.$$&lt;/div&gt;
 &lt;p&gt;
 This equation generalizes the &lt;a href="http://en.wikipedia.org/wiki/SimRank"&gt;classical SimRank similarity measure&lt;/a&gt;.
-The simple iteration combined with low-rank approximation of &lt;span class="math"&gt;\(S\)&lt;/span&gt; was proposed as a computational algorithm.&lt;br /&gt;
+The simple iteration combined with low-rank approximation of &lt;span class="math"&gt;\(S\)&lt;/span&gt; was proposed as a computational algorithm.&lt;br&gt;
 The model was tested both on synthetic datasets and a real &lt;a href="http://www2.informatik.uni-freiburg.de/~cziegler/BX/"&gt;Book-Crossing Dataset&lt;/a&gt;.
 The final network has the structure (Book, Author, Year, Publisher), and an example of a &amp;#8220;closest book&amp;#8221; request to the 
 Psychic Sisters
 is given in the Table&amp;nbsp;below.&lt;/p&gt;
 &lt;div class="newstable"&gt;
-&lt;p&gt;|Psychic Sisters (Sweet Valley Twins and Friends, No 70) | 
-|&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;|
-|The Love Potion (Sweet Valley Twins and Friends, No 72) | 
-|The Curse of the Ruby Necklace (Sweet Valley Twins and Friends Super, No 5) | 
-|She&amp;#8217;s Not What She Seems (Sweet Valley High No. 92) |
-|Are We in Love? (Sweet Valley High, No 94) |
-|Don&amp;#8217;t Go Home With John (Sweet Valley High No. 90) | 
-|In Love With a Prince (Sweet Valley High, No 91)&amp;nbsp;|&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Psychic Sisters (Sweet Valley Twins and Friends, No 70)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;The Love Potion (Sweet Valley Twins and Friends, No 72)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The Curse of the Ruby Necklace (Sweet Valley Twins and Friends Super, No 5)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;She&amp;#8217;s Not What She Seems (Sweet Valley High No. 92)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Are We in Love? (Sweet Valley High, No 94)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Don&amp;#8217;t Go Home With John (Sweet Valley High No. 90)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;In Love With a Prince (Sweet Valley High, No 91)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1502.06818"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
@@ -233,11 +286,9 @@ is given in the Table&amp;nbsp;below.&lt;/p&gt;
     }
 
     var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -277,22 +328,37 @@ is given in the Table&amp;nbsp;below.&lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains published!</title><link href="/news/time-integration-of-tensor-trains-published/" rel="alternate"></link><published>2015-02-04T00:00:00+03:00</published><updated>2015-02-04T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-04:news/time-integration-of-tensor-trains-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../time-integration-of-tensor-trains"&gt;paper on time integration of tensor trains&lt;/a&gt; 
+&lt;/script&gt;</content><category term="paper"></category></entry><entry><title>Time integration of tensor trains published!</title><link href="/news/time-integration-of-tensor-trains-published/" rel="alternate"></link><published>2015-02-04T00:00:00+03:00</published><updated>2015-02-04T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-02-04:/news/time-integration-of-tensor-trains-published/</id><summary type="html">&lt;p&gt;Our &lt;a href="../time-integration-of-tensor-trains"&gt;paper on time integration of tensor trains&lt;/a&gt; 
 &amp;#8220;Time integration of tensor trains&amp;#8221;
 by C. Lubich,  &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;, B. Vandereycken
-is now &lt;a href="http://epubs.siam.org/doi/abs/10.1137/140976546"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Numerical&amp;nbsp;Analysis&lt;/a&gt;&lt;/p&gt;</summary><category term="paper"></category></entry><entry><title>Maximum-volume principle for rectangular matrices</title><link href="/news/maximum-volume-principle-for-rectangular-matrices/" rel="alternate"></link><published>2015-02-03T00:00:00+03:00</published><updated>2015-02-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2015-02-03:news/maximum-volume-principle-for-rectangular-matrices/</id><summary type="html">&lt;p&gt;A definition of p-volume of rectangular matrices is given. We generalize the results for square maximum-volume submatrices to the case rectangular maximal-volume submatrices and provide estimates for the growth of the coefficients. Three promising applications of such submatrices are presented: recommender systems, finding maximal elements in low-rank matrices and preconditioning of overdetermined linear&amp;nbsp;systems.&lt;/p&gt;
+is now &lt;a href="http://epubs.siam.org/doi/abs/10.1137/140976546"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Numerical&amp;nbsp;Analysis&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Our &lt;a href="../time-integration-of-tensor-trains"&gt;paper on time integration of tensor trains&lt;/a&gt; 
+&amp;#8220;Time integration of tensor trains&amp;#8221;
+by C. Lubich,  &lt;a href="../../people/oseledets"&gt;I. Oseledets&lt;/a&gt;, B. Vandereycken
+is now &lt;a href="http://epubs.siam.org/doi/abs/10.1137/140976546"&gt;published in &lt;span class="caps"&gt;SIAM&lt;/span&gt; Journal on Numerical&amp;nbsp;Analysis&lt;/a&gt;&lt;/p&gt;</content><category term="paper"></category></entry><entry><title>Maximum-volume principle for rectangular matrices</title><link href="/news/maximum-volume-principle-for-rectangular-matrices/" rel="alternate"></link><published>2015-02-03T00:00:00+03:00</published><updated>2015-02-03T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2015-02-03:/news/maximum-volume-principle-for-rectangular-matrices/</id><summary type="html">&lt;p&gt;A definition of p-volume of rectangular matrices is given. We generalize the results for square maximum-volume submatrices to the case rectangular maximal-volume submatrices and provide estimates for the growth of the coefficients. Three promising applications of such submatrices are presented: recommender systems, finding maximal elements in low-rank matrices and preconditioning …&lt;/p&gt;</summary><content type="html">&lt;p&gt;A definition of p-volume of rectangular matrices is given. We generalize the results for square maximum-volume submatrices to the case rectangular maximal-volume submatrices and provide estimates for the growth of the coefficients. Three promising applications of such submatrices are presented: recommender systems, finding maximal elements in low-rank matrices and preconditioning of overdetermined linear&amp;nbsp;systems.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1502.07838"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Alexander Mikhalev defends his PhD</title><link href="/news/alexander-mikhalev-defends-his-phd/" rel="alternate"></link><published>2014-12-30T00:00:00+03:00</published><updated>2014-12-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-30:news/alexander-mikhalev-defends-his-phd/</id><summary type="html">&lt;p&gt;Congratulations to Alexander Mikhalev for his successful PhD defense in &lt;span class="caps"&gt;INM&lt;/span&gt; &lt;span class="caps"&gt;RAS&lt;/span&gt;!&lt;/p&gt;
+&lt;/ul&gt;</content><category term="paper"></category></entry><entry><title>Alexander Mikhalev defends his PhD</title><link href="/news/alexander-mikhalev-defends-his-phd/" rel="alternate"></link><published>2014-12-30T00:00:00+03:00</published><updated>2014-12-30T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2014-12-30:/news/alexander-mikhalev-defends-his-phd/</id><summary type="html">&lt;p&gt;Congratulations to Alexander Mikhalev for his successful PhD defense in &lt;span class="caps"&gt;INM&lt;/span&gt; &lt;span class="caps"&gt;RAS&lt;/span&gt;!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.inm.ras.ru/avtoreferat/%D0%9C%D0%B8%D1%85%D0%B0%D0%BB%D0%B5%D0%B2_dissertation.pdf"&gt;Dissertation (in&amp;nbsp;Russian)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>Convolutional neural networks and tensors</title><link href="/news/convolutional-neural-networks-and-tensors/" rel="alternate"></link><published>2014-12-19T00:00:00+03:00</published><updated>2014-12-19T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-12-19:news/convolutional-neural-networks-and-tensors/</id><summary type="html">&lt;p&gt;Deep learning is a huge topic today; speeding up the computation with convolutional 
+&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Congratulations to Alexander Mikhalev for his successful PhD defense in &lt;span class="caps"&gt;INM&lt;/span&gt; &lt;span class="caps"&gt;RAS&lt;/span&gt;!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.inm.ras.ru/avtoreferat/%D0%9C%D0%B8%D1%85%D0%B0%D0%BB%D0%B5%D0%B2_dissertation.pdf"&gt;Dissertation (in&amp;nbsp;Russian)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>Convolutional neural networks and tensors</title><link href="/news/convolutional-neural-networks-and-tensors/" rel="alternate"></link><published>2014-12-19T00:00:00+03:00</published><updated>2014-12-19T00:00:00+03:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2014-12-19:/news/convolutional-neural-networks-and-tensors/</id><summary type="html">&lt;p&gt;Deep learning is a huge topic today; speeding up the computation with convolutional 
 neural network is crucial for fast classification. In &lt;a href="http://arxiv.org/abs/1412.6553"&gt;this work&lt;/a&gt;
 we show how fine-tuned canonical polyadic (&lt;span class="caps"&gt;CP&lt;/span&gt;) decomposition can be used to speedup &lt;span class="caps"&gt;CNN&lt;/span&gt; by a factor 
 of&amp;nbsp;8-10.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.6553"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Alternating low-rank method for the Lyapunov equation</title><link href="/news/alternating-low-rank-method-for-the-lyapunov-equation/" rel="alternate"></link><published>2014-10-13T00:00:00+04:00</published><updated>2014-10-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-10-13:news/alternating-low-rank-method-for-the-lyapunov-equation/</id><summary type="html">&lt;p&gt;Time-stepping free method based on the rational Krylov subspaces play an important role in many 
+&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Deep learning is a huge topic today; speeding up the computation with convolutional 
+neural network is crucial for fast classification. In &lt;a href="http://arxiv.org/abs/1412.6553"&gt;this work&lt;/a&gt;
+we show how fine-tuned canonical polyadic (&lt;span class="caps"&gt;CP&lt;/span&gt;) decomposition can be used to speedup &lt;span class="caps"&gt;CNN&lt;/span&gt; by a factor 
+of&amp;nbsp;8-10.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.6553"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="paper"></category></entry><entry><title>Alternating low-rank method for the Lyapunov equation</title><link href="/news/alternating-low-rank-method-for-the-lyapunov-equation/" rel="alternate"></link><published>2014-10-13T00:00:00+04:00</published><updated>2014-10-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2014-10-13:/news/alternating-low-rank-method-for-the-lyapunov-equation/</id><summary type="html">&lt;p&gt;Time-stepping free method based on the rational Krylov subspaces play an important role in many 
+applications. The adaptative selection of the shifts for the construction of the &lt;span class="caps"&gt;RKS&lt;/span&gt; is crucial.
+In this paper we propose a new algorithm for the selection of the shifts. It is based 
+on the connection …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Time-stepping free method based on the rational Krylov subspaces play an important role in many 
 applications. The adaptative selection of the shifts for the construction of the &lt;span class="caps"&gt;RKS&lt;/span&gt; is crucial.
 In this paper we propose a new algorithm for the selection of the shifts. It is based 
 on the connection between the solution of the Lyapunov&amp;nbsp;equation&lt;/p&gt;
@@ -309,7 +375,7 @@ $$&lt;/div&gt;
 We have compared the efficiency of the new method with &lt;span class="caps"&gt;KPIK&lt;/span&gt; and &lt;span class="caps"&gt;RKSM&lt;/span&gt; methods (implementation
 were taken from the &lt;a href="http://www.dm.unibo.it/~simoncin/software.html"&gt;homepage of Valeria Simonchini&lt;/a&gt;.
 The &lt;span class="caps"&gt;ALR&lt;/span&gt; method we propose was the most efficient one (and it is&amp;nbsp;parameter-free).&lt;/p&gt;
-&lt;p&gt;&lt;img width="600" class="center" src="/images/diffusion.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="center" src="/images/diffusion.png" width="600"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1410.3335"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/dkolesnikov/alr"&gt;Code on&amp;nbsp;Github&lt;/a&gt;&lt;/li&gt;
@@ -327,11 +393,9 @@ The &lt;span class="caps"&gt;ALR&lt;/span&gt; method we propose was the most eff
     }
 
     var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -371,14 +435,17 @@ The &lt;span class="caps"&gt;ALR&lt;/span&gt; method we propose was the most eff
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Time evolution and optimization with MPS</title><link href="/news/time-evolution-and-optimization-with-mps/" rel="alternate"></link><published>2014-08-21T00:00:00+04:00</published><updated>2014-08-21T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-08-21:news/time-evolution-and-optimization-with-mps/</id><summary type="html">&lt;p&gt;The &lt;a href="http://arxiv.org/abs/1407.2042"&gt;projector-splitting scheme in the &lt;span class="caps"&gt;TT&lt;/span&gt;/&lt;span class="caps"&gt;MPS&lt;/span&gt; format&lt;/a&gt; is a natural way 
+&lt;/script&gt;</content><category term="paper"></category></entry><entry><title>Time evolution and optimization with MPS</title><link href="/news/time-evolution-and-optimization-with-mps/" rel="alternate"></link><published>2014-08-21T00:00:00+04:00</published><updated>2014-08-21T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2014-08-21:/news/time-evolution-and-optimization-with-mps/</id><summary type="html">&lt;p&gt;The &lt;a href="http://arxiv.org/abs/1407.2042"&gt;projector-splitting scheme in the &lt;span class="caps"&gt;TT&lt;/span&gt;/&lt;span class="caps"&gt;MPS&lt;/span&gt; format&lt;/a&gt; is a natural way 
+to computing dynamics of quantum spin systems Hamiltonians with long-range interaction. We have proposed a unified 
+approach that leads to a cheap and efficient computational scheme that can be applied to any Hamiltonian, 
+represented in the &lt;span class="caps"&gt;MPO&lt;/span&gt;/&lt;span class="caps"&gt;TT …&lt;/span&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;The &lt;a href="http://arxiv.org/abs/1407.2042"&gt;projector-splitting scheme in the &lt;span class="caps"&gt;TT&lt;/span&gt;/&lt;span class="caps"&gt;MPS&lt;/span&gt; format&lt;/a&gt; is a natural way 
 to computing dynamics of quantum spin systems Hamiltonians with long-range interaction. We have proposed a unified 
 approach that leads to a cheap and efficient computational scheme that can be applied to any Hamiltonian, 
 represented in the &lt;span class="caps"&gt;MPO&lt;/span&gt;/&lt;span class="caps"&gt;TT&lt;/span&gt; form.
-&lt;img width="600" class="center" src="/images/jutho.png"&gt;&lt;/p&gt;
+&lt;img class="center" src="/images/jutho.png" width="600"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1408.5056"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Time integration of tensor trains</title><link href="/news/time-integration-of-tensor-trains/" rel="alternate"></link><published>2014-08-07T00:00:00+04:00</published><updated>2014-08-07T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-08-07:news/time-integration-of-tensor-trains/</id><summary type="html">&lt;p&gt;Dynamical low-rank approximation is an efficient framework for solving continious and discrete-time 
+&lt;/ul&gt;</content><category term="paper"></category></entry><entry><title>Time integration of tensor trains</title><link href="/news/time-integration-of-tensor-trains/" rel="alternate"></link><published>2014-08-07T00:00:00+04:00</published><updated>2014-08-07T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2014-08-07:/news/time-integration-of-tensor-trains/</id><summary type="html">&lt;p&gt;Dynamical low-rank approximation is an efficient framework for solving continious and discrete-time 
 problems in high-dimensions. Using the Dirac-Frenkel principle applied to the tensor-train format, 
 we have propose a robust and efficient time integrator for the resulting system of nonlinear&amp;nbsp;equations.&lt;/p&gt;
 &lt;ul&gt;
@@ -393,11 +460,32 @@ we have propose a robust and efficient time integrator for the resulting system 
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img width="300" class="center" src="/images/sweep.png"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img width="300" class="center" src="/images/optim.png"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img class="center" src="/images/sweep.png" width="300"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img class="center" src="/images/optim.png" width="300"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</summary><category term="paper"></category></entry><entry><title>Multidimensional integrals in ion-atom collisions</title><link href="/news/multidimensional-integrals-in-ion-atom-collisions/" rel="alternate"></link><published>2014-03-19T00:00:00+04:00</published><updated>2014-03-19T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-19:news/multidimensional-integrals-in-ion-atom-collisions/</id><summary type="html">&lt;p&gt;Simulation in physics is full of multidimensional integrals. In the paper &lt;a href="http://arxiv.org/abs/1403.4068"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev and &lt;span class="caps"&gt;I. V.&lt;/span&gt; Oseledets. Low rank approximations for the &lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; computer code. arXiv preprint 1403.4068, 2014&lt;/a&gt; we consider the
+&lt;/table&gt;</summary><content type="html">&lt;p&gt;Dynamical low-rank approximation is an efficient framework for solving continious and discrete-time 
+problems in high-dimensions. Using the Dirac-Frenkel principle applied to the tensor-train format, 
+we have propose a robust and efficient time integrator for the resulting system of nonlinear&amp;nbsp;equations.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://arxiv.org/abs/1407.2042"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Algorithm scheme&lt;/th&gt;
+&lt;th&gt;Approximate Laplace inversion&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img class="center" src="/images/sweep.png" width="300"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img class="center" src="/images/optim.png" width="300"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content><category term="paper"></category></entry><entry><title>Multidimensional integrals in ion-atom collisions</title><link href="/news/multidimensional-integrals-in-ion-atom-collisions/" rel="alternate"></link><published>2014-03-19T00:00:00+04:00</published><updated>2014-03-19T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2014-03-19:/news/multidimensional-integrals-in-ion-atom-collisions/</id><summary type="html">&lt;p&gt;Simulation in physics is full of multidimensional integrals. In the paper &lt;a href="http://arxiv.org/abs/1403.4068"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev and &lt;span class="caps"&gt;I. V.&lt;/span&gt; Oseledets. Low rank approximations for the &lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; computer code. arXiv preprint 1403.4068, 2014&lt;/a&gt; we consider the
+&lt;a href="http://www.sciencedirect.com/science/article/pii/S0010465512003153"&gt;&lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; code&lt;/a&gt; that is suited 
+for the computation of ion-atomic collisons. The main computational bottleneck is …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Simulation in physics is full of multidimensional integrals. In the paper &lt;a href="http://arxiv.org/abs/1403.4068"&gt;&lt;span class="caps"&gt;M. S.&lt;/span&gt; Litsarev and &lt;span class="caps"&gt;I. V.&lt;/span&gt; Oseledets. Low rank approximations for the &lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; computer code. arXiv preprint 1403.4068, 2014&lt;/a&gt; we consider the
 &lt;a href="http://www.sciencedirect.com/science/article/pii/S0010465512003153"&gt;&lt;span class="caps"&gt;DEPOSIT&lt;/span&gt; code&lt;/a&gt; that is suited 
 for the computation of ion-atomic collisons. The main computational bottleneck is the computation 
 of a three-dimensional integral. We exploit its structure by computing low-rank separated representation
@@ -447,11 +535,9 @@ $&lt;/p&gt;
     }
 
     var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -491,17 +577,25 @@ $&lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Preconditioners for hierarchical matrices</title><link href="/news/preconditioners-for-hierarchical-matrices/" rel="alternate"></link><published>2014-03-12T00:00:00+04:00</published><updated>2014-03-12T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-03-12:news/preconditioners-for-hierarchical-matrices/</id><summary type="html">&lt;p&gt;We continue to develop our &lt;a href="https://bitbucket.org/muxas/h2tools"&gt;h2tools&lt;/a&gt; package with the new functionality.
+&lt;/script&gt;</content><category term="paper"></category></entry><entry><title>Preconditioners for hierarchical matrices</title><link href="/news/preconditioners-for-hierarchical-matrices/" rel="alternate"></link><published>2014-03-12T00:00:00+04:00</published><updated>2014-03-12T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2014-03-12:/news/preconditioners-for-hierarchical-matrices/</id><summary type="html">&lt;p&gt;We continue to develop our &lt;a href="https://bitbucket.org/muxas/h2tools"&gt;h2tools&lt;/a&gt; package with the new functionality.
+The solution of linear systems with hierarchical matrices plays a crucial role in many applications. 
+We use the sparse extended form of the H2-matrices to reduce the initial linear system to a block-structured
+linear system and then use this …&lt;/p&gt;</summary><content type="html">&lt;p&gt;We continue to develop our &lt;a href="https://bitbucket.org/muxas/h2tools"&gt;h2tools&lt;/a&gt; package with the new functionality.
 The solution of linear systems with hierarchical matrices plays a crucial role in many applications. 
 We use the sparse extended form of the H2-matrices to reduce the initial linear system to a block-structured
 linear system and then use this block structure to construct different preconditioners. The most efficient
 preconditioner is the preconditioner based on the 
 so-called &lt;a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3465730/"&gt;&amp;#8220;reverse-Schur complement&amp;#8221;&lt;/a&gt; method: we solve
-the initial system using the availability of the fast matrix-by-vector product, and to solve the corretion equation&lt;br /&gt;
+the initial system using the availability of the fast matrix-by-vector product, and to solve the corretion equation&lt;br&gt;
 we construct the extended system and make several preconditioned iterative steps with&amp;nbsp;it. &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://arxiv.org/abs/1412.1253"&gt;Preprint on&amp;nbsp;arXiv&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="paper"></category></entry><entry><title>Convolution via cross approximation</title><link href="/news/convolution-via-cross-approximation/" rel="alternate"></link><published>2014-02-25T00:00:00+04:00</published><updated>2014-02-25T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-25:news/convolution-via-cross-approximation/</id><summary type="html">&lt;p&gt;Multidimensional convolution plays a crucial role in many 
+&lt;/ul&gt;</content><category term="paper"></category></entry><entry><title>Convolution via cross approximation</title><link href="/news/convolution-via-cross-approximation/" rel="alternate"></link><published>2014-02-25T00:00:00+04:00</published><updated>2014-02-25T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2014-02-25:/news/convolution-via-cross-approximation/</id><summary type="html">&lt;p&gt;Multidimensional convolution plays a crucial role in many 
+applications. We have proposed a new method for approximate computation of the convolution 
+in &lt;em&gt;low-rank tensor formats&lt;/em&gt;
+that is based on the
+&lt;em&gt;cross approximation&lt;/em&gt; in the frequency domain. 
+The method is applicable to any &lt;span class="caps"&gt;SVD&lt;/span&gt;-based tensor format (skeleton, Tucker,  Tensor Train …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Multidimensional convolution plays a crucial role in many 
 applications. We have proposed a new method for approximate computation of the convolution 
 in &lt;em&gt;low-rank tensor formats&lt;/em&gt;
 that is based on the
@@ -519,8 +613,8 @@ For a practically interesting range of one-dimensional grid sizes &lt;span class
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;img width="270" class="center" src="/images/He_density.jpg"&gt;&lt;/td&gt;
-&lt;td&gt;&lt;img width="270" class="center" src="/images/H2_density.jpg"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img class="center" src="/images/He_density.jpg" width="270"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img class="center" src="/images/H2_density.jpg" width="270"&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -541,11 +635,9 @@ For a practically interesting range of one-dimensional grid sizes &lt;span class
     }
 
     var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -585,5 +677,6 @@ For a practically interesting range of one-dimensional grid sizes &lt;span class
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="paper"></category></entry><entry><title>Theses topics</title><link href="/news/theses-topics/" rel="alternate"></link><published>2014-02-13T00:00:00+04:00</published><updated>2014-02-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:,2014-02-13:news/theses-topics/</id><summary type="html">&lt;p&gt;I have put short descriptions of the available student
-project online. &lt;a href="/theses/"&gt;Please&amp;nbsp;check&lt;/a&gt;&lt;/p&gt;</summary><category term="Students"></category></entry></feed>
+&lt;/script&gt;</content><category term="paper"></category></entry><entry><title>Theses topics</title><link href="/news/theses-topics/" rel="alternate"></link><published>2014-02-13T00:00:00+04:00</published><updated>2014-02-13T00:00:00+04:00</updated><author><name>Ivan Oseledets</name></author><id>tag:None,2014-02-13:/news/theses-topics/</id><summary type="html">&lt;p&gt;I have put short descriptions of the available student
+project online. &lt;a href="/theses/"&gt;Please&amp;nbsp;check&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I have put short descriptions of the available student
+project online. &lt;a href="/theses/"&gt;Please&amp;nbsp;check&lt;/a&gt;&lt;/p&gt;</content><category term="Students"></category></entry></feed>
